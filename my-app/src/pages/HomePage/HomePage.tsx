@@ -1,15 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './HomePage.css';
+import NavigationButton from '../../components/navigationButtonComponent/NavigationButton';
 
-function App() {
+function HomePage() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
+        <p>My future site site.</p>
+        <p> Here is my button </p>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -23,4 +23,4 @@ function App() {
   );
 }
 
-export default App;
+export default HomePage;
