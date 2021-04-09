@@ -1,13 +1,19 @@
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import './MainButton.css';
 
 const MainButton = (props: any) => {
   const { text } = props;
 
+  const history = useHistory();
+
+  const buttonHandler = () => {
+    history.push('/about');
+  };
+
   return (
-    <div className='MainButton'>
-      <Link to='/about'>{text}</Link>
-    </div>
+    <button className='MainButton' onClick={buttonHandler}>
+      {text}
+    </button>
   );
 };
 
