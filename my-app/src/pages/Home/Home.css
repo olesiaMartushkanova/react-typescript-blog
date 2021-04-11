@@ -1,0 +1,23 @@
+.home {
+  background-color: lightslategrey;
+  height: 100vh;
+  width: 100vw;
+}
+
+.titleContainer {
+  margin-left: 10vw;
+  margin-top: 5vh;
+  display: block;
+  width: 26vw;
+  height: 81vh;
+  left: 105px;
+  top: 58px;
+  font-size: 36px;
+  font-family: 'Rhodium Libre';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 62px;
+  letter-spacing: 0.23em;
+  position: absolute;
+  color: #000000;
+}

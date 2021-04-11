@@ -1,9 +1,13 @@
-.MainButton {
+.mainButton {
   background: #fff;
   font-size: 24px;
   font-weight: bold;
   line-height: 34px;
+  font-family: Rhodium Libre;
   height: 54px;
   text-align: center;
   width: 200px;
+  position: absolute;
+  top: 8px;
+  right: 16px;
 }

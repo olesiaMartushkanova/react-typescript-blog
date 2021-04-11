@@ -1,17 +1,16 @@
 import { Link, useHistory } from 'react-router-dom';
+import { IMainButton } from '../types';
 import './MainButton.css';
 
-const MainButton = (props: any) => {
-  const { text } = props;
-
+const MainButton = ({ text, path }: IMainButton) => {
   const history = useHistory();
 
   const buttonHandler = () => {
-    history.push('/about');
+    history.push(path);
   };
 
   return (
-    <button className='MainButton' onClick={buttonHandler}>
+    <button className='mainButton' onClick={buttonHandler}>
       {text}
     </button>
   );
