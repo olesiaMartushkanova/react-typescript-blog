@@ -1,8 +1,8 @@
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { IMainButton } from '../types';
 import './MainButton.css';
 
-const MainButton = ({ text, path }: IMainButton) => {
+const MainButton = ({ className, text, path }: IMainButton) => {
   const history = useHistory();
 
   const buttonHandler = () => {
@@ -10,7 +10,7 @@ const MainButton = ({ text, path }: IMainButton) => {
   };
 
   return (
-    <button className='mainButton' onClick={buttonHandler}>
+    <button className={className} onClick={buttonHandler}>
       {text}
     </button>
   );

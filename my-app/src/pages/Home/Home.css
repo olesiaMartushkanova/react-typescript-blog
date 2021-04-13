@@ -5,15 +5,17 @@
 }
 
 .titleContainer {
-  margin-left: 10vw;
-  margin-top: 5vh;
+  margin-left: 5vw;
+  margin-right: 64vw;
+  margin-top: 2vh;
   display: block;
-  width: 26vw;
-  height: 81vh;
-  left: 105px;
+  width: 300px;
+  height: 570px;
+  left: 70px;
   top: 58px;
-  font-size: 36px;
-  font-family: 'Rhodium Libre';
+  font-size: 40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 62px;

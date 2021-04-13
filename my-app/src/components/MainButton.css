@@ -1,13 +1,26 @@
 .mainButton {
   background: #fff;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   line-height: 34px;
-  font-family: Rhodium Libre;
-  height: 54px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  height: 56px;
   text-align: center;
-  width: 200px;
+  width: 163px;
   position: absolute;
-  top: 8px;
+  font-style: normal;
+  top: 58px;
+}
+
+.aboutMeButton {
+  top: 58px;
+  left: 684px;
+  font-style: normal;
+}
+
+.mediumButton {
   right: 16px;
+  left: 870px;
+  font-style: normal;
 }
