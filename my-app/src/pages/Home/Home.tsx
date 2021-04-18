@@ -1,15 +1,12 @@
 import './Home.css';
 import MainButton from '../../components/MainButton';
-import { ABOUT_ME_PATH, MEDIUM_PATH } from '../../constants';
-
-const TITLE_TEXT =
-  'It’s all about my passion to life, learning and personal growth';
+import { ABOUT_ME_PATH, MEDIUM_PATH, TITLE_TEXT } from '../../constants';
 
 const Home = () => {
   return (
     <div className='home'>
-      <div id='titleContainer'>
-        <h1 className='titleContainer'>{TITLE_TEXT}</h1>
+      <div className='titleContainer'>
+        <h1 className='titleText'>{TITLE_TEXT}</h1>
       </div>
       <div id='interactiveContainer'>
         <div>
