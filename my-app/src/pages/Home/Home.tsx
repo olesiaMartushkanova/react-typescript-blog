@@ -12,26 +12,24 @@ const Home = () => {
         <h1 className='titleContainer'>{TITLE_TEXT}</h1>
       </div>
       <div id='interactiveContainer'>
-        <div id='navigationContainer'>
-          <div>
-            <MainButton
-              className='mainButton aboutMeButton'
-              text='About me'
-              path={ABOUT_ME_PATH}
-            />
-          </div>
-          <div>
-            <MainButton
-              className='mainButton mediumButton'
-              text='Medium'
-              path={MEDIUM_PATH}
-            />
-          </div>
+        <div>
+          <MainButton
+            className='mainButton mediumButton'
+            text='Medium'
+            path={MEDIUM_PATH}
+          />
         </div>
-        <div id='latestPostsContainer'> </div>
-        <div id='contactMeContainer'> </div>
-        <div id='socialButton'></div>
+        <div>
+          <MainButton
+            className='mainButton aboutMeButton'
+            text='About me'
+            path={ABOUT_ME_PATH}
+          />
+        </div>
       </div>
+      <div id='latestPostsContainer'> </div>
+      <div id='contactMeContainer'> </div>
+      <div id='socialButton'></div>
     </div>
   );
 };
