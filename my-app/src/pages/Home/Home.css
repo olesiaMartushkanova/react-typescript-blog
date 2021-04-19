@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Rhodium+Libre&display=swap');
+
 .home {
-  background-color: lightslategrey;
+  background-color: rgb(241, 241, 241);
   height: 100vh;
   width: 100vw;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Rhodium+Libre&display=swap');
 
 .titleContainer {
   width: 382px;

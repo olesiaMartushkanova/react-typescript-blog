@@ -1,23 +1,13 @@
-.mainButton {
-  background: #fff;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 34px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  height: 56px;
-  text-align: center;
-  width: 163px;
-  position: absolute;
-  top: 58px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Rhodium+Libre&display=swap');
 
 .aboutMeButton {
-  top: 58px;
-  left: 684px;
+  float: right;
+  top: 0px;
+  left: 384px;
 }
 
 .mediumButton {
-  right: 16px;
+  float: right;
+  right: 0px;
   left: 870px;
 }

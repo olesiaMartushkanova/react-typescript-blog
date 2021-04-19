@@ -1,6 +1,7 @@
 import './Home.css';
-import MainButton from '../../components/MainButton';
 import { ABOUT_ME_PATH, MEDIUM_PATH, TITLE_TEXT } from '../../constants';
+import MainButton from '../../components/MainButton';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Home = () => {
   return (
@@ -8,22 +9,24 @@ const Home = () => {
       <div className='titleContainer'>
         <h1 className='titleText'>{TITLE_TEXT}</h1>
       </div>
-      <div id='interactiveContainer'>
+
+      <div id='interactiveButtonContainer'>
         <div>
           <MainButton
-            className='mainButton mediumButton'
+            className='mediumButton'
             text='Medium'
             path={MEDIUM_PATH}
           />
         </div>
         <div>
           <MainButton
-            className='mainButton aboutMeButton'
+            className='aboutMeButton'
             text='About me'
             path={ABOUT_ME_PATH}
           />
         </div>
       </div>
+
       <div id='latestPostsContainer'> </div>
       <div id='contactMeContainer'> </div>
       <div id='socialButton'></div>

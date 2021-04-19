@@ -1,18 +1,25 @@
 import { useHistory } from 'react-router-dom';
 import { IMainButton } from '../types';
 import './MainButton.css';
+import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const MainButton = ({ className, text, path }: IMainButton) => {
+const MainButton = (props: IMainButton) => {
+  const { className, text, path, variant, size } = props;
+
   const history = useHistory();
-
   const buttonHandler = () => {
-    history.push(path);
+    history.push(path || '/');
   };
 
   return (
-    <button className={className} onClick={buttonHandler}>
+    <Button
+      className={className}
+      variant={variant ? variant : 'secondary'}
+      size={size ? size : 'lg'}
+      onClick={buttonHandler}>
       {text}
-    </button>
+    </Button>
   );
 };
 
