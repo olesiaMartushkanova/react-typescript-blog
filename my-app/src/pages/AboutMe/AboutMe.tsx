@@ -6,11 +6,7 @@ const AboutMe = () => {
   return (
     <div className='aboutMe'>
       <h1>My journey</h1>
-      <MainButton
-        className='mainButton mediumButton'
-        text='Home'
-        path={HOME_PATH}
-      />
+      <MainButton text='Home' path={HOME_PATH} />
     </div>
   );
 };

@@ -7,29 +7,22 @@ const Home = () => {
   return (
     <div className='home'>
       <div className='titleContainer'>
-        <h1 className='titleText'>{TITLE_TEXT}</h1>
+        <h1>{TITLE_TEXT}</h1>
       </div>
-
-      <div id='interactiveButtonContainer'>
-        <div>
+      <div className='spacer' />
+      <div id='mainSection' className='mainSection'>
+        <div className='buttonsContainer'>
           <MainButton
-            className='mediumButton'
-            text='Medium'
-            path={MEDIUM_PATH}
-          />
-        </div>
-        <div>
-          <MainButton
-            className='aboutMeButton'
+            className='mainButton aboutMeButton'
             text='About me'
             path={ABOUT_ME_PATH}
           />
+          <MainButton className='mainButton' text='Medium' path={MEDIUM_PATH} />
         </div>
+        <div id='latestPostsContainer' className='latestPostsContainer'></div>
+        <div id='contactMeContainer' className='contactMeContainer'></div>
+        <div id='socialButton' className='socialButton'></div>
       </div>
-
-      <div id='latestPostsContainer'> </div>
-      <div id='contactMeContainer'> </div>
-      <div id='socialButton'></div>
     </div>
   );
 };

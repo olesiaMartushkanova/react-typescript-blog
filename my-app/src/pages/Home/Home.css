@@ -1,24 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Rhodium+Libre&display=swap');
 
 .home {
+  display: flex;
+  flex-direction: row;
   background-color: rgb(241, 241, 241);
   height: 100vh;
   width: 100vw;
 }
 
+.spacer {
+  flex-grow: 1;
+  display: block;
+}
+
 .titleContainer {
   width: 382px;
   height: 405px;
-  left: 105px;
-  top: 180px;
-  opacity: 70%;
-  position: relative;
-}
 
-.titleText {
+  margin-top: 100px;
+  margin-left: 105px;
+
   font-family: 'Rhodium Libre', serif;
   font-style: normal;
+  letter-spacing: 0.1em;
   line-height: 61px;
   color: #000000;
   font-size: 36px;
+}
+
+.mainSection {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-right: 50px;
+  width: 412px;
+}
+
+.buttonsContainer {
+  display: flex;
 }

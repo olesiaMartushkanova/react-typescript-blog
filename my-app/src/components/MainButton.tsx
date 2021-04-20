@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const MainButton = (props: IMainButton) => {
-  const { className, text, path, variant, size } = props;
+  const { text, className, path, variant, size } = props;
 
   const history = useHistory();
   const buttonHandler = () => {
