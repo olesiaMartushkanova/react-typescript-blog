@@ -1,4 +1,4 @@
-import MainButton from '../../components/MainButton';
+import MainButton from '../../components/MainButton/MainButton';
 import { HOME_PATH } from '../../constants';
 import './AboutMe.css';
 

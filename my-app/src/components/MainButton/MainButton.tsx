@@ -1,5 +1,5 @@
 import { useHistory } from 'react-router-dom';
-import { IMainButton } from '../types';
+import { IMainButton } from '../../types';
 import './MainButton.css';
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
