@@ -8,11 +8,27 @@ import {
   faLinkedin,
   faGithub,
 } from '@fortawesome/free-brands-svg-icons';
+import { ISocialFollow } from '../../types';
 
-const socialButtons = [
-  { icon: faInstagram, className: 'instagram', color: 'black' },
-  { icon: faLinkedin, className: 'linkedin', color: 'black' },
-  { icon: faGithub, className: 'github', color: 'black' },
+const SOCIAL_BUTTONS: Array<ISocialFollow> = [
+  {
+    icon: faInstagram,
+    className: 'instagram',
+    color: 'black',
+    path: 'https://www.instagram.com/olesia_learns/',
+  },
+  {
+    icon: faLinkedin,
+    className: 'linkedin',
+    color: 'black',
+    path: 'https://www.linkedin.com/in/olesia-martushkanova/',
+  },
+  {
+    icon: faGithub,
+    className: 'github',
+    color: 'black',
+    path: 'https://github.com/olesiaMartushkanova',
+  },
 ];
 
 const Home = () => {
@@ -37,7 +53,7 @@ const Home = () => {
         <div id='contactMeContainer' className='contactMeContainer'></div> */}
 
         <div className='socialContainer'>
-          <SocialFollow props={socialButtons} />
+          <SocialFollow props={SOCIAL_BUTTONS} />
         </div>
       </div>
     </div>

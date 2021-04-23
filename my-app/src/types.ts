@@ -1,7 +1,13 @@
+import { FontAwesomeIconProps } from '@fortawesome/react-fontawesome';
+
 export interface IMainButton {
   text: string;
   className?: string;
   path?: string;
   variant?: string;
   size?: 'lg' | 'sm';
+}
+
+export interface ISocialFollow extends FontAwesomeIconProps {
+  path: string;
 }
