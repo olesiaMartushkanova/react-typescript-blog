@@ -4,7 +4,7 @@ import './SocialFollow.css';
 
 const SocialFollow = ({ props }: any) => {
   return props.map((socialButton: ISocialFollow) => (
-    <a href={socialButton.path}>
+    <a href={socialButton.path} target='_blank'>
       <FontAwesomeIcon
         icon={socialButton.icon}
         className={socialButton.className}
