@@ -2,15 +2,27 @@
 
 .home {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: rgb(241, 241, 241);
   height: 100vh;
   width: 100vw;
 }
 
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer {
+  width: 100vw;
+  height: 91px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 .spacer {
   flex-grow: 1;
-  display: block;
 }
 
 .titleContainer {
@@ -41,7 +53,8 @@
 }
 
 .socialContainer {
-  display: flex;
-  /* flex-direction: row; */
-  margin-top: 510px;
+  position: absolute;
+  right: 0;
+  top: 7px;
+  margin-right: 50px;
 }
