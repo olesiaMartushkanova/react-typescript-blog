@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Rhodium+Libre&display=swap');
+
 .latestsPosts {
   padding: 1rem;
   background-color: rgb(202, 202, 202);
@@ -6,4 +8,11 @@
   max-width: 95%;
   border-radius: 12px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+}
+
+.title {
+  font-family: 'Rhodium Libre', serif;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
 }

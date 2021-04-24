@@ -2,8 +2,9 @@
 
 .mainButton {
   font-family: 'Rhodium Libre', serif;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
 }
 
 .aboutMeButton {
-  margin-right: 12px;
+  margin-right: 11px;
 }
