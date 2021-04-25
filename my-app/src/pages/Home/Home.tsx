@@ -8,7 +8,7 @@ import {
 } from '../../constants';
 import MainButton from '../../components/MainButton/MainButton';
 import SocialFollow from '../../components/SocialFollow/SocialFollow';
-import LatestPosts from '../../components/LatestPosts/LatestPosts';
+import LatestPostsContainer from '../../components/LatestPosts/LatestPostsContainer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../components/LatestPosts/LatestPosts.css';
 import MediumButton from '../../components/MediumButton/MediumButton';
@@ -35,7 +35,7 @@ const Home = () => {
 
           <div className='latestPostsContainer'>
             My latest posts
-            <LatestPosts props={LATEST_POSTS} />
+            <LatestPostsContainer props={LATEST_POSTS} />
           </div>
 
           <ContactForm />

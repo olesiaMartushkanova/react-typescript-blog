@@ -1,8 +1,8 @@
-import PostItem from '../PostItem/PostItem';
+import PostItem from './PostItem';
 import { IPostItem } from '../../types';
 // import { Link } from 'react-router-dom';
 
-const LatestPosts = ({ props }: any) => {
+const LatestPostsContainer = ({ props }: any) => {
   return props.map((postItem: IPostItem) => (
     <div>
       <PostItem title={postItem.title} path={postItem.path} />
@@ -10,4 +10,4 @@ const LatestPosts = ({ props }: any) => {
   ));
 };
 
-export default LatestPosts;
+export default LatestPostsContainer;
