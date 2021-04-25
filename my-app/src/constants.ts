@@ -7,7 +7,8 @@ import { IPostItem, ISocialFollow } from './types';
 
 export const ABOUT_ME_PATH = '/about-me';
 export const HOME_PATH = '/';
-export const MEDIUM_PATH = '/medium';
+export const MEDIUM_PATH = 'https://medium.com/me/stories/drafts';
+
 export const TITLE_TEXT =
   'It’s all about my passion to life, learning and personal growth';
 
@@ -29,15 +30,13 @@ export const SOCIAL_BUTTONS: Array<ISocialFollow> = [
   },
 ];
 
-const BASE_MEDIUM_PATH = 'https://medium.com/me/';
-
 export const LATEST_POSTS: Array<IPostItem> = [
   {
     title: 'Learning React: Part 1',
-    path: `${BASE_MEDIUM_PATH}/stories/drafts`,
+    path: MEDIUM_PATH,
   },
   {
     title: 'Diving into DevOps: learning Argo Workflows',
-    path: `${BASE_MEDIUM_PATH}/stories/drafts`,
+    path: MEDIUM_PATH,
   },
 ];
