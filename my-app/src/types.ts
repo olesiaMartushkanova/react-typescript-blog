@@ -11,3 +11,8 @@ export interface IMainButton {
 export interface ISocialFollow extends FontAwesomeIconProps {
   path: string;
 }
+
+export interface IPostItem {
+  title: string;
+  path: string;
+}

@@ -1,11 +1,12 @@
-import './LatestPosts.css';
+import PostItem from '../PostItem/PostItem';
+import { IPostItem } from '../../types';
 
-const LatestPosts = () => {
-  return (
-    <div className='latestsPosts'>
-      <h3 className='title'>My latest posts</h3>
+const LatestPosts = ({ props }: any) => {
+  return props.map((postItem: IPostItem) => (
+    <div>
+      <PostItem title={postItem.title} path={postItem.path} />
     </div>
-  );
+  ));
 };
 
 export default LatestPosts;

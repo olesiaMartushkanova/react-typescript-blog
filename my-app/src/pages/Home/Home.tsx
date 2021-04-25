@@ -1,6 +1,7 @@
 import './Home.css';
 import {
   ABOUT_ME_PATH,
+  LATEST_POSTS,
   MEDIUM_PATH,
   SOCIAL_BUTTONS,
   TITLE_TEXT,
@@ -9,6 +10,7 @@ import MainButton from '../../components/MainButton/MainButton';
 import SocialFollow from '../../components/SocialFollow/SocialFollow';
 import LatestPosts from '../../components/LatestPosts/LatestPosts';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../../components/LatestPosts/LatestPosts.css';
 
 const Home = () => {
   return (
@@ -33,8 +35,9 @@ const Home = () => {
             />
           </div>
 
-          <div id='latestPostsContainer' className='latestPostsContainer'>
-            <LatestPosts />
+          <div className='latestPostsContainer'>
+            My latest posts
+            <LatestPosts props={LATEST_POSTS} />
           </div>
 
           {/* <div id='contactMeContainer' className='contactMeContainer'></div> */}
