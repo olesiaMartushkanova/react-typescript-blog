@@ -12,6 +12,7 @@ import LatestPosts from '../../components/LatestPosts/LatestPosts';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../components/LatestPosts/LatestPosts.css';
 import MediumButton from '../../components/MediumButton/MediumButton';
+import ContactForm from '../../components/ContactForm/ContactForm';
 
 const Home = () => {
   return (
@@ -37,7 +38,7 @@ const Home = () => {
             <LatestPosts props={LATEST_POSTS} />
           </div>
 
-          {/* <div id='contactMeContainer' className='contactMeContainer'></div> */}
+          <ContactForm />
         </div>
       </div>
       <div className='footer'>
