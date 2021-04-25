@@ -4,12 +4,12 @@ import './PostItem.css';
 const PostItem = (props: IPostItem) => {
   const { title, path } = props;
 
-  const clickHandler = () => {
+  const postItemHandler = () => {
     window.open(path, '_blank');
   };
 
   return (
-    <div className='postItem' onClick={clickHandler}>
+    <div className='postItem' onClick={postItemHandler}>
       {title}
       <a href={path}></a>
     </div>

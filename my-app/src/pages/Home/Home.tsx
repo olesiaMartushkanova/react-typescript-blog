@@ -11,6 +11,7 @@ import SocialFollow from '../../components/SocialFollow/SocialFollow';
 import LatestPosts from '../../components/LatestPosts/LatestPosts';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../components/LatestPosts/LatestPosts.css';
+import MediumButton from '../../components/MediumButton/MediumButton';
 
 const Home = () => {
   return (
@@ -28,11 +29,7 @@ const Home = () => {
               text='About me'
               path={ABOUT_ME_PATH}
             />
-            <MainButton
-              className='mainButton'
-              text='Medium'
-              path={MEDIUM_PATH}
-            />
+            <MediumButton path={MEDIUM_PATH} text='Medium' />
           </div>
 
           <div className='latestPostsContainer'>
