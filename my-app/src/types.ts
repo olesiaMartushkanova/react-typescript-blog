@@ -1,7 +1,7 @@
 import { FontAwesomeIconProps } from '@fortawesome/react-fontawesome';
 
 export interface IMainButton {
-  text: string;
+  text?: string;
   className?: string;
   path?: string;
   variant?: string;

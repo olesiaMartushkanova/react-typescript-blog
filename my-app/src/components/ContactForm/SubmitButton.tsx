@@ -1,0 +1,23 @@
+import Button from '@material-ui/core/Button';
+import '../MainButton/MainButton.css';
+import Send from '@material-ui/icons/Send';
+import green from '@material-ui/core/colors/green';
+
+const SubmitButton = () => {
+  const primary = green[600] as any;
+
+  return (
+    <div>
+      <Button
+        className='submitButton'
+        color='primary'
+        variant='contained'
+        endIcon={<Send>Send</Send>}
+        size='small'>
+        Send
+      </Button>
+    </div>
+  );
+};
+
+export default SubmitButton;

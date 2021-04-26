@@ -30,7 +30,7 @@ const Home = () => {
               text='About me'
               path={ABOUT_ME_PATH}
             />
-            <MediumButton path={MEDIUM_PATH} text='Medium' />
+            <MediumButton path={MEDIUM_PATH} />
           </div>
 
           <div className='latestPostsContainer'>

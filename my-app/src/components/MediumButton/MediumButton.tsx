@@ -4,7 +4,7 @@ import '../MainButton/MainButton.css';
 import { IMainButton } from '../../types';
 
 const MediumButton = (props: IMainButton) => {
-  const { text, variant, size, path } = props;
+  const { path } = props;
 
   const buttonHandler = () => {
     window.open(path, '_blank');
@@ -14,9 +14,9 @@ const MediumButton = (props: IMainButton) => {
     <Button
       onClick={buttonHandler}
       className='mainButton'
-      variant={variant ? variant : 'secondary'}
-      size={size ? size : 'lg'}>
-      {text}
+      variant='secondary'
+      size='lg'>
+      Medium
     </Button>
   );
 };
