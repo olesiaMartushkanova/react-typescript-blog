@@ -6,7 +6,7 @@ import {
   SOCIAL_BUTTONS,
   TITLE_TEXT,
 } from '../../constants';
-import MainButton from '../../components/MainButton/MainButton';
+import AboutMeButton from '../../components/AboutMeButton/AboutMeButton';
 import SocialFollow from '../../components/SocialFollow/SocialFollow';
 import LatestPostsContainer from '../../components/LatestPosts/LatestPostsContainer';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -25,11 +25,7 @@ const Home = () => {
 
         <div id='mainSection' className='mainSection'>
           <div className='buttonsContainer'>
-            <MainButton
-              className='mainButton aboutMeButton'
-              text='About me'
-              path={ABOUT_ME_PATH}
-            />
+            <AboutMeButton path={ABOUT_ME_PATH} text='About me' />
             <MediumButton path={MEDIUM_PATH} />
           </div>
 

@@ -6,6 +6,7 @@ export interface IMainButton {
   path?: string;
   variant?: string;
   size?: 'lg' | 'sm';
+  onClick?: any;
 }
 
 export interface ISocialFollow extends FontAwesomeIconProps {

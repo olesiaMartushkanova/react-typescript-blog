@@ -1,6 +1,6 @@
 import Button from 'react-bootstrap/esm/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../MainButton/MainButton.css';
+import '../AboutMeButton/AboutMeButton.css';
 import { IMainButton } from '../../types';
 
 const MediumButton = (props: IMainButton) => {
