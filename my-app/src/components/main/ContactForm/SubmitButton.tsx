@@ -13,7 +13,7 @@ const SubmitButton = () => {
         color='primary'
         variant='contained'
         endIcon={<Send>Send</Send>}
-        size='small'>
+        size='medium'>
         Send
       </Button>
     </div>

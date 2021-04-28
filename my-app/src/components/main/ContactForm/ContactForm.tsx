@@ -6,6 +6,7 @@ const ContactForm = () => {
     <div className='contactForm'>
       Contact Me
       <div>
+        <input className='inputField' type='text' />
         <SubmitButton />
       </div>
     </div>
