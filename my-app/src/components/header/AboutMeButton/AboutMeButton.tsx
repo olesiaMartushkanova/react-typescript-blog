@@ -1,6 +1,6 @@
 import { useHistory } from 'react-router-dom';
-import { IMainButton } from '../../types';
-import MainButton from '../Common/MainButton/MainButton';
+import { IMainButton } from '../../../types';
+import MainButton from '../../common/MainButton';
 import './AboutMeButton.css';
 
 const AboutMeButton = (props: IMainButton) => {

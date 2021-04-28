@@ -1,6 +1,5 @@
 import PostItem from './PostItem';
-import { IPostItem } from '../../types';
-// import { Link } from 'react-router-dom';
+import { IPostItem } from '../../../types';
 
 const LatestPostsContainer = ({ props }: any) => {
   return props.map((postItem: IPostItem) => (

@@ -1,4 +1,4 @@
-import { IPostItem } from '../../types';
+import { IPostItem } from '../../../types';
 import './PostItem.css';
 
 const PostItem = (props: IPostItem) => {

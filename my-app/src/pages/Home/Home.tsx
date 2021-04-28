@@ -6,13 +6,13 @@ import {
   SOCIAL_BUTTONS,
   TITLE_TEXT,
 } from '../../constants';
-import AboutMeButton from '../../components/AboutMeButton/AboutMeButton';
-import SocialFollow from '../../components/SocialFollow/SocialFollow';
-import LatestPostsContainer from '../../components/LatestPosts/LatestPostsContainer';
+import AboutMeButton from '../../components/header/AboutMeButton/AboutMeButton';
+import SocialFollow from '../../components/footer/SocialFollow';
+import LatestPostsContainer from '../../components/main/LatestPosts/LatestPostsContainer';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../../components/LatestPosts/LatestPosts.css';
-import MediumButton from '../../components/MediumButton/MediumButton';
-import ContactForm from '../../components/ContactForm/ContactForm';
+import '../../components/main/LatestPosts/LatestPosts.css';
+import MediumButton from '../../components/header/MediumButton/MediumButton';
+import ContactForm from '../../components/main/ContactForm/ContactForm';
 
 const Home = () => {
   return (
