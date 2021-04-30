@@ -4,6 +4,7 @@ import Send from '@material-ui/icons/Send';
 import green from '@material-ui/core/colors/green';
 
 const SubmitButton = () => {
+  // This is not working
   const primary = green[600] as any;
 
   return (
