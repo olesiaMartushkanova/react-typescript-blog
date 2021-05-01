@@ -1,27 +1,25 @@
 import './ContactForm.css';
 import SubmitButton from './SubmitButton';
 import { useState } from 'react';
-import { IContactForm } from '../../../types';
 
-const ContactForm = (props: IContactForm) => {
-  const [value, setValue] = useState(props.value);
+const ContactForm = () => {
+  const [value, setValue] = useState();
 
-  const onChangeHandler = () => {
-    setValue('New value');
-    console.log('Am I clicked');
+  const onChangeHandler = (event: any) => {
+    setValue(event.target.value);
   };
 
   return (
     <div className='contactForm'>
       Contact Me
       <div>
-        <input
+        <textarea
           className='inputField'
-          type='text'
           title='Do you want to contact me?'
-          value={value}
-          onChange={onChangeHandler}
-        />
+          placeholder={`Would you like to contact me?\nPlease, send me message and I will reply you in the next couple of days.`}
+          onChange={onChangeHandler}>
+          {value}
+        </textarea>
         <SubmitButton />
       </div>
     </div>

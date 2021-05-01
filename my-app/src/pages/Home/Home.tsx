@@ -17,6 +17,12 @@ import ContactForm from '../../components/main/ContactForm/ContactForm';
 const Home = () => {
   return (
     <div className='home'>
+      <div className='header'>
+        <div className='buttonsContainer'>
+          <AboutMeButton path={ABOUT_ME_PATH} text='About me' />
+          <MediumButton path={MEDIUM_PATH} />
+        </div>
+      </div>
       <div className='main'>
         <div className='titleContainer'>
           <h1>{TITLE_TEXT}</h1>
@@ -24,11 +30,6 @@ const Home = () => {
         <div className='spacer' />
 
         <div id='mainSection' className='mainSection'>
-          <div className='buttonsContainer'>
-            <AboutMeButton path={ABOUT_ME_PATH} text='About me' />
-            <MediumButton path={MEDIUM_PATH} />
-          </div>
-
           <div className='latestPostsContainer'>
             My latest posts
             <LatestPostsContainer props={LATEST_POSTS} />

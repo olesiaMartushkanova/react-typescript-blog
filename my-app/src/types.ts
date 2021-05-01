@@ -17,7 +17,3 @@ export interface IPostItem {
   title: string;
   path: string;
 }
-
-export interface IContactForm {
-  value?: string;
-}

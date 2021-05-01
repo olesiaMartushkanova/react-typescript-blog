@@ -3,10 +3,13 @@
 .home {
   display: flex;
   flex-direction: column;
-  background-color: rgb(241, 241, 241);
   height: 100vh;
   width: 100vw;
-  background-image: url('../../images/background.jpeg');
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url('../../images/background.jpeg');
   background-repeat: no-repeat;
   background-size: 200vh 100vh;
   background-color: transparent;
@@ -17,13 +20,17 @@
   flex-direction: row;
 }
 
-.footer {
+.header {
   width: 100vw;
-  height: 91px;
-  position: absolute;
+  height: 80px;
+}
 
-  bottom: 0;
-  left: 0;
+.buttonsContainer {
+  position: absolute;
+  display: flex;
+  right: 0;
+  margin-top: 25px;
+  margin-right: 65px;
 }
 
 .spacer {
@@ -33,10 +40,8 @@
 .titleContainer {
   width: 382px;
   height: 405px;
-
   margin-top: 100px;
   margin-left: 105px;
-
   font-family: 'Rhodium Libre', serif;
   font-style: normal;
   letter-spacing: 0.1em;
@@ -48,13 +53,16 @@
 .mainSection {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
   margin-right: 50px;
   width: 412px;
 }
 
-.buttonsContainer {
-  display: flex;
+.footer {
+  width: 100vw;
+  height: 91px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .socialContainer {
