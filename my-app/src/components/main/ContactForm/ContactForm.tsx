@@ -15,7 +15,6 @@ const ContactForm = () => {
       <div>
         <textarea
           className='inputField'
-          title='Do you want to contact me?'
           placeholder={`Would you like to contact me?\nPlease, send me message and I will reply you in the next couple of days.`}
           onChange={onChangeHandler}>
           {value}

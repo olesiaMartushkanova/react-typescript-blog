@@ -29,3 +29,12 @@
   height: 105.8px;
   font-size: 14px;
 }
+
+::placeholder {
+  font-family: 'Rhodium Libre', serif;
+  font-size: 14px;
+  line-height: 23px;
+  opacity: 50%;
+  padding-top: 20px;
+  padding-left: 15px;
+}
