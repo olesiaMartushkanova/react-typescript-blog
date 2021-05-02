@@ -2,6 +2,7 @@ import './ContactForm.css';
 import SubmitButton from './SubmitButton';
 import { useState } from 'react';
 import emailjs from 'emailjs-com';
+import { ENV_KEY } from '../../../utils/env';
 
 const templateParams = {
   name: 'James',
@@ -10,10 +11,10 @@ const templateParams = {
 
 const sendEmail = emailjs
   .send(
-    'service_uuiq0hr',
-    'template_qxa5a8i',
+    ENV_KEY.emailServiceId,
+    ENV_KEY.emailTemplateId,
     templateParams,
-    'user_srvGHruster2XssIBwcI7'
+    ENV_KEY.emailUserId
   )
   .then(
     (response) => {
