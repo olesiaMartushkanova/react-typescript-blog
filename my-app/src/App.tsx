@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { ABOUT_ME_PATH, HOME_PATH } from './constants';
+import { ABOUT_ME_PATH, HOME_PATH } from './utils/constants';
 import AboutMe from './pages/AboutMe/AboutMe';
 import Home from './pages/Home/Home';
 

@@ -1,6 +1,28 @@
 import './ContactForm.css';
 import SubmitButton from './SubmitButton';
 import { useState } from 'react';
+import emailjs from 'emailjs-com';
+
+const templateParams = {
+  name: 'James',
+  notes: 'Check this out!',
+};
+
+const sendEmail = emailjs
+  .send(
+    'service_uuiq0hr',
+    'template_qxa5a8i',
+    templateParams,
+    'user_srvGHruster2XssIBwcI7'
+  )
+  .then(
+    (response) => {
+      console.log('SUCCESS!', response.status, response.text);
+    },
+    (err) => {
+      console.log('FAILED...', err);
+    }
+  );
 
 const ContactForm = () => {
   const [value, setValue] = useState();

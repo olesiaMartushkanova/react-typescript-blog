@@ -5,7 +5,7 @@ import {
   MEDIUM_PATH,
   SOCIAL_BUTTONS,
   TITLE_TEXT,
-} from '../../constants';
+} from '../../utils/constants';
 import AboutMeButton from '../../components/header/AboutMeButton/AboutMeButton';
 import SocialFollow from '../../components/footer/SocialFollow';
 import LatestPostsContainer from '../../components/main/LatestPosts/LatestPostsContainer';
