@@ -3,11 +3,9 @@ import {
   ABOUT_ME_PATH,
   LATEST_POSTS,
   MEDIUM_PATH,
-  SOCIAL_BUTTONS,
   TITLE_TEXT,
 } from '../../utils/constants';
 import AboutMeButton from '../../components/header/AboutMeButton/AboutMeButton';
-import SocialFollow from '../../components/footer/SocialFollow';
 import LatestPostsContainer from '../../components/main/LatestPosts/LatestPostsContainer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../components/main/LatestPosts/LatestPosts.css';
@@ -36,11 +34,6 @@ const Home = () => {
           </div>
 
           <ContactForm />
-        </div>
-      </div>
-      <div className='footer'>
-        <div className='socialContainer'>
-          <SocialFollow props={SOCIAL_BUTTONS} />
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { ISocialFollow } from '../../utils/types';
+import { ISocialFollow } from '../../../utils/types';
 import './SocialFollow.css';
 
 const SocialFollow = ({ props }: any) => {
