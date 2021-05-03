@@ -9,11 +9,9 @@ export const App = () => {
     <Router>
       <Switch>
         <Route exact path={HOME_PATH} component={Home}>
-          <Home />
+          <Route path='/' component={Home} />
         </Route>
-        <Route path={ABOUT_ME_PATH} component={AboutMe}>
-          <AboutMe />
-        </Route>
+        <Route path={ABOUT_ME_PATH} component={AboutMe}></Route>
       </Switch>
       <Footer />
     </Router>

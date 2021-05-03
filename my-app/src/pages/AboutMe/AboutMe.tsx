@@ -1,4 +1,4 @@
-import AboutMeButton from '../../components/header/AboutMeButton/AboutMeButton';
+import AboutMeButton from '../../components/main/Navigation/AboutMeButton/AboutMeButton';
 import { HOME_PATH } from '../../utils/constants';
 import './AboutMe.css';
 
