@@ -17,3 +17,8 @@ export interface IPostItem {
   title: string;
   path: string;
 }
+
+export interface INavigation {
+  homeButtonPath: string;
+  homeButtonName: string;
+}

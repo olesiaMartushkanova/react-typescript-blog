@@ -1,11 +1,11 @@
-import AboutMeButton from '../../components/main/Navigation/AboutMeButton/AboutMeButton';
+import Navigation from '../../components/main/Navigation/Navigation';
 import { HOME_PATH } from '../../utils/constants';
 import './AboutMe.css';
 
 const AboutMe = () => {
   return (
     <div className='aboutMe'>
-      <AboutMeButton text='Home' path={HOME_PATH} />
+      <Navigation homeButtonPath={HOME_PATH} homeButtonName='Home' />
     </div>
   );
 };
