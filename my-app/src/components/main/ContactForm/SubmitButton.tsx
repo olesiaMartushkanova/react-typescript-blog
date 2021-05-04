@@ -14,7 +14,8 @@ const SubmitButton = () => {
         color='primary'
         variant='contained'
         endIcon={<Send>Send</Send>}
-        size='medium'>
+        size='medium'
+        type='submit'>
         Send
       </Button>
     </div>
