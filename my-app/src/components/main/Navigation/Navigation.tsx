@@ -4,11 +4,13 @@ import './Navigation.css';
 import MediumButton from './MediumButton/MediumButton';
 import { INavigation } from '../../../utils/types';
 
-const Navigation = ({ homeButtonPath }: INavigation) => {
+const Navigation = (props: INavigation) => {
+  const { path, text } = props;
+
   return (
     <div className='navigationContainer'>
       <div className='buttonsContainer'>
-        <AboutMeButton path={homeButtonPath} text='About me' />
+        <AboutMeButton path={path} text={text} />
         <MediumButton path={MEDIUM_PATH} />
       </div>
     </div>

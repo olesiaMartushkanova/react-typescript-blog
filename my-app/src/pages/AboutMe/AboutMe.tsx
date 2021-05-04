@@ -5,7 +5,7 @@ import './AboutMe.css';
 const AboutMe = () => {
   return (
     <div className='aboutMe'>
-      <Navigation homeButtonPath={HOME_PATH} homeButtonName='Home' />
+      <Navigation path={HOME_PATH} text='Home' />
     </div>
   );
 };
