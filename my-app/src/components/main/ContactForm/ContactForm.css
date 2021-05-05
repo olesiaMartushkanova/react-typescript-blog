@@ -24,13 +24,18 @@
 
 .contactMessage {
   margin-top: 3px;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   height: 105.8px;
-  font-size: 14px;
 }
 
 .contactField {
-  height: 30px;
+  height: 40px;
+  padding: 20px;
+}
+
+.email {
+  margin-bottom: 3px;
+  margin-top: 5px;
 }
 
 ::placeholder {

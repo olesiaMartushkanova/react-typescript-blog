@@ -37,7 +37,7 @@ const ContactForm = () => {
       <form onSubmit={handelSubmit}>
         <Form
           name='email'
-          className='contactField'
+          className='contactField email'
           placeholder={'Please, leave your email'}></Form>
         <Form
           name='name'
