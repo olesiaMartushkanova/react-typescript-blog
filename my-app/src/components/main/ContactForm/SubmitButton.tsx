@@ -10,7 +10,7 @@ const SubmitButton = () => {
   return (
     <div>
       <Button
-        className='submitButton'
+        className='submitButton contactStyle'
         color='primary'
         variant='contained'
         endIcon={<Send>Send</Send>}

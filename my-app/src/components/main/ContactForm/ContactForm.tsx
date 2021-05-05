@@ -3,6 +3,7 @@ import { useState } from 'react';
 import emailjs from 'emailjs-com';
 import { ENV_KEY } from '../../../utils/env';
 import SubmitButton from './SubmitButton';
+import Form from '../../common/Form';
 
 const ContactForm = () => {
   const [value, setValue] = useState();
@@ -13,8 +14,6 @@ const ContactForm = () => {
 
   const handelSubmit = (event: any) => {
     event.preventDefault();
-    console.log('user id: ' + ENV_KEY.emailUserId);
-
     return emailjs
       .send(
         ENV_KEY.emailServiceId,
@@ -33,17 +32,23 @@ const ContactForm = () => {
   };
 
   return (
-    <div className='contactForm'>
-      <form onSubmit={handelSubmit} name='contactMessage'>
-        <label>
-          Contact Me
-          <textarea
-            className='contactInputField'
-            placeholder={`Would you like to contact me?\nPlease, send me message and I will reply you in the next couple of days.`}
-            onChange={handleChange}>
-            {value}
-          </textarea>
-        </label>
+    <div className='contactFormContainer'>
+      Contact Me
+      <form onSubmit={handelSubmit}>
+        <Form
+          name='email'
+          className='contactField'
+          placeholder={'Please, leave your email'}></Form>
+        <Form
+          name='name'
+          className='contactField'
+          placeholder={'Please, leave your name'}></Form>
+        <Form
+          name='contactMessage'
+          className='contactMessage'
+          placeholder={`Would you like to contact me?\nPlease, send me message and I will reply you in the next couple of days.`}
+          onChange={handleChange}
+          value={value}></Form>
         <SubmitButton />
       </form>
     </div>

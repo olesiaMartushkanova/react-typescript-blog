@@ -1,5 +1,7 @@
 import { FontAwesomeIconProps } from '@fortawesome/react-fontawesome';
 
+//  TODO: move interfaces to components files?
+
 export interface IMainButton {
   text?: string;
   className?: string;
@@ -21,4 +23,12 @@ export interface IPostItem {
 export interface INavigation {
   path: string;
   text: string;
+}
+
+export interface IForm {
+  name?: string;
+  className?: string;
+  placeholder?: string;
+  value?: string;
+  onChange?: any;
 }

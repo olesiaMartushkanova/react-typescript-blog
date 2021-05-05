@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Rhodium+Libre&display=swap');
 
-.contactForm {
+.contactFormContainer {
   padding: 1rem;
   background-color: rgb(202, 202, 202);
   margin: 2rem auto;
   width: 412px;
-  height: 249px;
+  height: 313px;
   max-width: 95%;
   border-radius: 12px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
@@ -22,12 +22,15 @@
   background-color: green;
 }
 
-.contactInputField {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 366px;
+.contactMessage {
+  margin-top: 3px;
+  margin-bottom: 5px;
   height: 105.8px;
   font-size: 14px;
+}
+
+.contactField {
+  height: 30px;
 }
 
 ::placeholder {
@@ -35,6 +38,6 @@
   font-size: 14px;
   line-height: 23px;
   opacity: 50%;
-  padding-top: 20px;
+  padding-top: 3px;
   padding-left: 15px;
 }
