@@ -1,5 +1,5 @@
 import Button from '@material-ui/core/Button';
-import './ContactForm.css';
+import './SubmitButton.css';
 import Send from '@material-ui/icons/Send';
 import green from '@material-ui/core/colors/green';
 

@@ -23,12 +23,12 @@ export interface IPostItem {
 export interface INavigation {
   path: string;
   text: string;
+  className?: string;
 }
 
 export interface IForm {
+  type: string;
   name?: string;
   className?: string;
   placeholder?: string;
-  value?: string;
-  onChange?: any;
 }
