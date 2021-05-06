@@ -26,8 +26,9 @@ export interface INavigation {
   className?: string;
 }
 
-export interface IForm {
+export interface IInput {
   type: string;
+  value?: string;
   name?: string;
   className?: string;
   placeholder?: string;

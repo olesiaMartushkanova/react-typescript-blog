@@ -9,13 +9,13 @@ interface IContactForm {
 }
 
 const ContactForm = ({ className }: IContactForm) => {
-  const handelSubmit = (event: any) => {
-    event.preventDefault();
-    return emailjs
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+    emailjs
       .send(
         ENV_KEY.emailServiceId,
         ENV_KEY.emailTemplateId,
-        event.target.value,
+        e.target.value,
         ENV_KEY.emailUserId
       )
       .then(
@@ -26,28 +26,36 @@ const ContactForm = ({ className }: IContactForm) => {
           console.log('FAILED...', err);
         }
       );
+    e.target.reset();
   };
 
   return (
     <div className={`contactFormContainer ${className}`}>
       <label>Contact Me</label>
-      <form onSubmit={handelSubmit}>
-        <Input
-          type='text'
-          className='contactField'
-          placeholder='Leave your name, please.'></Input>
-        <Input
-          type='email'
-          className='contactField email'
-          placeholder={`Enter your email, please.`}
-          name='email_address'></Input>
-        <Input
-          type='text'
-          className='contactMessage'
-          placeholder={`Please, send me message\n and I will reply you in the next couple of days.`}
-          name='contact_message'></Input>
-        <SubmitButton />
-      </form>
+      <div>
+        <form onSubmit={sendEmail}>
+          <Input
+            type='text'
+            className='contactField'
+            placeholder='Leave your name, please.'
+            name='from_name'
+          />
+          <Input
+            type='email'
+            className='contactField email'
+            placeholder={`Enter your email, please.`}
+            name='email_address'
+          />
+          <Input
+            type='text'
+            className='contactMessage'
+            placeholder={`Please, send me message\n and I will reply you in the next couple of days.`}
+            name='contact_message'
+          />
+          <Input type='submit' value='Send message' />
+          {/* <SubmitButton /> */}
+        </form>
+      </div>
     </div>
   );
 };

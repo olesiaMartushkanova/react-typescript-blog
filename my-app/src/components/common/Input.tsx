@@ -1,8 +1,8 @@
-import { IForm } from '../../utils/types';
+import { IInput } from '../../utils/types';
 import './Input.css';
 
-const Input: React.FC<IForm> = (props) => {
-  const { name, className, placeholder, type } = props;
+const Input: React.FC<IInput> = (props) => {
+  const { name, className, placeholder, type, value } = props;
   const classes = 'input ' + className;
 
   return (
@@ -12,6 +12,7 @@ const Input: React.FC<IForm> = (props) => {
         className={classes}
         placeholder={placeholder}
         name={name}
+        value={value}
       />
     </div>
   );
