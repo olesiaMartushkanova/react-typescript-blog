@@ -8,7 +8,6 @@
   width: 50rem;
   max-width: 95%;
   border-radius: 12px;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
   font-family: 'Rhodium Libre', serif;
   font-size: 22px;
   text-align: center;
@@ -16,8 +15,8 @@
 }
 
 .contactMessage {
-  margin-top: 1px;
-  margin-bottom: 3px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   height: 105.8px;
   font-size: 14px;
   width: 366px;
@@ -31,12 +30,7 @@
 }
 
 .email {
-  margin-bottom: 3px;
-  margin-top: 5px;
-}
-
-.name {
-  margin-top: 2px;
+  margin-top: 10px;
 }
 
 ::placeholder {

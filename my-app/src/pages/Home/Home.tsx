@@ -24,7 +24,7 @@ const Home = () => {
             My latest posts
             <LatestPosts props={LATEST_POSTS} />
           </div>
-          <ContactForm />
+          <ContactForm className='contactFormContainer' />
         </div>
       </div>
     </div>

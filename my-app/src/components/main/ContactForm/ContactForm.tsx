@@ -4,7 +4,11 @@ import { ENV_KEY } from '../../../utils/env';
 import SubmitButton from './SubmitButton';
 import Input from '../../common/Input';
 
-const ContactForm = () => {
+interface IContactForm {
+  className?: string;
+}
+
+const ContactForm = ({ className }: IContactForm) => {
   const handelSubmit = (event: any) => {
     event.preventDefault();
     return emailjs
@@ -25,8 +29,8 @@ const ContactForm = () => {
   };
 
   return (
-    <div className='contactFormContainer'>
-      Contact Me
+    <div className={`contactFormContainer ${className}`}>
+      <label>Contact Me</label>
       <form onSubmit={handelSubmit}>
         <Input
           type='text'
@@ -40,7 +44,7 @@ const ContactForm = () => {
         <Input
           type='text'
           className='contactMessage'
-          placeholder={`Please, send me message and I will reply you in the next couple of days.`}
+          placeholder={`Please, send me message\n and I will reply you in the next couple of days.`}
           name='contact_message'></Input>
         <SubmitButton />
       </form>

@@ -24,7 +24,7 @@
   position: absolute;
   display: flex;
   right: 0;
-  margin-top: 5px;
+  margin-top: 25px;
   margin-right: 65px;
 }
 
@@ -50,4 +50,8 @@
   flex-direction: column;
   margin-right: 50px;
   width: 412px;
+}
+
+.contactFormContainer {
+  margin-top: 10px;
 }
