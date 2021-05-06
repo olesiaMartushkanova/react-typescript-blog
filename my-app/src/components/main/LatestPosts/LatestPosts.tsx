@@ -1,7 +1,7 @@
 import PostItem from './PostItem';
 import { IPostItem } from '../../../utils/types';
 
-const LatestPostsContainer = ({ props }: any) => {
+const LatestPosts = ({ props }: any) => {
   return props.map((postItem: IPostItem) => (
     <div>
       <PostItem title={postItem.title} path={postItem.path} />
@@ -9,4 +9,4 @@ const LatestPostsContainer = ({ props }: any) => {
   ));
 };
 
-export default LatestPostsContainer;
+export default LatestPosts;
