@@ -9,11 +9,6 @@ import Navigation from '../../components/main/Navigation/Navigation';
 const Home = () => {
   return (
     <div className='home'>
-      <Navigation
-        path={ABOUT_ME_PATH}
-        text='About me'
-        className='buttonsContainer'
-      />
       <div className='main'>
         <div className='titleContainer'>
           <h1>{TITLE_TEXT}</h1>

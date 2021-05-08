@@ -21,6 +21,7 @@
   font-size: 14px;
   width: 366px;
   border-radius: 12px;
+  border-width: 0;
 }
 
 .contactField {
@@ -28,6 +29,7 @@
   padding: 20px;
   font-size: 14px;
   width: 366px;
+  border-width: 0;
 }
 
 .email {

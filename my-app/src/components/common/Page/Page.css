@@ -1,0 +1,7 @@
+.buttonsContainer {
+  position: absolute;
+  display: flex;
+  right: 0;
+  margin-top: 25px;
+  margin-right: 65px;
+}
