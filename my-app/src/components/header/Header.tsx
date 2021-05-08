@@ -1,18 +1,18 @@
-import Navigation from '../../main/Navigation/Navigation';
+import Navigation from '../main/Navigation/Navigation';
 import React from 'react';
-import Footer from '../../footer/Footer';
-import './Page.css';
+import './Header.css';
+import Footer from '../footer/Footer';
 
-interface IPage {
+interface IHeader {
   path: string;
   text: string;
 }
 
-const Page: React.FC<IPage> = (props) => {
+const Header: React.FC<IHeader> = (props) => {
   const { children, path, text } = props;
 
   return (
-    <div className='mainContainer'>
+    <div className='header'>
       <Navigation path={path} text={text} className='buttonsContainer' />
       {children}
       <Footer />
@@ -20,4 +20,4 @@ const Page: React.FC<IPage> = (props) => {
   );
 };
 
-export default Page;
+export default Header;

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Rhodium+Libre&display=swap');
 
-.main {
+.homePage {
   display: flex;
   flex-direction: row;
 }
