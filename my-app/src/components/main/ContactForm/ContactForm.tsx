@@ -3,34 +3,38 @@ import emailjs from 'emailjs-com';
 import { ENV_KEY } from '../../../utils/env';
 import SubmitButton from './SubmitButton';
 import Input from '../../common/Input';
+import { useState } from 'react';
 
 interface IContactForm {
+  value?: string;
   className?: string;
 }
 
-const ContactForm = ({ className }: IContactForm) => {
+const ContactForm = (props: IContactForm) => {
   const sendEmail = (e: any) => {
     e.preventDefault();
+
     emailjs
-      .send(
+      .sendForm(
         ENV_KEY.emailServiceId,
         ENV_KEY.emailTemplateId,
-        e.target.value,
+        e.target,
         ENV_KEY.emailUserId
       )
       .then(
         (response) => {
           console.log('SUCCESS!', response.status, response.text);
         },
-        (err) => {
-          console.log('FAILED...', err);
+        (error) => {
+          console.log('FAILED to send email...', error);
         }
       );
+
     e.target.reset();
   };
 
   return (
-    <div className={`contactFormContainer ${className}`}>
+    <div className={`contactFormContainer ${props.className}`}>
       <label>Contact Me</label>
       <div>
         <form onSubmit={sendEmail}>
@@ -38,22 +42,19 @@ const ContactForm = ({ className }: IContactForm) => {
             type='text'
             className='contactField'
             placeholder='Leave your name, please.'
-            name='from_name'
+            name='name'
           />
           <Input
             type='email'
             className='contactField email'
             placeholder={`Enter your email, please.`}
-            name='email_address'
+            name='email'
           />
-          <Input
-            type='text'
+          <textarea
             className='contactMessage'
             placeholder={`Please, send me message\n and I will reply you in the next couple of days.`}
-            name='contact_message'
-          />
-          <Input type='submit' value='Send message' />
-          {/* <SubmitButton /> */}
+            name='message'></textarea>
+          <SubmitButton />
         </form>
       </div>
     </div>
