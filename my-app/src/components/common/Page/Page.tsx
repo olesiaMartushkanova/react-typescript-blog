@@ -12,7 +12,7 @@ const Page: React.FC<IPage> = (props) => {
   const { children, path, text } = props;
 
   return (
-    <div>
+    <div className='mainContainer'>
       <Navigation path={path} text={text} className='buttonsContainer' />
       {children}
       <Footer />

@@ -20,7 +20,6 @@ export const App = () => {
           </Page>
         </Route>
       </Switch>
-      <Footer />
     </Router>
   );
 };

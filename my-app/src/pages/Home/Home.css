@@ -1,18 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Rhodium+Libre&display=swap');
 
-.home {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0.9)
-    ),
-    url('../../images/background.jpeg');
-  background-repeat: no-repeat;
-  background-size: 100vw;
-}
-
 .main {
   display: flex;
   flex-direction: row;

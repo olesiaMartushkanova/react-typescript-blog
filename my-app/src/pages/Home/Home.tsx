@@ -8,19 +8,17 @@ import Navigation from '../../components/main/Navigation/Navigation';
 
 const Home = () => {
   return (
-    <div className='home'>
-      <div className='main'>
-        <div className='titleContainer'>
-          <h1>{TITLE_TEXT}</h1>
+    <div className='main'>
+      <div className='titleContainer'>
+        <h1>{TITLE_TEXT}</h1>
+      </div>
+      <div className='spacer' />
+      <div className='mainSection'>
+        <div className='latestPostsContainer'>
+          My latest posts
+          <LatestPosts props={LATEST_POSTS} />
         </div>
-        <div className='spacer' />
-        <div className='mainSection'>
-          <div className='latestPostsContainer'>
-            My latest posts
-            <LatestPosts props={LATEST_POSTS} />
-          </div>
-          <ContactForm className='contactFormContainer' />
-        </div>
+        <ContactForm className='contactFormContainer' />
       </div>
     </div>
   );

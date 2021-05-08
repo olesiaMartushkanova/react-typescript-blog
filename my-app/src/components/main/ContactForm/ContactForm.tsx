@@ -51,7 +51,7 @@ const ContactForm = (props: IContactForm) => {
           />
           <textarea
             className='contactMessage'
-            placeholder={`Please, send me message\n and I will reply you in the next couple of days.`}
+            placeholder={`Please, send me message\nand I will reply you in the next couple of days.`}
             name='message'></textarea>
           <SubmitButton />
         </form>
