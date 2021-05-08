@@ -3,7 +3,6 @@ import emailjs from 'emailjs-com';
 import { ENV_KEY } from '../../../utils/env';
 import SubmitButton from './SubmitButton';
 import Input from '../../common/Input';
-import { useState } from 'react';
 
 interface IContactForm {
   value?: string;
