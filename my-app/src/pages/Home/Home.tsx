@@ -1,9 +1,9 @@
 import './Home.css';
 import { LATEST_POSTS, TITLE_TEXT } from '../../utils/constants';
-import LatestPosts from '../../components/main/LatestPosts/LatestPosts';
+import LatestPosts from '../../components/LatestPosts/LatestPosts';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../../components/main/LatestPosts/LatestPosts.css';
-import ContactForm from '../../components/main/ContactForm/ContactForm';
+import '../../components/LatestPosts/LatestPosts.css';
+import ContactForm from '../../components/ContactForm/ContactForm';
 
 const Home = () => {
   return (

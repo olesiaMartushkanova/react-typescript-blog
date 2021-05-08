@@ -1,9 +1,10 @@
 import Button from '@material-ui/core/Button';
-import './SubmitButton.css';
+import './SendButton.css';
 import Send from '@material-ui/icons/Send';
 import green from '@material-ui/core/colors/green';
 
-const SubmitButton = () => {
+const SendButton = () => {
+  const primary = green[600] as any;
   return (
     <div>
       <Button
@@ -19,4 +20,4 @@ const SubmitButton = () => {
   );
 };
 
-export default SubmitButton;
+export default SendButton;

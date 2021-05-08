@@ -1,8 +1,8 @@
 import './ContactForm.css';
 import emailjs from 'emailjs-com';
-import { ENV_KEY } from '../../../utils/env';
-import SubmitButton from './SubmitButton';
-import Input from '../../primitives/Input/Input';
+import { ENV_KEY } from '../../utils/env';
+import SendButton from './SendButton';
+import Input from '../Input/Input';
 
 interface IContactForm {
   value?: string;
@@ -53,7 +53,7 @@ const ContactForm = (props: IContactForm) => {
             className='contactMessage'
             placeholder={`Please, send me message\nand I will reply you in the next couple of days.`}
             name='message'></textarea>
-          <SubmitButton />
+          <SendButton />
         </form>
       </div>
     </div>

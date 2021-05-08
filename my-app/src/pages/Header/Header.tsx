@@ -1,7 +1,7 @@
-import Navigation from '../main/Navigation/Navigation';
+import Navigation from '../../components/Navigation/Navigation';
 import React from 'react';
 import './Header.css';
-import Footer from '../footer/Footer';
+import Footer from '../Footer/Footer';
 
 interface IHeader {
   path: string;
@@ -13,7 +13,7 @@ const Header: React.FC<IHeader> = (props) => {
 
   return (
     <div className='header'>
-      <Navigation path={path} text={text} className='buttonsContainer' />
+      <Navigation path={path} text={text} />
       {children}
       <Footer />
     </div>
