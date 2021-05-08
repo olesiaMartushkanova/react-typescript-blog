@@ -1,4 +1,4 @@
-import { IInput } from '../../utils/types';
+import { IInput } from '../../../utils/types';
 import './Input.css';
 
 const Input: React.FC<IInput> = (props) => {

@@ -1,5 +1,5 @@
 import { IMainButton } from '../../../../utils/types';
-import MainButton from '../../../common/MainButton';
+import MainButton from '../../../primitives/MainButton/MainButton';
 
 const MediumButton = (props: IMainButton) => {
   const { path } = props;

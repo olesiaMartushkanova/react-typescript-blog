@@ -1,7 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './MainButton.css';
-import { IMainButton } from '../../utils/types';
+import { IMainButton } from '../../../utils/types';
 
 const MainButton: React.FC<IMainButton> = (props) => {
   const { className, text, children, onClick } = props;

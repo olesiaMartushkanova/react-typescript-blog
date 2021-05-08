@@ -2,7 +2,7 @@ import './ContactForm.css';
 import emailjs from 'emailjs-com';
 import { ENV_KEY } from '../../../utils/env';
 import SubmitButton from './SubmitButton';
-import Input from '../../common/Input';
+import Input from '../../primitives/Input/Input';
 
 interface IContactForm {
   value?: string;
