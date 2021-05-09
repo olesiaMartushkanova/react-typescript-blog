@@ -12,7 +12,6 @@ interface IContactForm {
 const ContactForm = (props: IContactForm) => {
   const sendEmail = (e: any) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         ENV_KEY.emailServiceId,
@@ -28,7 +27,6 @@ const ContactForm = (props: IContactForm) => {
           console.log('FAILED to send email...', error);
         }
       );
-
     e.target.reset();
   };
 

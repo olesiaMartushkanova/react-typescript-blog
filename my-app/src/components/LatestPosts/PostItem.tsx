@@ -1,5 +1,9 @@
-import { IPostItem } from '../../utils/types';
 import './PostItem.css';
+
+export interface IPostItem {
+  title: string;
+  path: string;
+}
 
 const PostItem = (props: IPostItem) => {
   const { title, path } = props;

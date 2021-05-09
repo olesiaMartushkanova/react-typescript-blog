@@ -1,5 +1,4 @@
-import PostItem from './PostItem';
-import { IPostItem } from '../../utils/types';
+import PostItem, { IPostItem } from './PostItem';
 
 const LatestPosts = ({ props }: any) => {
   return props.map((postItem: IPostItem) => (

@@ -1,6 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { ISocialFollow } from '../../utils/types';
 import './SocialFollow.css';
+import { FontAwesomeIconProps } from '@fortawesome/react-fontawesome';
+
+export interface ISocialFollow extends FontAwesomeIconProps {
+  path: string;
+}
 
 const SocialFollow = ({ props }: any) => {
   return props.map((socialButton: ISocialFollow) => (

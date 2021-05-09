@@ -1,5 +1,12 @@
-import { IInput } from '../../utils/types';
 import './Input.css';
+
+interface IInput {
+  type: string;
+  value?: string;
+  name?: string;
+  className?: string;
+  placeholder?: string;
+}
 
 const Input: React.FC<IInput> = (props) => {
   const { name, className, placeholder, type, value } = props;
