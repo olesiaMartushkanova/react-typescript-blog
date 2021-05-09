@@ -2,7 +2,7 @@ import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './MainButton.css';
 
-interface IMainButton {
+export interface IMainButton {
   text?: string;
   className?: string;
   path?: string;

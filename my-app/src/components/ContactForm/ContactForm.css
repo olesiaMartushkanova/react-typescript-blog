@@ -14,7 +14,7 @@
   font-weight: bold;
 }
 
-.contactMessage {
+.message {
   margin-top: 10px;
   margin-bottom: 10px;
   height: 105.8px;
@@ -42,7 +42,13 @@
   font-size: 14px;
   line-height: 23px;
   opacity: 50%;
-  padding-top: 3px;
-  padding-left: 15px;
-  text-align: left;
+  padding-top: 5px;
+  text-align: center;
+}
+
+p {
+  font-size: 14px;
+  color: red;
+  font-weight: lighter;
+  margin-top: 5px;
 }

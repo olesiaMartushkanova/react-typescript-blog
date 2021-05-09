@@ -3,7 +3,8 @@ import {
   faLinkedin,
   faGithub,
 } from '@fortawesome/free-brands-svg-icons';
-import { IPostItem, ISocialFollow } from '../utils/types';
+import { IPostItem } from '../components/LatestPosts/PostItem';
+import { ISocialFollow } from '../components/SocialFollow/SocialFollow';
 
 export const ABOUT_ME_PATH = '/about-me';
 export const HOME_PATH = '/';
