@@ -1,29 +1,27 @@
 import './ContactForm.css';
 import SendButton from './SendButton';
 import Input from '../Input/Input';
-import { useForm } from 'react-hook-form';
+import { useForm, Controller } from 'react-hook-form';
 import { ENV_KEY } from '../../utils/env';
 import emailjs from 'emailjs-com';
+
+export type FormValues = {
+  email: string;
+  name: string;
+  message: string;
+};
 
 interface IContactForm {
   value?: string;
   className?: string;
 }
 
-type FormValues = {
-  email: string;
-  name: string;
-  message: string;
-};
-
 const ContactForm = (props: IContactForm) => {
   const {
-    register,
     handleSubmit,
+    control,
     formState: { errors },
   } = useForm<FormValues>();
-
-  console.log(errors);
 
   const sendEmail = (e: any) => {
     e.preventDefault();
@@ -45,33 +43,45 @@ const ContactForm = (props: IContactForm) => {
     e.target.reset();
   };
 
-  const onSubmit = (data: any) => console.log(data);
+  const handleSubmitForm = (data: FormValues) => console.log(data);
 
   return (
     <div className={`contactFormContainer ${props.className}`}>
       <label>Contact Me</label>
       <div>
-        <form noValidate onSubmit={handleSubmit(onSubmit)}>
-          <Input
-            {...register('name', { required: 'Leave your name, please' })}
-            placeholder='Your Name'
-            id='name'
+        <form noValidate onSubmit={handleSubmit(handleSubmitForm)}>
+          <Controller
+            rules={{ required: 'Please, leave your name.' }}
+            control={control}
             name='name'
-            className='contactField'
-          />
+            render={({ field }) => (
+              <Input
+                {...field}
+                placeholder='Your Name'
+                id='name'
+                name='name'
+                className='contactField'
+              />
+            )}></Controller>
           {errors.name && <p>{errors.name.message}</p>}
-          <Input
-            {...register('email', { required: 'Leave your email, please' })}
-            placeholder='Your Email address'
-            id='email'
+
+          <Controller
+            rules={{ required: 'Please, leave your email,' }}
+            control={control}
             name='email'
-            type='email'
-            className='contactField email'
-          />
+            render={({ field }) => (
+              <Input
+                {...field}
+                placeholder='Your Email address'
+                id='email'
+                name='email'
+                type='email'
+                className='contactField email'
+              />
+            )}></Controller>
           {errors.email && <p>{errors.email.message}</p>}
 
           <textarea
-            {...register('message', { required: 'Please, leave your message' })}
             id='message'
             name='message'
             className='message'

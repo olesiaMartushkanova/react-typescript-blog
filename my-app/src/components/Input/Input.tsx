@@ -1,16 +1,17 @@
 import './Input.css';
 
 interface IInput {
-  id: string;
+  id?: string;
+  name?: string;
   type?: string;
   value?: string;
-  name?: string;
   className?: string;
   placeholder?: string;
+  onClick?: any;
 }
 
 const Input: React.FC<IInput> = (props) => {
-  const { name, className, placeholder, type, value, id } = props;
+  const { name, className, placeholder, type, value, id, onClick } = props;
   const classes = 'input ' + className;
 
   return (
@@ -22,6 +23,7 @@ const Input: React.FC<IInput> = (props) => {
         placeholder={placeholder}
         name={name}
         value={value}
+        onClick={onClick}
       />
     </div>
   );
