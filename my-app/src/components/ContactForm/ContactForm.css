@@ -47,9 +47,16 @@
   text-align: center;
 }
 
-p {
+.error {
   font-size: 14px;
   color: red;
   font-weight: lighter;
   margin-top: 5px;
+}
+
+.input {
+  padding: 0.5rem;
+  border-radius: 12px;
+  background-color: whitesmoke;
+  resize: none;
 }
