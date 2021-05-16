@@ -35,7 +35,7 @@
 }
 
 .email {
-  margin-top: 10px;
+  margin-top: 15px;
   display: flex;
 }
 
@@ -51,6 +51,12 @@
 .error {
   font-size: 14px;
   color: red;
+  font-weight: lighter;
+}
+
+.successMessage {
+  font-size: 14px;
+  color: green;
   font-weight: lighter;
 }
 

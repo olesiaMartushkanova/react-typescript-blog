@@ -1,7 +1,8 @@
-import { SyntheticEvent, useState } from 'react';
+import { useState } from 'react';
 import './ContactForm.css';
 import SendButton from './SendButton';
 import { sendEmail } from '../../utils/sendEmail';
+import validator from 'validator';
 
 interface IContactForm {
   value?: string;
@@ -16,7 +17,8 @@ const ContactForm = (props: IContactForm) => {
   const [nameError, setNameError] = useState('');
   const [emailError, setEmailError] = useState('');
   const [messageError, setMessageError] = useState('');
-  const [formError, setFormError] = useState('');
+
+  const [successMessage, setSuccessMessage] = useState('');
 
   const nameChangeHandler = (e: React.FormEvent<EventTarget>) => {
     let target = e.target as HTMLInputElement;
@@ -36,35 +38,36 @@ const ContactForm = (props: IContactForm) => {
   const onSubmit = (e: any) => {
     e.preventDefault();
 
-    const enteredData = {
-      name: enteredName,
-      email: enteredEmail,
-      message: enteredMessage,
-    };
-    console.log(enteredData);
-
-    if (enteredName === '') {
-      setNameError('Please, leave your name');
+    if (enteredName === '' || enteredName.length <= 1) {
+      setNameError('Please, leave your full name');
     }
 
-    if (enteredEmail === '') {
-      setEmailError('Please, leave your email');
+    if (enteredName.length > 26) {
+      setNameError(`Sorry, name can't be more than 26 characters.`);
+    }
+
+    if (enteredEmail === '' || !validator.isEmail(enteredEmail)) {
+      setEmailError('Please, leave your valid email address');
     }
 
     if (enteredMessage === '') {
       setMessageError('Please, leave your message');
     }
 
+    if (nameError === '' && emailError === '' && messageError === '') {
+      // sendEmail(e.target);
+      console.log('Sent!');
+      setSuccessMessage(
+        `Thank you for your message!\nI will reply you as soon as I can!`
+      );
+      e.target.reset();
+    }
+
     if (enteredName === '' && enteredEmail === '' && enteredMessage === '') {
       setNameError('');
       setEmailError('');
-      setMessageError('');
-
-      setFormError('All these fields are required. Please, fill them.');
+      setMessageError(`Please, feel the form if you want to send me a message`);
     }
-
-    sendEmail(e.target);
-    e.target.reset();
 
     setEnteredName('');
     setEnteredEmail('');
@@ -102,11 +105,11 @@ const ContactForm = (props: IContactForm) => {
             id='message'
             name='message'
             className='message'
-            placeholder={`If you send me a message\nI will reply you in the next couple of days.`}
+            placeholder='Do you want to contact me?'
             value={enteredMessage}
             onChange={messageChangeHandler}></textarea>
           {messageError && <p className='error'>{messageError}</p>}
-          {formError && <p className='error'>{formError}</p>}
+          {successMessage && <p className='successMessage'>{successMessage}</p>}
 
           <SendButton />
         </form>
