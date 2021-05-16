@@ -38,44 +38,41 @@ const ContactForm = (props: IContactForm) => {
   const onSubmit = (e: any) => {
     e.preventDefault();
 
+    let isValid: boolean = true;
+
     if (enteredName === '' || enteredName.length <= 1) {
       setNameError('Please, leave your full name');
+      isValid = false;
     }
 
     if (enteredName.length > 26) {
       setNameError(`Sorry, name can't be more than 26 characters.`);
+      isValid = false;
     }
 
     if (enteredEmail === '' || !validator.isEmail(enteredEmail)) {
       setEmailError('Please, leave your valid email address');
+      isValid = false;
     }
 
     if (enteredMessage === '') {
       setMessageError('Please, leave your message');
+      isValid = false;
     }
 
     if (enteredName === '' && enteredEmail === '' && enteredMessage === '') {
       setMessageError(`Please, feel the form if you want to send me a message`);
+      isValid = false;
     }
 
-    const errors = {
-      nameError: nameError,
-      emailError: emailError,
-      messageError: messageError,
-    };
-
-    if (nameError === '' && emailError === '' && messageError === '') {
+    if (isValid) {
       // sendEmail(e.target);
       // e.target.reset();
 
-      console.log('Errors' + errors);
       console.log('Sent!');
       setSuccessMessage(
         `Thank you for your message!\nI will reply you as soon as I can!`
       );
-    } else {
-      setSuccessMessage('');
-      console.log('Failed to send!');
     }
 
     setEnteredName('');
@@ -101,7 +98,7 @@ const ContactForm = (props: IContactForm) => {
             value={enteredName}
             onChange={nameChangeHandler}
           />
-          {nameError && <p className='error'>{nameError}</p>}
+          {nameError && <div className='error'>{nameError}</div>}
 
           <input
             id='email'
@@ -116,7 +113,7 @@ const ContactForm = (props: IContactForm) => {
             value={enteredEmail}
             onChange={emailChangeHandler}
           />
-          {emailError && <p className='error'>{emailError}</p>}
+          {emailError && <div className='error'>{emailError}</div>}
 
           <textarea
             id='message'
@@ -129,8 +126,10 @@ const ContactForm = (props: IContactForm) => {
             placeholder='Do you want to contact me?'
             value={enteredMessage}
             onChange={messageChangeHandler}></textarea>
-          {messageError && <p className='error'>{messageError}</p>}
-          {successMessage && <p className='successMessage'>{successMessage}</p>}
+          {messageError && <div className='error'>{messageError}</div>}
+          {successMessage && (
+            <div className='successMessage'>{successMessage}</div>
+          )}
 
           <SendButton />
         </form>
