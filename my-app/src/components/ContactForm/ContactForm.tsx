@@ -36,6 +36,7 @@ const ContactForm = (props: IContactForm) => {
   };
 
   const onSubmit = (e: any) => {
+    setSuccessMessage('');
     e.preventDefault();
 
     let isValid: boolean = true;
