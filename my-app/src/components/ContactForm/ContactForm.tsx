@@ -9,39 +9,66 @@ interface IContactForm {
 }
 
 const ContactForm = (props: IContactForm) => {
-  const [formData, setFormData] = useState({} as any);
-  const [formErrors, setFormErrors] = useState({} as any);
+  const [enteredName, setEnteredName] = useState('');
+  const [enteredEmail, setEnteredEmail] = useState('');
+  const [enteredMessage, setEnteredMessage] = useState('');
+
+  const [nameError, setNameError] = useState('');
+  const [emailError, setEmailError] = useState('');
+  const [messageError, setMessageError] = useState('');
+  const [formError, setFormError] = useState('');
+
+  const nameChangeHandler = (e: React.FormEvent<EventTarget>) => {
+    let target = e.target as HTMLInputElement;
+    setEnteredName(target.value);
+  };
+
+  const emailChangeHandler = (e: React.FormEvent<EventTarget>) => {
+    let target = e.target as HTMLInputElement;
+    setEnteredEmail(target.value);
+  };
+
+  const messageChangeHandler = (e: React.FormEvent<EventTarget>) => {
+    let target = e.target as HTMLInputElement;
+    setEnteredMessage(target.value);
+  };
 
   const onSubmit = (e: any) => {
     e.preventDefault();
 
-    const newFormErrors: any = {};
-    if (!formData['name']) {
-      newFormErrors['name'] = 'Please, leave your name';
+    const enteredData = {
+      name: enteredName,
+      email: enteredEmail,
+      message: enteredMessage,
+    };
+    console.log(enteredData);
+
+    if (enteredName === '') {
+      setNameError('Please, leave your name');
     }
 
-    if (!formData['email']) {
-      newFormErrors['email'] = 'Please, leave your email';
+    if (enteredEmail === '') {
+      setEmailError('Please, leave your email');
     }
 
-    if (!formData['message']) {
-      newFormErrors['message'] = 'Please, leave your message';
+    if (enteredMessage === '') {
+      setMessageError('Please, leave your message');
     }
 
-    if (Object.keys(newFormErrors).length === 0) {
-      // sendEmail(e.target);
-      e.target.reset();
-      setFormData({});
-      console.log('Sent');
+    if (enteredName === '' && enteredEmail === '' && enteredMessage === '') {
+      setNameError('');
+      setEmailError('');
+      setMessageError('');
+
+      setFormError('All these fields are required. Please, fill them.');
     }
 
-    setFormErrors(newFormErrors);
-  };
+    sendEmail(e.target);
+    e.target.reset();
 
-  const setFormValue = (name: string, event: any) => {
-    const newFormData = formData;
-    newFormData[name] = event.target.value;
-    setFormData(newFormData);
+    setEnteredName('');
+    setEnteredEmail('');
+    setEnteredMessage('');
   };
 
   return (
@@ -55,9 +82,10 @@ const ContactForm = (props: IContactForm) => {
             id='name'
             name='name'
             className='input contactField'
-            onChange={(event) => setFormValue('name', event)}
+            value={enteredName}
+            onChange={nameChangeHandler}
           />
-          {formErrors['name'] && <p className='error'>{formErrors['name']}</p>}
+          {nameError && <p className='error'>{nameError}</p>}
 
           <input
             id='email'
@@ -65,21 +93,20 @@ const ContactForm = (props: IContactForm) => {
             type='email'
             placeholder='Your Email address'
             className='input contactField email'
-            onChange={(event) => setFormValue('email', event)}
+            value={enteredEmail}
+            onChange={emailChangeHandler}
           />
-          {formErrors['email'] && (
-            <p className='error'>{formErrors['email']}</p>
-          )}
+          {emailError && <p className='error'>{emailError}</p>}
 
           <textarea
             id='message'
             name='message'
             className='message'
             placeholder={`If you send me a message\nI will reply you in the next couple of days.`}
-            onChange={(event) => setFormValue('message', event)}></textarea>
-          {formErrors['message'] && (
-            <p className='error'>{formErrors['message']}</p>
-          )}
+            value={enteredMessage}
+            onChange={messageChangeHandler}></textarea>
+          {messageError && <p className='error'>{messageError}</p>}
+          {formError && <p className='error'>{formError}</p>}
 
           <SendButton />
         </form>
