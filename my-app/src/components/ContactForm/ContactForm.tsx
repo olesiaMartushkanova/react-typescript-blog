@@ -35,6 +35,18 @@ const ContactForm = (props: IContactForm) => {
     setEnteredMessage(target.value);
   };
 
+  const nameFocusHandler = () => {
+    setNameError('');
+  };
+
+  const emailFocusHandler = () => {
+    setEmailError('');
+  };
+
+  const messageFocusHandler = () => {
+    setMessageError('');
+  };
+
   const onSubmit = (e: any) => {
     setSuccessMessage('');
     e.preventDefault();
@@ -74,11 +86,10 @@ const ContactForm = (props: IContactForm) => {
       setSuccessMessage(
         `Thank you for your message!\nI will reply you as soon as I can!`
       );
+      setEnteredName('');
+      setEnteredEmail('');
+      setEnteredMessage('');
     }
-
-    setEnteredName('');
-    setEnteredEmail('');
-    setEnteredMessage('');
   };
 
   return (
@@ -98,6 +109,7 @@ const ContactForm = (props: IContactForm) => {
             }
             value={enteredName}
             onChange={nameChangeHandler}
+            onFocus={nameFocusHandler}
           />
           {nameError && <div className='error'>{nameError}</div>}
 
@@ -113,6 +125,7 @@ const ContactForm = (props: IContactForm) => {
             }
             value={enteredEmail}
             onChange={emailChangeHandler}
+            onFocus={emailFocusHandler}
           />
           {emailError && <div className='error'>{emailError}</div>}
 
@@ -126,7 +139,8 @@ const ContactForm = (props: IContactForm) => {
             }
             placeholder='Do you want to contact me?'
             value={enteredMessage}
-            onChange={messageChangeHandler}></textarea>
+            onChange={messageChangeHandler}
+            onFocus={messageFocusHandler}></textarea>
           {messageError && <div className='error'>{messageError}</div>}
           {successMessage && (
             <div className='successMessage'>{successMessage}</div>
