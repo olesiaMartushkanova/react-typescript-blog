@@ -79,10 +79,9 @@ const ContactForm = (props: IContactForm) => {
     }
 
     if (isValid) {
-      // sendEmail(e.target);
-      // e.target.reset();
+      sendEmail(e.target);
+      e.target.reset();
 
-      console.log('Sent!');
       setSuccessMessage(
         `Thank you for your message!\nI will reply you as soon as I can!`
       );
