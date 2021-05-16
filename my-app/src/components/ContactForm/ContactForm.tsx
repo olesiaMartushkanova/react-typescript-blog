@@ -54,19 +54,28 @@ const ContactForm = (props: IContactForm) => {
       setMessageError('Please, leave your message');
     }
 
+    if (enteredName === '' && enteredEmail === '' && enteredMessage === '') {
+      setMessageError(`Please, feel the form if you want to send me a message`);
+    }
+
+    const errors = {
+      nameError: nameError,
+      emailError: emailError,
+      messageError: messageError,
+    };
+
     if (nameError === '' && emailError === '' && messageError === '') {
       // sendEmail(e.target);
+      // e.target.reset();
+
+      console.log('Errors' + errors);
       console.log('Sent!');
       setSuccessMessage(
         `Thank you for your message!\nI will reply you as soon as I can!`
       );
-      e.target.reset();
-    }
-
-    if (enteredName === '' && enteredEmail === '' && enteredMessage === '') {
-      setNameError('');
-      setEmailError('');
-      setMessageError(`Please, feel the form if you want to send me a message`);
+    } else {
+      setSuccessMessage('');
+      console.log('Failed to send!');
     }
 
     setEnteredName('');
@@ -84,7 +93,11 @@ const ContactForm = (props: IContactForm) => {
             placeholder='Your Name'
             id='name'
             name='name'
-            className='input contactField'
+            className={
+              nameError
+                ? 'input contactField errorBorder'
+                : 'input contactField successBorder'
+            }
             value={enteredName}
             onChange={nameChangeHandler}
           />
@@ -95,7 +108,11 @@ const ContactForm = (props: IContactForm) => {
             name='email'
             type='email'
             placeholder='Your Email address'
-            className='input contactField email'
+            className={
+              emailError
+                ? 'input contactField email errorBorder'
+                : 'input contactField email successBorder'
+            }
             value={enteredEmail}
             onChange={emailChangeHandler}
           />
@@ -104,7 +121,11 @@ const ContactForm = (props: IContactForm) => {
           <textarea
             id='message'
             name='message'
-            className='message'
+            className={
+              messageError
+                ? 'input message errorBorder'
+                : 'input message successBorder'
+            }
             placeholder='Do you want to contact me?'
             value={enteredMessage}
             onChange={messageChangeHandler}></textarea>

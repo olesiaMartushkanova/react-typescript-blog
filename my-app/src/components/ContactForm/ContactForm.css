@@ -13,6 +13,13 @@
   text-align: center;
   font-weight: bold;
 }
+.input {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 12px;
+  background-color: whitesmoke;
+  resize: none;
+}
 
 .message {
   margin-top: 10px;
@@ -20,23 +27,15 @@
   height: 105.8px;
   font-size: 14px;
   width: 366px;
-  border-radius: 12px;
-  border-width: 0;
-  padding: 10px;
-  resize: none;
 }
 
 .contactField {
   height: 40px;
-  padding: 20px;
-  font-size: 14px;
   width: 366px;
-  border-width: 0;
 }
 
 .email {
   margin-top: 15px;
-  display: flex;
 }
 
 ::placeholder {
@@ -51,18 +50,19 @@
 .error {
   font-size: 14px;
   color: red;
-  font-weight: lighter;
 }
 
 .successMessage {
   font-size: 14px;
   color: green;
-  font-weight: lighter;
+  border-width: 0;
 }
 
-.input {
-  padding: 0.5rem;
-  border-radius: 12px;
-  background-color: whitesmoke;
-  resize: none;
+.errorBorder {
+  border-width: 1px;
+  border-color: red;
+}
+
+.successBorder {
+  border-width: 0px;
 }
