@@ -35,11 +35,20 @@ const ContactForm = (props: IContactForm) => {
     setMessage(target.value);
   };
 
-  const nameFocusHandler = () => setNameError('');
+  const nameFocusHandler = () => {
+    setNameError('');
+    setSuccessMessage('');
+  };
 
-  const emailFocusHandler = () => setEmailError('');
+  const emailFocusHandler = () => {
+    setEmailError('');
+    setSuccessMessage('');
+  };
 
-  const messageFocusHandler = () => setMessageError('');
+  const messageFocusHandler = () => {
+    setMessageError('');
+    setSuccessMessage('');
+  };
 
   const onSubmit = (e: any) => {
     setSuccessMessage('');
