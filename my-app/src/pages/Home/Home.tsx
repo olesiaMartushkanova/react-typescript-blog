@@ -1,29 +1,28 @@
 import './Home.css';
-import { ABOUT_ME_PATH, MEDIUM_PATH, TITLE_TEXT } from '../../constants';
-import MainButton from '../../components/MainButton';
+import { ABOUT_ME_PATH, LATEST_POSTS, TITLE_TEXT } from '../../utils/constants';
+import LatestPosts from '../../components/LatestPosts/LatestPosts';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../../components/LatestPosts/LatestPosts.css';
+import ContactForm from '../../components/ContactForm/ContactForm';
+import Page from '../../components/Page/Page';
 
 const Home = () => {
   return (
-    <div className='home'>
-      <div className='titleContainer'>
-        <h1>{TITLE_TEXT}</h1>
-      </div>
-      <div className='spacer' />
-      <div id='mainSection' className='mainSection'>
-        <div className='buttonsContainer'>
-          <MainButton
-            className='mainButton aboutMeButton'
-            text='About me'
-            path={ABOUT_ME_PATH}
-          />
-          <MainButton className='mainButton' text='Medium' path={MEDIUM_PATH} />
+    <Page path={ABOUT_ME_PATH} text='Home'>
+      <div className='home'>
+        <div className='titleContainer'>
+          <h1>{TITLE_TEXT}</h1>
         </div>
-        <div id='latestPostsContainer' className='latestPostsContainer'></div>
-        <div id='contactMeContainer' className='contactMeContainer'></div>
-        <div id='socialButton' className='socialButton'></div>
+        <div className='spacer' />
+        <div className='mainSection'>
+          <div className='latestPostsContainer'>
+            My latest posts
+            <LatestPosts props={LATEST_POSTS} />
+          </div>
+          <ContactForm className='contactFormContainer' />
+        </div>
       </div>
-    </div>
+    </Page>
   );
 };
 

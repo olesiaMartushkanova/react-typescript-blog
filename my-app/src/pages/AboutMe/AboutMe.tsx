@@ -1,13 +1,12 @@
-import MainButton from '../../components/MainButton';
-import { HOME_PATH } from '../../constants';
+import Page from '../../components/Page/Page';
+import { HOME_PATH } from '../../utils/constants';
 import './AboutMe.css';
 
 const AboutMe = () => {
   return (
-    <div className='aboutMe'>
-      <h1>My journey</h1>
-      <MainButton text='Home' path={HOME_PATH} />
-    </div>
+    <Page path={HOME_PATH} text='About me'>
+      <div className='aboutMe'></div>
+    </Page>
   );
 };
 
