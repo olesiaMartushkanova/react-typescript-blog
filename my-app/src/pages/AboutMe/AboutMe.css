@@ -1,5 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Rhodium+Libre&display=swap');
+
 .aboutMe {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Rhodium Libre', serif;
   height: 100vh;
   width: 100%;
+}
+
+.introContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+}
+
+.titleAboutMeContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  width: 300px;
+}
+
+.aboutMeTitle {
+  font-size: 36px;
+  text-align: right;
+}
+
+.aboutMeIntro {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.mainPortfolioContainer {
+  display: flex;
+  flex-direction: row;
+  width: 700px;
+}
+
+.portfolioPictureContainer {
+  width: 180px;
+  height: 235px;
+}
+
+.mainTextContainer {
+  margin-left: 20px;
+}
+
+.contactDetailsContainer {
+}
+
+.downloadCVButton {
+}
+
+.contactMeButton {
+}
+
+.moreAboutMeButton {
 }
