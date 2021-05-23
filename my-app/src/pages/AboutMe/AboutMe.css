@@ -50,9 +50,11 @@
 }
 
 .downloadCVButton {
+  cursor: pointer;
+  border: none;
 }
 
-.contactMeButton {
+.contactMeIcon {
 }
 
 .moreAboutMeButton {

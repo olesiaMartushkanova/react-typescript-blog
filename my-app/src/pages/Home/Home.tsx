@@ -8,7 +8,7 @@ import Page from '../../components/Page/Page';
 
 const Home = () => {
   return (
-    <Page path={ABOUT_ME_PATH} text='Home'>
+    <Page path={ABOUT_ME_PATH} text='About me'>
       <div className='home'>
         <div className='titleContainer'>
           <h1>{TITLE_TEXT}</h1>
