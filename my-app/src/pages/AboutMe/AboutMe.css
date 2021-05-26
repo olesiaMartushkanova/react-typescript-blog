@@ -42,19 +42,14 @@
   height: 235px;
 }
 
-.mainTextContainer {
+.mainAboutMeContainer {
+  display: flex;
+  flex-direction: column;
   margin-left: 20px;
 }
 
-.contactDetailsContainer {
-}
-
-.downloadCVButton {
-  cursor: pointer;
-  border: none;
-}
-
-.contactMeIcon {
+.introText {
+  margin-bottom: 20px;
 }
 
 .moreAboutMeButton {
