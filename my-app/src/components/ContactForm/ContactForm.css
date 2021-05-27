@@ -42,7 +42,7 @@
   font-family: 'Rhodium Libre', serif;
   font-size: 14px;
   line-height: 23px;
-  opacity: 50%;
+  /* opacity: 50%; */
   padding-top: 5px;
   text-align: center;
 }
