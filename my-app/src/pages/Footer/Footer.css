@@ -1,11 +1,12 @@
 .footer {
-  width: 100vw;
-  height: 90px;
-  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  bottom: 0;
 }
 
 .socialContainer {
-  position: absolute;
+  /* position: absolute; */
   right: 0;
   top: calc(45px - 1em);
   margin-right: 70px;
