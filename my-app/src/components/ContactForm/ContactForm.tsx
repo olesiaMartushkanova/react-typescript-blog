@@ -106,8 +106,8 @@ const ContactForm = (props: IContactForm) => {
             name='name'
             className={
               nameError
-                ? 'input contactField errorBorder'
-                : 'input contactField successBorder'
+                ? 'inputField contactField errorBorder'
+                : 'inputField contactField successBorder'
             }
             value={name}
             onChange={nameChangeHandler}
@@ -122,8 +122,8 @@ const ContactForm = (props: IContactForm) => {
             placeholder='Your Email address'
             className={
               emailError
-                ? 'input contactField email errorBorder'
-                : 'input contactField email successBorder'
+                ? 'inputField contactField email errorBorder'
+                : 'inputField contactField email successBorder'
             }
             value={email}
             onChange={emailChangeHandler}
@@ -136,8 +136,8 @@ const ContactForm = (props: IContactForm) => {
             name='message'
             className={
               messageError
-                ? 'input message errorBorder'
-                : 'input message successBorder'
+                ? 'inputField message errorBorder'
+                : 'inputField message successBorder'
             }
             placeholder='Do you want to contact me?'
             value={message}

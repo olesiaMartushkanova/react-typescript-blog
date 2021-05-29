@@ -13,12 +13,21 @@
   text-align: center;
   font-weight: bold;
 }
-.input {
+
+.inputField {
   padding: 10px;
   font-size: 14px;
   border-radius: 12px;
   background-color: whitesmoke;
   resize: none;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+  border: 1px solid;
+  border-color: grey;
+  border-radius: 12px;
 }
 
 .message {
@@ -42,7 +51,6 @@
   font-family: 'Rhodium Libre', serif;
   font-size: 14px;
   line-height: 23px;
-  /* opacity: 50%; */
   padding-top: 5px;
   text-align: center;
 }
