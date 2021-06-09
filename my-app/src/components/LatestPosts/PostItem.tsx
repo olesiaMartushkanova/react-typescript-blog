@@ -1,12 +1,13 @@
 import './PostItem.css';
 
 export interface IPostItem {
+  id: string;
   title: string;
   path: string;
 }
 
 const PostItem = (props: IPostItem) => {
-  const { title, path } = props;
+  const { title, path, id } = props;
 
   const postItemHandler = () => {
     window.open(path, '_blank');

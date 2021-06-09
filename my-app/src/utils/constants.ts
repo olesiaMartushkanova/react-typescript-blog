@@ -15,16 +15,19 @@ export const TITLE_TEXT =
 
 export const SOCIAL_BUTTONS: Array<ISocialFollow> = [
   {
+    id: 'instagram_icon',
     icon: faInstagram,
     className: 'instagram',
     path: 'https://www.instagram.com/olesia_learns/',
   },
   {
+    id: 'linkedin_icon',
     icon: faLinkedin,
     className: 'linkedin',
     path: 'https://www.linkedin.com/in/olesia-martushkanova/',
   },
   {
+    id: 'github_icon',
     icon: faGithub,
     className: 'github',
     path: 'https://github.com/olesiaMartushkanova',
@@ -33,10 +36,12 @@ export const SOCIAL_BUTTONS: Array<ISocialFollow> = [
 
 export const LATEST_POSTS: Array<IPostItem> = [
   {
+    id: 'learning_react_article',
     title: 'Learning React: Part 1',
     path: MEDIUM_PATH,
   },
   {
+    id: 'learning_argo_article',
     title: 'Diving into DevOps: learning Argo Workflows',
     path: MEDIUM_PATH,
   },
