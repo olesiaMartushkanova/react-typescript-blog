@@ -6,17 +6,15 @@ import green from '@material-ui/core/colors/green';
 const SendButton = () => {
   const primary = green[600] as any;
   return (
-    <div>
-      <Button
-        className='submitButton contactStyle'
-        color='primary'
-        variant='contained'
-        endIcon={<Send>Send</Send>}
-        size='medium'
-        type='submit'>
-        Send
-      </Button>
-    </div>
+    <Button
+      className='submitButton contactStyle'
+      color='primary'
+      variant='contained'
+      endIcon={<Send>Send</Send>}
+      size='medium'
+      type='submit'>
+      Send
+    </Button>
   );
 };
 
