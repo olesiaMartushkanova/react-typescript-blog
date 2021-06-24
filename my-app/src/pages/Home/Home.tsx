@@ -14,7 +14,7 @@ const Home = () => {
           <h1>{TITLE_TEXT}</h1>
         </section>
 
-        <aside className='spacer' />
+        <div className='spacer' />
 
         <section className='mainSection'>
           <nav className='latestPostsContainer'>
