@@ -95,9 +95,9 @@ const ContactForm = (props: IContactForm) => {
   };
 
   return (
-    <div className={`contactFormContainer ${props.className}`}>
+    <section className={`contactFormContainer ${props.className}`}>
       <label className='formLabel'>Contact Me</label>
-      <div>
+      <>
         <form noValidate onSubmit={onSubmit}>
           <input
             type='text'
@@ -150,8 +150,8 @@ const ContactForm = (props: IContactForm) => {
 
           <SendButton />
         </form>
-      </div>
-    </div>
+      </>
+    </section>
   );
 };
 
