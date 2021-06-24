@@ -9,19 +9,21 @@ import Page from '../../components/Page/Page';
 const Home = () => {
   return (
     <Page path={ABOUT_ME_PATH} text='About me'>
-      <div className='home'>
-        <div className='titleContainer'>
+      <main className='home'>
+        <section className='titleContainer'>
           <h1>{TITLE_TEXT}</h1>
-        </div>
-        <div className='spacer' />
-        <div className='mainSection'>
-          <div className='latestPostsContainer'>
+        </section>
+
+        <aside className='spacer' />
+
+        <section className='mainSection'>
+          <nav className='latestPostsContainer'>
             My latest posts
             <LatestPosts props={LATEST_POSTS} />
-          </div>
+          </nav>
           <ContactForm className='contactFormContainer' />
-        </div>
-      </div>
+        </section>
+      </main>
     </Page>
   );
 };
