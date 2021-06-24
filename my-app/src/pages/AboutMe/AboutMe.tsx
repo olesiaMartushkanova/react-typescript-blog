@@ -7,34 +7,34 @@ import DownloadCVButton from '../../components/DownloadCVButton/DowlonadCVButton
 const AboutMe = () => {
   return (
     <Page path={HOME_PATH} text='Home'>
-      <div className='aboutMe'>
-        <div className='introContainer'>
-          <div className='titleAboutMeContainer'>
-            <div className='aboutMeTitle'>Hello! I'm Olesia!</div>
-            <div className='aboutMeIntro'>
+      <main className='aboutMe'>
+        <section className='introContainer'>
+          <section className='titleAboutMeContainer'>
+            <title className='aboutMeTitle'>Hello! I'm Olesia!</title>
+            <aside className='aboutMeIntro'>
               I am a Software Engineer based in a beautiful New Zealand
-            </div>
-          </div>
+            </aside>
+          </section>
 
           {/* Main part container */}
-          <div className='mainPortfolioContainer'>
+          <section className='mainPortfolioContainer'>
             <img className='portfolioPictureContainer' src={Portrait} />
 
-            <div className='mainAboutMeContainer'>
-              <div className='introText'>
+            <section className='mainAboutMeContainer'>
+              <aside className='introText'>
                 Some cool short text about me,Some cool short text about me,Some
                 cool short text about me,Some cool short text about me,Some cool
                 short text about me which should be saved somewhere
-              </div>
+              </aside>
               <DownloadCVButton />
-            </div>
-          </div>
+            </section>
+          </section>
 
           <div className='moreAboutMeButton'></div>
-        </div>
+        </section>
 
         {/* Next page here */}
-      </div>
+      </main>
     </Page>
   );
 };
