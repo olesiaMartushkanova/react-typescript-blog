@@ -4,12 +4,12 @@ import './DownloadCVButton.css';
 
 const DownloadCVButton = () => {
   return (
-    <div className='downloadCVContainer'>
+    <section className='downloadCVContainer'>
       <a href='CV.pdf' download target='_blank' className='downloadCVButton'>
         <FontAwesomeIcon icon={faFileDownload} size='3x' />
         <label className='downloadCVLabel'>Download my CV</label>
       </a>
-    </div>
+    </section>
   );
 };
 
