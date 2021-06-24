@@ -14,16 +14,16 @@ const Header: React.FC<IHeader> = (props) => {
   const { children, path, text } = props;
 
   return (
-    <div className='page'>
-      <div className='header'>
-        <div className='buttonsContainer'>
+    <main className='page'>
+      <header className='header'>
+        <nav className='buttonsContainer'>
           <AboutMeButton path={path} text={text} />
           <MediumButton path={MEDIUM_PATH} />
-        </div>
-      </div>
+        </nav>
+      </header>
       {children}
       <Footer />
-    </div>
+    </main>
   );
 };
 
