@@ -4,14 +4,17 @@ import LatestPosts from '../../components/LatestPosts/LatestPosts';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ContactForm from '../../components/ContactForm/ContactForm';
 import Page from '../../components/Page/Page';
+import { BrowserView } from 'react-device-detect';
 
 const Home = () => {
   return (
     <Page path={ABOUT_ME_PATH} text='About me'>
       <main className='main__home'>
-        <section className='section__title'>
-          <h1>{TITLE_TEXT}</h1>
-        </section>
+        <BrowserView>
+          <section className='section__title'>
+            <h1>{TITLE_TEXT}</h1>
+          </section>
+        </BrowserView>
 
         <div className='spacer' />
 
