@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Rhodium+Libre&display=swap');
 
-.contactFormContainer {
+.form-container__contact {
   padding: 1rem;
   background-color: rgb(202, 202, 202);
   margin: 2rem auto;
@@ -14,12 +14,13 @@
   font-weight: bold;
 }
 
-.inputField {
+.text-field {
   padding: 10px;
   font-size: 14px;
   border-radius: 12px;
   background-color: whitesmoke;
   resize: none;
+  border-width: 0px;
 }
 
 textarea:focus,
@@ -30,7 +31,7 @@ input:focus {
   border-radius: 12px;
 }
 
-.message {
+.textarea__message {
   margin-top: 10px;
   margin-bottom: 10px;
   height: 105.8px;
@@ -38,12 +39,12 @@ input:focus {
   width: 366px;
 }
 
-.contactField {
+.input__contact-field {
   height: 40px;
   width: 366px;
 }
 
-.email {
+.input__contact-field--email {
   margin-top: 15px;
 }
 
@@ -55,22 +56,22 @@ input:focus {
   text-align: center;
 }
 
-.error {
+.text__error {
   font-size: 14px;
   color: red;
 }
 
-.successMessage {
+.text__success {
   font-size: 14px;
   color: green;
   border-width: 0;
 }
 
-.errorBorder {
+.invalid {
   border-width: 1px;
   border-color: red;
 }
 
-.successBorder {
+.valid {
   border-width: 0px;
 }

@@ -95,7 +95,7 @@ const ContactForm = (props: IContactForm) => {
   };
 
   return (
-    <section className={`contactFormContainer ${props.className}`}>
+    <section className={`form-container__contact ${props.className}`}>
       <label className='formLabel'>Contact Me</label>
       <>
         <form noValidate onSubmit={onSubmit}>
@@ -106,14 +106,14 @@ const ContactForm = (props: IContactForm) => {
             name='name'
             className={
               nameError
-                ? 'inputField contactField errorBorder'
-                : 'inputField contactField successBorder'
+                ? 'text-field input__contact-field invalid'
+                : 'text-field input__contact-field'
             }
             value={name}
             onChange={nameChangeHandler}
             onFocus={nameFocusHandler}
           />
-          {nameError && <div className='error'>{nameError}</div>}
+          {nameError && <div className='text__error'>{nameError}</div>}
 
           <input
             id='email'
@@ -122,30 +122,30 @@ const ContactForm = (props: IContactForm) => {
             placeholder='Your Email address'
             className={
               emailError
-                ? 'inputField contactField email errorBorder'
-                : 'inputField contactField email successBorder'
+                ? 'text-field input__contact-field input__contact-field--email invalid'
+                : 'text-field input__contact-field input__contact-field--email'
             }
             value={email}
             onChange={emailChangeHandler}
             onFocus={emailFocusHandler}
           />
-          {emailError && <div className='error'>{emailError}</div>}
+          {emailError && <div className='text__error'>{emailError}</div>}
 
           <textarea
             id='message'
             name='message'
             className={
               messageError
-                ? 'inputField message errorBorder'
-                : 'inputField message successBorder'
+                ? 'text-field textarea__message invalid'
+                : 'text-field textarea__message'
             }
             placeholder='Do you want to contact me?'
             value={message}
             onChange={messageChangeHandler}
             onFocus={messageFocusHandler}></textarea>
-          {messageError && <div className='error'>{messageError}</div>}
+          {messageError && <div className='text__error'>{messageError}</div>}
           {successMessage && (
-            <div className='successMessage'>{successMessage}</div>
+            <div className='text__success'>{successMessage}</div>
           )}
 
           <SendButton />

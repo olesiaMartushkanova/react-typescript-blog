@@ -4,10 +4,10 @@ import './DownloadCVButton.css';
 
 const DownloadCVButton = () => {
   return (
-    <section className='downloadCVContainer'>
-      <a href='CV.pdf' download target='_blank' className='downloadCVButton'>
+    <section className='section__download-cv'>
+      <a href='CV.pdf' download target='_blank' className='button__download-cv'>
         <FontAwesomeIcon icon={faFileDownload} size='3x' />
-        <label className='downloadCVLabel'>Download my CV</label>
+        <label className='label__download-cv'>Download my CV</label>
       </a>
     </section>
   );

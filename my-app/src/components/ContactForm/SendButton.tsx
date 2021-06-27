@@ -7,7 +7,7 @@ const SendButton = () => {
   const primary = green[600] as any;
   return (
     <Button
-      className='submitButton contactStyle'
+      className='button__send'
       color='primary'
       variant='contained'
       endIcon={<Send>Send</Send>}
