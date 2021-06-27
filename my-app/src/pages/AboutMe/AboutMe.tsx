@@ -7,21 +7,21 @@ import DownloadCVButton from '../../components/DownloadCVButton/DowlonadCVButton
 const AboutMe = () => {
   return (
     <Page path={HOME_PATH} text='Home'>
-      <main className='aboutMe'>
-        <section className='introContainer'>
-          <section className='titleAboutMeContainer'>
-            <title className='aboutMeTitle'>Hello! I'm Olesia!</title>
-            <aside className='aboutMeIntro'>
+      <main className='main__about-me'>
+        <section className='section__introduction'>
+          <section className='section__title--about-me'>
+            <title className='title__about-me'>Hello! I'm Olesia!</title>
+            <aside className='aside__about-me'>
               I am a Software Engineer based in a beautiful New Zealand
             </aside>
           </section>
 
           {/* Main part container */}
-          <section className='mainPortfolioContainer'>
-            <img className='portfolioPictureContainer' src={Portrait} />
+          <section className='section__portfolio-picture'>
+            <img className='img__portfolio-picture' src={Portrait} />
 
-            <section className='mainAboutMeContainer'>
-              <aside className='introText'>
+            <section className='section__about-me__main'>
+              <aside className='aside__text__main-about-me'>
                 Some cool short text about me,Some cool short text about me,Some
                 cool short text about me,Some cool short text about me,Some cool
                 short text about me which should be saved somewhere
@@ -30,7 +30,7 @@ const AboutMe = () => {
             </section>
           </section>
 
-          <div className='moreAboutMeButton'></div>
+          <div className='button__more-about-me'></div>
         </section>
 
         {/* Next page here */}

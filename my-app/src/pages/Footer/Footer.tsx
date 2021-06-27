@@ -5,7 +5,7 @@ import SocialFollow from '../../components/SocialFollow/SocialFollow';
 const Footer = () => {
   return (
     <footer className='footer'>
-      <section className='socialContainer'>
+      <section className='section__social-follow'>
         <SocialFollow props={SOCIAL_BUTTONS} />
       </section>
     </footer>

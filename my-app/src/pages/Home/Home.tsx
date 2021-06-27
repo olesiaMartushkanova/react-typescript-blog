@@ -8,15 +8,15 @@ import Page from '../../components/Page/Page';
 const Home = () => {
   return (
     <Page path={ABOUT_ME_PATH} text='About me'>
-      <main className='home'>
-        <section className='titleContainer'>
+      <main className='main__home'>
+        <section className='section__title'>
           <h1>{TITLE_TEXT}</h1>
         </section>
 
         <div className='spacer' />
 
-        <section className='mainSection'>
-          <nav className='latestPostsContainer'>
+        <section className='section__main--home-page'>
+          <nav className='nav__latest-posts'>
             My latest posts
             <LatestPosts props={LATEST_POSTS} />
           </nav>
