@@ -16,7 +16,7 @@ const Header: React.FC<IHeader> = (props) => {
   return (
     <main className='page'>
       <header className='header'>
-        <nav className='buttonsContainer'>
+        <nav className='nav__buttons'>
           <AboutMeButton path={path} text={text} />
           <MediumButton path={MEDIUM_PATH} />
         </nav>

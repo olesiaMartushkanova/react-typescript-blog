@@ -14,7 +14,7 @@ const PostItem = (props: IPostItem) => {
   };
 
   return (
-    <div className='postItem' onClick={postItemHandler}>
+    <div className='post-item' onClick={postItemHandler}>
       {title}
       <a href={path}></a>
     </div>

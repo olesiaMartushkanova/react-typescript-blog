@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Rhodium+Libre&display=swap');
 
-.mainButton {
+.button__main {
   font-family: 'Rhodium Libre', serif;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
 }

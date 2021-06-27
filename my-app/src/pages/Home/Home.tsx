@@ -2,7 +2,6 @@ import './Home.css';
 import { ABOUT_ME_PATH, LATEST_POSTS, TITLE_TEXT } from '../../utils/constants';
 import LatestPosts from '../../components/LatestPosts/LatestPosts';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../../components/LatestPosts/LatestPosts.css';
 import ContactForm from '../../components/ContactForm/ContactForm';
 import Page from '../../components/Page/Page';
 

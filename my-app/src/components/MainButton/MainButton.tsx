@@ -13,7 +13,7 @@ export interface IMainButton {
 
 const MainButton: React.FC<IMainButton> = (props) => {
   const { className, text, children, onClick } = props;
-  const classes = 'mainButton ' + className;
+  const classes = 'button__main ' + className;
 
   return (
     <Button className={classes} variant='secondary' size='lg' onClick={onClick}>
