@@ -1,5 +1,5 @@
 import validator from 'validator';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import './ContactForm.css';
 import SendButton from './SendButton';
 import { sendEmail } from '../../utils/sendEmail';
@@ -9,31 +9,16 @@ interface IContactForm {
   className?: string;
 }
 
-const ContactForm = (props: IContactForm) => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+const ContactForm: React.FC<IContactForm> = (props) => {
+  const nameInputRef = useRef<HTMLInputElement>(null);
+  const emailInputRef = useRef<HTMLInputElement>(null);
+  const messageInputRef = useRef<HTMLTextAreaElement>(null);
 
   const [nameError, setNameError] = useState('');
   const [emailError, setEmailError] = useState('');
   const [messageError, setMessageError] = useState('');
 
   const [successMessage, setSuccessMessage] = useState('');
-
-  const nameChangeHandler = (e: React.FormEvent<EventTarget>) => {
-    const target = e.target as HTMLInputElement;
-    setName(target.value);
-  };
-
-  const emailChangeHandler = (e: React.FormEvent<EventTarget>) => {
-    const target = e.target as HTMLInputElement;
-    setEmail(target.value);
-  };
-
-  const messageChangeHandler = (e: React.FormEvent<EventTarget>) => {
-    const target = e.target as HTMLInputElement;
-    setMessage(target.value);
-  };
 
   const nameFocusHandler = () => {
     setNameError('');
@@ -54,29 +39,33 @@ const ContactForm = (props: IContactForm) => {
     setSuccessMessage('');
     e.preventDefault();
 
+    let enteredName = nameInputRef.current?.value as string;
+    let enteredEmail = emailInputRef.current?.value as string;
+    let enteredMessage = messageInputRef.current?.value as string;
+
     let isValid: boolean = true;
 
-    if (name === '' || name.length <= 1) {
+    if (enteredName === '' || enteredName.length <= 1) {
       setNameError('Please, leave your full name');
       isValid = false;
     }
 
-    if (name.length > 26) {
+    if (enteredName.length > 26) {
       setNameError(`Sorry, name can't be more than 26 characters.`);
       isValid = false;
     }
 
-    if (email === '' || !validator.isEmail(email)) {
+    if (enteredEmail === '' || !validator.isEmail(enteredEmail)) {
       setEmailError('Please, leave your valid email address');
       isValid = false;
     }
 
-    if (message === '') {
+    if (enteredMessage === '') {
       setMessageError('Please, leave your message');
       isValid = false;
     }
 
-    if (name === '' && email === '' && message === '') {
+    if (enteredName === '' && enteredEmail === '' && enteredMessage === '') {
       setMessageError(`Please, feel the form if you want to send me a message`);
       isValid = false;
     }
@@ -88,9 +77,11 @@ const ContactForm = (props: IContactForm) => {
       setSuccessMessage(
         `Thank you for your message!\nI will reply you as soon as I can!`
       );
-      setName('');
-      setEmail('');
-      setMessage('');
+
+      // Resetting input fields
+      enteredName = '';
+      enteredEmail = '';
+      enteredMessage = '';
     }
   };
 
@@ -104,13 +95,12 @@ const ContactForm = (props: IContactForm) => {
             placeholder='Your Name'
             id='name'
             name='name'
+            ref={nameInputRef}
             className={
               nameError
                 ? 'text-field input__contact-field invalid'
                 : 'text-field input__contact-field'
             }
-            value={name}
-            onChange={nameChangeHandler}
             onFocus={nameFocusHandler}
           />
           {nameError && <div className='text__error'>{nameError}</div>}
@@ -125,8 +115,7 @@ const ContactForm = (props: IContactForm) => {
                 ? 'text-field input__contact-field input__contact-field--email invalid'
                 : 'text-field input__contact-field input__contact-field--email'
             }
-            value={email}
-            onChange={emailChangeHandler}
+            ref={emailInputRef}
             onFocus={emailFocusHandler}
           />
           {emailError && <div className='text__error'>{emailError}</div>}
@@ -134,14 +123,13 @@ const ContactForm = (props: IContactForm) => {
           <textarea
             id='message'
             name='message'
+            ref={messageInputRef}
             className={
               messageError
                 ? 'text-field textarea__message invalid'
                 : 'text-field textarea__message'
             }
             placeholder='Do you want to contact me?'
-            value={message}
-            onChange={messageChangeHandler}
             onFocus={messageFocusHandler}></textarea>
           {messageError && <div className='text__error'>{messageError}</div>}
           {successMessage && (
