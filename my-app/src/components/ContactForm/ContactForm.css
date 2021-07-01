@@ -1,5 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Rhodium+Libre&display=swap');
 
+@media (min-width: 769px) {
+  .form-container__contact {
+    padding: 1rem;
+    background-color: rgb(202, 202, 202);
+    margin: 2rem auto;
+    width: 412px;
+    width: 50rem;
+    max-width: 95%;
+    border-radius: 12px;
+    font-family: 'Rhodium Libre', serif;
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .text-field {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 12px;
+    background-color: whitesmoke;
+    resize: none;
+    border-width: 0px;
+  }
+
+  textarea:focus,
+  input:focus {
+    outline: none;
+    border: 1px solid;
+    border-color: grey;
+    border-radius: 12px;
+  }
+
+  .textarea__message {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 105.8px;
+    font-size: 14px;
+    /* Don't need it */
+    /* width: 366px; */
+  }
+
+  .input__contact-field {
+    height: 40px;
+    /* Don't need it */
+    /* width: 366px; */
+  }
+
+  .input__contact-field--email {
+    margin-top: 15px;
+  }
+
+  ::placeholder {
+    font-family: 'Rhodium Libre', serif;
+    font-size: 14px;
+    line-height: 23px;
+    padding-top: 5px;
+    text-align: center;
+  }
+
+  .text__error {
+    font-size: 14px;
+    color: red;
+  }
+
+  .text__success {
+    font-size: 14px;
+    color: green;
+    border-width: 0;
+  }
+
+  .invalid {
+    border-width: 1px;
+    border-color: red;
+  }
+
+  .valid {
+    border-width: 0px;
+  }
+}
+
 .form-container__contact {
   padding: 1rem;
   background-color: rgb(202, 202, 202);
@@ -9,14 +89,14 @@
   max-width: 95%;
   border-radius: 12px;
   font-family: 'Rhodium Libre', serif;
-  font-size: 22px;
+  font-size: 18px;
   text-align: center;
   font-weight: bold;
 }
 
 .text-field {
   padding: 10px;
-  font-size: 14px;
+  font-size: 12px;
   border-radius: 12px;
   background-color: whitesmoke;
   resize: none;
@@ -35,13 +115,13 @@ input:focus {
   margin-top: 10px;
   margin-bottom: 10px;
   height: 105.8px;
-  font-size: 14px;
-  width: 366px;
+  font-size: 12px;
+  width: 250px;
 }
 
 .input__contact-field {
   height: 40px;
-  width: 366px;
+  width: 250px;
 }
 
 .input__contact-field--email {
@@ -50,19 +130,19 @@ input:focus {
 
 ::placeholder {
   font-family: 'Rhodium Libre', serif;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 23px;
   padding-top: 5px;
   text-align: center;
 }
 
 .text__error {
-  font-size: 14px;
+  font-size: 12px;
   color: red;
 }
 
 .text__success {
-  font-size: 14px;
+  font-size: 12px;
   color: green;
   border-width: 0;
 }

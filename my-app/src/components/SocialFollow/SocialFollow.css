@@ -1,7 +1,17 @@
+@media (min-width: 769px) {
+  .instagram {
+    margin-right: 15px;
+  }
+
+  .linkedin {
+    margin-right: 15px;
+  }
+}
+
 .instagram {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .linkedin {
-  margin-right: 15px;
+  margin-right: 10px;
 }

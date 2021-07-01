@@ -1,3 +1,18 @@
+@media (min-width: 769px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    bottom: 0;
+  }
+
+  .section__social-follow {
+    right: 0;
+    top: calc(45px - 1em);
+    margin-right: 70px;
+  }
+}
+
 .footer {
   display: flex;
   flex-direction: row;
@@ -8,5 +23,5 @@
 .section__social-follow {
   right: 0;
   top: calc(45px - 1em);
-  margin-right: 70px;
+  margin-right: 50px;
 }

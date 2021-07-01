@@ -1,16 +1,33 @@
-.page {
-  display: flex;
-  flex-direction: column;
-  background-image: none;
-  background-color: #f5f5f5;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 100vw;
+/* Desktop */
+@media (min-width: 769px) {
+  .page {
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+    background-color: #f5f5f5;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100vw;
+  }
+
+  .header {
+    width: 100vw;
+    height: 80px;
+  }
+
+  .nav__buttons {
+    position: absolute;
+    display: flex;
+    right: 0;
+    margin-top: 25px;
+    margin-right: 65px;
+  }
 }
 
+/* Mobile */
 .header {
   width: 100vw;
-  height: 80px;
+  height: 60px;
 }
 
 .nav__buttons {
@@ -18,5 +35,5 @@
   display: flex;
   right: 0;
   margin-top: 25px;
-  margin-right: 65px;
+  margin-right: 50px;
 }

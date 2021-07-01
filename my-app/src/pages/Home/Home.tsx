@@ -23,7 +23,7 @@ const Home = () => {
             My latest posts
             <LatestPosts props={LATEST_POSTS} />
           </nav>
-          <ContactForm className='form-container__contact' />
+          <ContactForm className='container__contact-me' />
         </section>
       </main>
     </Page>
