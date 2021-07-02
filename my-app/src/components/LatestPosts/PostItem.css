@@ -1,4 +1,4 @@
-@media (min-width: 769px) {
+@media screen and (min-width: 769px) {
   .post-item {
     display: flex;
     justify-content: space-between;
@@ -13,15 +13,17 @@
   }
 }
 
-.post-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-  padding: 0.3rem;
-  margin: 1rem 0;
-  border-radius: 12px;
-  background-color: whitesmoke;
-  font-size: 12px;
-  cursor: pointer;
+@media screen and (max-width: 768px) {
+  .post-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    padding: 0.3rem;
+    margin: 1rem 0;
+    border-radius: 12px;
+    background-color: whitesmoke;
+    font-size: 12px;
+    cursor: pointer;
+  }
 }

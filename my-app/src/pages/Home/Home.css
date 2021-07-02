@@ -1,13 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Rhodium+Libre&display=swap');
 
-@media (min-width: 769px) {
-  /* Desktop */
+/* Desktop */
+@media screen and (min-width: 769px) {
+  .main__home {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  .spacer {
+    flex-grow: 1;
+  }
+
   .section__main--home-page {
     display: flex;
     flex-direction: column;
     margin-right: 50px;
     width: 412px;
   }
+  .nav__latest-posts {
+    padding: 1rem;
+    background-color: rgb(202, 202, 202);
+    margin: 2rem auto;
+    width: 50rem;
+    max-width: 95%;
+    border-radius: 12px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+    font-family: 'Rhodium Libre', serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+  }
+
   .section__title {
     width: 382px;
     height: 405px;
@@ -27,38 +51,40 @@
 }
 
 /* Mobile */
-.main__home {
-  display: flex;
-  flex-direction: row;
-  height: 100vh;
-}
+@media screen and (max-width: 768px) {
+  .main__home {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
 
-.spacer {
-  flex-grow: 1;
-}
+  .spacer {
+    flex-grow: 1;
+  }
 
-.section__main--home-page {
-  display: flex;
-  flex-direction: column;
-  flex-flow: center;
-  margin-right: 40px;
-  width: 300px;
-}
+  .section__main--home-page {
+    display: flex;
+    flex-direction: column;
+    flex-flow: center;
+    margin-right: 40px;
+    width: 300px;
+  }
 
-.container__contact-me {
-  margin-top: 2px;
-}
+  .container__contact-me {
+    margin-top: 2px;
+  }
 
-.nav__latest-posts {
-  padding: 1rem;
-  background-color: rgb(202, 202, 202);
-  margin: 2rem auto;
-  width: 50rem;
-  max-width: 95%;
-  border-radius: 12px;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
-  font-family: 'Rhodium Libre', serif;
-  font-size: 18px;
-  text-align: center;
-  font-weight: bold;
+  .nav__latest-posts {
+    padding: 1rem;
+    background-color: rgb(202, 202, 202);
+    margin: 2rem auto;
+    width: 50rem;
+    max-width: 95%;
+    border-radius: 12px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+    font-family: 'Rhodium Libre', serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+  }
 }
