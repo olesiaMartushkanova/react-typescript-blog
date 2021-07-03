@@ -63,19 +63,18 @@
   .section__main--home-page {
     display: flex;
     flex-direction: column;
-    flex-flow: center;
     margin-right: 40px;
     width: 300px;
   }
 
   .container__contact-me {
-    margin-top: 2px;
+    margin-top: 0px;
   }
 
   .nav__latest-posts {
     padding: 1rem;
     background-color: rgb(202, 202, 202);
-    margin: 2rem auto;
+    margin: 1rem auto;
     width: 50rem;
     max-width: 95%;
     border-radius: 12px;

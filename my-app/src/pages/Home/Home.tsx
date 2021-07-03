@@ -15,7 +15,6 @@ const Home = () => {
             <h1>{TITLE_TEXT}</h1>
           </section>
         </BrowserView>
-
         <div className='spacer' />
 
         <section className='section__main--home-page'>
