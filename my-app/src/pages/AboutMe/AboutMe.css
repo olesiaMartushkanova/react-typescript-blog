@@ -1,54 +1,108 @@
-.main__about-me {
-  display: flex;
-  flex-direction: row;
-  font-family: 'Rhodium Libre', serif;
-  height: 100vh;
-  width: 100%;
+/* Desktop */
+@media screen and (min-width: 769px) {
+  .main__about-me {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Rhodium Libre', serif;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .section__introduction {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+  }
+
+  .section__title--about-me {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    width: 300px;
+  }
+
+  .title__about-me {
+    font-size: 36px;
+    text-align: right;
+  }
+
+  .aside__about-me {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+
+  .section__portfolio-picture {
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+  }
+
+  .img__portfolio-picture {
+    width: 180px;
+    height: 235px;
+  }
+
+  .section__about-me__main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
+  .aside__text__main-about-me {
+    margin-bottom: 20px;
+  }
+
+  .button__more-about-me {
+  }
 }
 
-.section__introduction {
-  display: flex;
-  flex-direction: column;
-  margin-left: 150px;
-}
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .main__about-me {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    font-family: 'Rhodium Libre', serif;
+    height: 100vh;
+    width: 100%;
+    margin-top: 15px;
+    margin-left: 30px;
+    text-align: center;
+    width: 90%;
+  }
 
-.section__title--about-me {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 5px;
-  width: 300px;
-}
+  .section__title--about-me {
+    margin-bottom: 5px;
+  }
 
-.title__about-me {
-  font-size: 36px;
-  text-align: right;
-}
+  .title__about-me {
+    font-size: 26px;
+  }
 
-.aside__about-me {
-  font-size: 18px;
-  margin-bottom: 24px;
-}
+  .aside__about-me {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
 
-.section__portfolio-picture {
-  display: flex;
-  flex-direction: row;
-  width: 700px;
-}
+  .section__portfolio-picture {
+    margin-left: 10px;
+  }
 
-.img__portfolio-picture {
-  width: 180px;
-  height: 235px;
-}
+  .img__portfolio-picture {
+    width: 116px;
+    height: 166x;
+    margin-bottom: 10px;
+  }
 
-.section__about-me__main {
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-}
+  .section__about-me__main {
+    font-size: 14px;
+  }
 
-.aside__text__main-about-me {
-  margin-bottom: 20px;
-}
+  .aside__text__main-about-me {
+    margin-bottom: 25px;
+  }
 
-.button__more-about-me {
+  .button__more-about-me {
+  }
 }

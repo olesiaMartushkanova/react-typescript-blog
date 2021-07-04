@@ -10,7 +10,7 @@ const AboutMe = () => {
       <main className='main__about-me'>
         <section className='section__introduction'>
           <section className='section__title--about-me'>
-            <title className='title__about-me'>Hello! I'm Olesia!</title>
+            <div className='title__about-me'>Hello! I'm Olesia!</div>
             <aside className='aside__about-me'>
               I am a Software Engineer based in a beautiful New Zealand
             </aside>
