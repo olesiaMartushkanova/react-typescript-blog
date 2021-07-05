@@ -46,3 +46,8 @@ export const LATEST_POSTS: Array<IPostItem> = [
     path: MEDIUM_PATH,
   },
 ];
+
+export const MEDIA_QUERY_SIZE = {
+  desktop: '(min-width: 769px)',
+  mobile: '(max-width: 768px)',
+};
