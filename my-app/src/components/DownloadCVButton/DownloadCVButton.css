@@ -1,13 +1,11 @@
 .section__download-cv {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
 .button__download-cv {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
   border: none;
   width: 70px;
   text-align: center;
@@ -17,4 +15,10 @@
   margin-top: 5px;
   font-size: 16px;
   font-family: 'Rhodium Libre', serif;
+  color: black;
+  cursor: pointer;
+}
+
+a :hover {
+  color: blue;
 }

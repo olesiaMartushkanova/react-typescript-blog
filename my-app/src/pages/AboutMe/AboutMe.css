@@ -50,6 +50,7 @@
 
   .aside__text__main-about-me {
     margin-bottom: 20px;
+    text-align: justify;
   }
 
   .button__more-about-me {

@@ -22,9 +22,10 @@ const AboutMe = () => {
 
             <section className='section__about-me__main'>
               <aside className='aside__text__main-about-me'>
-                Some cool short text about me,Some cool short text about me,Some
-                cool short text about me,Some cool short text about me,Some cool
-                short text about me which should be saved somewhere
+                I love programming and believe in clean code, teamwork and
+                making users happy. I can create web applications using modern
+                languages and frameworks. I always work to achieve the best
+                results. My main life motto is 'grow and improve every day'.
               </aside>
               <DownloadCVButton />
             </section>

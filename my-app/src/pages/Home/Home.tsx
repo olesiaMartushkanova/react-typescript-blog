@@ -1,5 +1,10 @@
 import './Home.css';
-import { ABOUT_ME_PATH, LATEST_POSTS, TITLE_TEXT } from '../../utils/constants';
+import {
+  ABOUT_ME_PATH,
+  LATEST_POSTS,
+  MEDIA_QUERY_SIZE,
+  TITLE_TEXT,
+} from '../../utils/constants';
 import LatestPosts from '../../components/LatestPosts/LatestPosts';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ContactForm from '../../components/ContactForm/ContactForm';
@@ -7,7 +12,8 @@ import Page from '../../components/Page/Page';
 import { useMediaQueryHook } from '../../utils/hooks/useMediaQuery';
 
 const Home = () => {
-  let isPageWide = useMediaQueryHook('(min-width: 769px)');
+  const isPageWide = useMediaQueryHook(MEDIA_QUERY_SIZE.desktop);
+
   return (
     <Page path={ABOUT_ME_PATH} text='About me'>
       <main className='main__home'>
