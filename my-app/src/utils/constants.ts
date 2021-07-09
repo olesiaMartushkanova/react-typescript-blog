@@ -9,6 +9,7 @@ import { ISocialFollow } from '../components/Page/components/Footer/components/S
 export const ABOUT_ME_PATH = '/about-me';
 export const HOME_PATH = '/';
 export const MEDIUM_PATH = 'https://medium.com/me/stories/drafts';
+export const MY_STORY_PATH = '/my-story';
 
 export const TITLE_TEXT =
   'It’s all about my passion to life, learning and personal growth';

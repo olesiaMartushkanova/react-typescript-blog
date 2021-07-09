@@ -1,5 +1,5 @@
 import Page from '../../components/Page/Page';
-import { HOME_PATH } from '../../utils/constants';
+import { HOME_PATH, MY_STORY_PATH } from '../../utils/constants';
 import './AboutMe.css';
 import Portrait from '../../images/Portrait.jpg';
 import DownloadCVButton from './components/DownloadCVButton/DowlonadCVButton';
@@ -30,7 +30,10 @@ const AboutMe = () => {
               </aside>
               <div className='buttons__more'>
                 <DownloadCVButton />
-                <ReadMyStoryButton className='button__read-my-story' />
+                <ReadMyStoryButton
+                  className='button__read-my-story'
+                  path={MY_STORY_PATH}
+                />
               </div>
             </section>
           </section>

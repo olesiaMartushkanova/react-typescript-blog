@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { ABOUT_ME_PATH, HOME_PATH } from './utils/constants';
+import { ABOUT_ME_PATH, HOME_PATH, MY_STORY_PATH } from './utils/constants';
 import AboutMe from './pages/AboutMe/AboutMe';
 import Home from './pages/Home/Home';
+import ReadMyStory from './pages/ReadMyStory/ReadMyStory';
 
 export const App = () => {
   return (
@@ -12,6 +13,9 @@ export const App = () => {
         </Route>
         <Route path={ABOUT_ME_PATH} component={AboutMe}>
           <AboutMe />
+        </Route>
+        <Route path={MY_STORY_PATH} component={ReadMyStory}>
+          <ReadMyStory />
         </Route>
       </Switch>
     </Router>
