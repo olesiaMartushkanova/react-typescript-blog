@@ -37,8 +37,10 @@
   }
 
   .header {
+    align-items: center;
     width: 100vw;
     height: 80px;
+    margin-bottom: 15px;
   }
 
   .nav__buttons {

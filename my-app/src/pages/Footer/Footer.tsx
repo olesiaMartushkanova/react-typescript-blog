@@ -1,6 +1,6 @@
 import { SOCIAL_BUTTONS } from '../../utils/constants';
 import './Footer.css';
-import SocialFollow from '../../components/SocialFollow/SocialFollow';
+import SocialFollow from './components/SocialFollow/SocialFollow';
 
 const Footer = () => {
   return (

@@ -16,6 +16,7 @@
     margin-right: 50px;
     width: 412px;
   }
+
   .nav__latest-posts {
     padding: 1rem;
     background-color: rgb(202, 202, 202);
@@ -53,6 +54,7 @@
   .main__home {
     display: flex;
     flex-direction: row;
+    align-items: center;
     height: 100vh;
   }
 

@@ -62,15 +62,13 @@
   .main__about-me {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
     flex-wrap: wrap;
     font-family: 'Rhodium Libre', serif;
     height: 100vh;
     width: 100%;
-    margin-top: 15px;
-    margin-left: 30px;
     text-align: center;
-    width: 90%;
+    width: 95%;
   }
 
   .section__title--about-me {
@@ -96,12 +94,10 @@
     margin-bottom: 10px;
   }
 
-  .section__about-me__main {
-    font-size: 14px;
-  }
-
   .aside__text__main-about-me {
     margin-bottom: 25px;
+    font-size: 14px;
+    text-align: justify;
   }
 
   .button__more-about-me {
