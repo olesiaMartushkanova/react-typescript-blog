@@ -21,11 +21,12 @@
     flex-direction: row;
     justify-content: flex-end;
     bottom: 0;
+    margin-top: 10px;
   }
 
   .section__social-follow {
     right: 0;
     top: calc(45px - 1em);
-    margin-right: 50px;
+    margin-right: 35px;
   }
 }

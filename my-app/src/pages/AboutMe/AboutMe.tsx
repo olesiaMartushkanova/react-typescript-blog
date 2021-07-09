@@ -3,6 +3,7 @@ import { HOME_PATH } from '../../utils/constants';
 import './AboutMe.css';
 import Portrait from '../../images/Portrait.jpg';
 import DownloadCVButton from './components/DownloadCVButton/DowlonadCVButton';
+import ReadMyStoryButton from './components/ReadMyStoryButton/ReadMyStoryButton';
 
 const AboutMe = () => {
   return (
@@ -27,11 +28,12 @@ const AboutMe = () => {
                 languages and frameworks. I always work to achieve the best
                 results. My main life motto is 'grow and improve every day'.
               </aside>
-              <DownloadCVButton />
+              <div className='buttons__more'>
+                <DownloadCVButton />
+                <ReadMyStoryButton className='button__read-my-story' />
+              </div>
             </section>
           </section>
-
-          <div className='button__more-about-me'></div>
         </section>
 
         {/* Next page here */}

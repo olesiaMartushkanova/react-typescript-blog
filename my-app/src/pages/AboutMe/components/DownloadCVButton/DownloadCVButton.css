@@ -1,24 +1,55 @@
-.section__download-cv {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+/* Desktop */
+@media screen and (min-width: 769px) {
+  .section__download-cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button__download-cv {
+    border: none;
+    width: 70px;
+    text-align: center;
+  }
+
+  .label__download-cv {
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: 'Rhodium Libre', serif;
+    color: black;
+    cursor: pointer;
+  }
+
+  a :hover {
+    color: blue;
+  }
 }
 
-.button__download-cv {
-  border: none;
-  width: 70px;
-  text-align: center;
-}
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .section__download-cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-.label__download-cv {
-  margin-top: 5px;
-  font-size: 16px;
-  font-family: 'Rhodium Libre', serif;
-  color: black;
-  cursor: pointer;
-}
+  .button__download-cv {
+    border: none;
+    width: 70px;
+    text-align: center;
+  }
 
-a :hover {
-  color: blue;
+  .label__download-cv {
+    margin-top: 5px;
+    font-size: 14px;
+    font-family: 'Rhodium Libre', serif;
+    color: black;
+    cursor: pointer;
+  }
+
+  a :hover {
+    color: blue;
+  }
 }
