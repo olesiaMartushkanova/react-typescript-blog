@@ -54,7 +54,6 @@
     "dotenv": "^8.2.0",
     "emailjs-com": "^2.6.4",
     "madge": "^4.0.2",
-    "react-bootstrap": "^1.5.2",
     "react-router-dom": "^5.2.0",
     "validator": "^13.6.0"
   }

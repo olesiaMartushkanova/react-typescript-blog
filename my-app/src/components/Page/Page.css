@@ -41,13 +41,12 @@
     width: 100vw;
     height: 80px;
     margin-bottom: 15px;
+    margin-left: 15px;
   }
 
   .nav__buttons {
     position: absolute;
     display: flex;
-    right: 0;
     margin-top: 25px;
-    margin-right: 50px;
   }
 }
