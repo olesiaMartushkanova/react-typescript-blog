@@ -5,9 +5,9 @@ import {
   MEDIA_QUERY_SIZE,
   TITLE_TEXT,
 } from '../../utils/constants';
-import LatestPosts from '../../components/LatestPosts/LatestPosts';
+import LatestPosts from './components/LatestPosts/LatestPosts';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ContactForm from '../../components/ContactForm/ContactForm';
+import ContactForm from './components/ContactForm/ContactForm';
 import Page from '../../components/Page/Page';
 import { useMediaQueryHook } from '../../utils/hooks/useMediaQuery';
 

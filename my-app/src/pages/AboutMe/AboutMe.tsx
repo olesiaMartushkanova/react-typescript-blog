@@ -2,7 +2,7 @@ import Page from '../../components/Page/Page';
 import { HOME_PATH } from '../../utils/constants';
 import './AboutMe.css';
 import Portrait from '../../images/Portrait.jpg';
-import DownloadCVButton from '../../components/DownloadCVButton/DowlonadCVButton';
+import DownloadCVButton from './components/DownloadCVButton/DowlonadCVButton';
 
 const AboutMe = () => {
   return (

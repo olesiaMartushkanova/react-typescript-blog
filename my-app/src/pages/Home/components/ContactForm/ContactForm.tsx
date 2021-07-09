@@ -1,8 +1,8 @@
 import validator from 'validator';
 import { useState } from 'react';
 import './ContactForm.css';
-import SendButton from './SendButton';
-import { sendEmail } from '../../utils/sendEmail';
+import SendButton from './components/SendButton';
+import { sendEmail } from '../../../../utils/sendEmail';
 
 interface IContactForm {
   value?: string;

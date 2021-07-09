@@ -1,4 +1,4 @@
-import PostItem, { IPostItem } from './PostItem';
+import PostItem, { IPostItem } from './components/PostItem';
 
 const LatestPosts = ({ props }: any) => {
   return props.map((postItem: IPostItem) => (

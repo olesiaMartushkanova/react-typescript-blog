@@ -1,4 +1,4 @@
-import { SOCIAL_BUTTONS } from '../../utils/constants';
+import { SOCIAL_BUTTONS } from '../../../../utils/constants';
 import './Footer.css';
 import SocialFollow from './components/SocialFollow/SocialFollow';
 
