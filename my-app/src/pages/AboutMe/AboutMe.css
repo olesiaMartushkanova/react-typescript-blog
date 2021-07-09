@@ -84,11 +84,11 @@
   }
 
   .title__about-me {
-    font-size: 26px;
+    font-size: 22px;
   }
 
   .aside__about-me {
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 5px;
   }
 
@@ -97,8 +97,8 @@
   }
 
   .img__portfolio-picture {
-    width: 116px;
-    height: 166x;
+    width: 114px;
+    height: 164x;
     margin-bottom: 10px;
   }
 
