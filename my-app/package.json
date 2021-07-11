@@ -54,6 +54,7 @@
     "dotenv": "^8.2.0",
     "emailjs-com": "^2.6.4",
     "madge": "^4.0.2",
+    "react-google-charts": "^3.0.15",
     "react-router-dom": "^5.2.0",
     "validator": "^13.6.0"
   }
