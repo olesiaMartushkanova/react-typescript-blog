@@ -2,7 +2,9 @@
 @media screen and (min-width: 769px) {
   .main__about-me {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex: 1;
+    overflow: auto;
     font-family: 'Rhodium Libre', serif;
     height: 100vh;
     width: 100%;
@@ -74,7 +76,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 200px;
   }
 
   .cart-header {
@@ -87,6 +89,8 @@
   .main__about-me {
     display: flex;
     flex-direction: column;
+    flex: 1;
+    overflow: auto;
     align-items: center;
     flex-wrap: wrap;
     font-family: 'Rhodium Libre', serif;
@@ -139,5 +143,16 @@
   .button__more-about-me {
     font-size: 13px;
     width: 200px;
+  }
+
+  .chart__role {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+  }
+
+  .cart-header {
+    font-size: 22px;
   }
 }

@@ -9,8 +9,17 @@ import DownloadCVButton from './components/DownloadCVButton/DowlonadCVButton';
 import ReadMyStoryButton from './components/ReadMyStoryButton/ReadMyStoryButton';
 import MainButton from '../../components/MainButton/MainButton';
 import RolePieChart from './components/RolePieChart/RolePieChart';
+import { useRef } from 'react';
 
 const AboutMe = () => {
+  const chartRef = useRef<HTMLDivElement>(null);
+
+  const executeScroll = () =>
+    chartRef.current?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+
   return (
     <Page path={HOME_PATH} text='Home'>
       <main className='main__about-me'>
@@ -39,15 +48,18 @@ const AboutMe = () => {
                 />
                 <MainButton
                   className='button__more-about-me'
-                  text='More about me '>
+                  text='More about me '
+                  onClick={executeScroll}>
                   <FontAwesomeIcon icon={faArrowDown} />
                 </MainButton>
               </div>
             </section>
           </section>
+        </div>
+        <div>
           <div className='chart__role'>
             <h3 className='cart-header'>What I do:</h3>
-            <RolePieChart />
+            <RolePieChart ref={chartRef} />
           </div>
         </div>
       </main>
