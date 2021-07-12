@@ -20,8 +20,8 @@ const AboutMe = () => {
     });
 
   return (
-    <Page path={HOME_PATH} text='Home'>
-      <main className='main__about-me'>
+    <Page homeButtonPath={HOME_PATH} text='Home'>
+      <div className='main__about-me'>
         <div className='section__introduction'>
           <section className='section__title--about-me'>
             <div className='title__about-me'>Hello! I'm Olesia!</div>
@@ -60,7 +60,7 @@ const AboutMe = () => {
           <h3 className='chart-header'>What I do:</h3>
           <RolePieChart ref={chartRef} />
         </section>
-      </main>
+      </div>
     </Page>
   );
 };

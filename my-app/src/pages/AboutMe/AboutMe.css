@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     font-family: 'Rhodium Libre', serif;
-    height: 100vh;
     width: 100%;
   }
 
@@ -74,7 +73,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 200px;
+    /* margin-top: 400px; */
   }
 
   .chart-header {
@@ -89,7 +88,6 @@
     flex-direction: column;
     align-items: center;
     font-family: 'Rhodium Libre', serif;
-    height: 100vh;
     width: 100%;
     text-align: center;
     width: 95%;
