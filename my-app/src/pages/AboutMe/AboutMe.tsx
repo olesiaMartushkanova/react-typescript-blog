@@ -33,12 +33,14 @@ const AboutMe = () => {
           <section className='section__portfolio-picture'>
             <img className='img__portfolio-picture' src={Portrait} />
             <section className='section__about-me__main'>
-              <aside className='aside__text__main-about-me'>
-                I love programming and believe in clean code, teamwork and
-                making users happy. I can create web applications using modern
-                languages and frameworks. I always work to achieve the best
-                results. My main life motto is 'grow and improve every day'.
-              </aside>
+              <text className='text__main-about-me'>
+                I have 5+ years of experience working in Agile software
+                development environment. I love programming and believe in clean
+                code, teamwork and making users happy. I can create web
+                applications using modern languages and frameworks. I always
+                work to achieve the best results. My main life motto is 'grow
+                and improve every day'.
+              </text>
               <div className='buttons__more'>
                 <DownloadCVButton />
                 <ReadMyStoryButton
@@ -58,7 +60,11 @@ const AboutMe = () => {
 
         <section className='section__chart-role'>
           <h3 className='chart-header'>What I do:</h3>
-          <RolePieChart ref={chartRef} />
+          <div className='chart'>
+            <text>Part Test Engineer</text>
+            <RolePieChart ref={chartRef} />
+            <text>Part Web-Developer</text>
+          </div>
         </section>
       </div>
     </Page>

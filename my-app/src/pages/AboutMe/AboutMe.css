@@ -26,7 +26,7 @@
   }
 
   .aside__about-me {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 24px;
   }
 
@@ -47,9 +47,10 @@
     margin-left: 20px;
   }
 
-  .aside__text__main-about-me {
+  .text__main-about-me {
     margin-bottom: 20px;
     text-align: justify;
+    font-size: 20px;
   }
 
   .buttons__more {
@@ -61,7 +62,7 @@
   .button__read-my-story {
     font-size: 18px;
     width: 250px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
 
   .button__more-about-me {
@@ -73,7 +74,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-top: 400px; */
+    margin-top: 150px;
+  }
+  .chart {
+    display: flex;
+    flex-direction: row;
   }
 
   .chart-header {
@@ -116,8 +121,8 @@
     margin-bottom: 10px;
   }
 
-  .aside__text__main-about-me {
-    font-size: 14px;
+  .text__main-about-me {
+    font-size: 12px;
     text-align: justify;
   }
 
@@ -130,7 +135,7 @@
   .button__read-my-story {
     font-size: 15px;
     width: 200px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
 
   .button__more-about-me {
@@ -142,7 +147,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
   .chart-header {
