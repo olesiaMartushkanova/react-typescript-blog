@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
-
+import { useRef } from 'react';
 import Page from '../../components/Page/Page';
 import { HOME_PATH, MY_STORY_PATH } from '../../utils/constants';
 import './AboutMe.css';
@@ -9,7 +9,6 @@ import DownloadCVButton from './components/DownloadCVButton/DowlonadCVButton';
 import ReadMyStoryButton from './components/ReadMyStoryButton/ReadMyStoryButton';
 import MainButton from '../../components/MainButton/MainButton';
 import RolePieChart from './components/RolePieChart/RolePieChart';
-import { useRef } from 'react';
 
 const AboutMe = () => {
   const chartRef = useRef<HTMLDivElement>(null);
@@ -56,12 +55,11 @@ const AboutMe = () => {
             </section>
           </section>
         </div>
-        <div>
-          <div className='chart__role'>
-            <h3 className='cart-header'>What I do:</h3>
-            <RolePieChart ref={chartRef} />
-          </div>
-        </div>
+
+        <section className='section__chart-role'>
+          <h3 className='chart-header'>What I do:</h3>
+          <RolePieChart ref={chartRef} />
+        </section>
       </main>
     </Page>
   );
