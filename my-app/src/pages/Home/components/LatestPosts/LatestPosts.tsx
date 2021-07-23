@@ -1,5 +1,6 @@
 import PostItem, { IPostItem } from './components/PostItem';
 
+// TODO: add a proper type
 const LatestPosts = ({ props }: any) => {
   return props.map((postItem: IPostItem) => (
     <div key={postItem.id}>

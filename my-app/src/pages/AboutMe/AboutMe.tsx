@@ -9,6 +9,7 @@ import DownloadCVButton from './components/DownloadCVButton/DowlonadCVButton';
 import ReadMyStoryButton from './components/ReadMyStoryButton/ReadMyStoryButton';
 import MainButton from '../../components/MainButton/MainButton';
 import RolePieChart from './components/RolePieChart/RolePieChart';
+import RoleList from './components/RoleText/RoleList';
 
 const AboutMe = () => {
   const chartRef = useRef<HTMLDivElement>(null);
@@ -61,9 +62,9 @@ const AboutMe = () => {
         <section className='section__chart-role'>
           <h3 className='chart-header'>What I do:</h3>
           <div className='chart'>
-            <text>Part Test Engineer</text>
+            <RoleList title='Part Test Engineer' />
             <RolePieChart ref={chartRef} />
-            <text>Part Web-Developer</text>
+            <RoleList title='Part Web-Developer' />
           </div>
         </section>
       </div>
