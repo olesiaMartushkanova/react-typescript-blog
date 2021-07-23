@@ -2,7 +2,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { useRef } from 'react';
 import Page from '../../components/Page/Page';
-import { HOME_PATH, MY_STORY_PATH } from '../../utils/constants';
+import {
+  CODE_CHALLENGE_PATH,
+  HOME_PATH,
+  MY_STORY_PATH,
+} from '../../utils/constants';
 import './AboutMe.css';
 import Portrait from '../../images/Portrait.jpg';
 import DownloadCVButton from './components/DownloadCVButton/DowlonadCVButton';
@@ -17,6 +21,7 @@ import {
   SOFT_SKILLS,
   TECH_SKILLS,
 } from './constants';
+import CodeChallengeButton from './components/ReadMyStoryButton copy/ReadMyStoryButton';
 
 const AboutMe = () => {
   const chartRef = useRef<HTMLDivElement>(null);
@@ -40,21 +45,25 @@ const AboutMe = () => {
             <img className='img__portfolio-picture' src={Portrait} />
             <section className='section__about-me__main'>
               <text className='text__main-about-me'>{ABOUT_ME_TEXT}</text>
-              <div className='buttons__more'>
-                <DownloadCVButton />
-                <ReadMyStoryButton
-                  className='button__read-my-story'
-                  path={MY_STORY_PATH}
-                />
-                <MainButton
-                  className='button__more-about-me'
-                  text='More about me '
-                  onClick={executeScroll}>
-                  <FontAwesomeIcon icon={faArrowDown} />
-                </MainButton>
-              </div>
             </section>
           </section>
+          <div className='buttons__more'>
+            <DownloadCVButton />
+            <ReadMyStoryButton
+              className='button__read-my-story'
+              path={MY_STORY_PATH}
+            />
+            <CodeChallengeButton
+              className='button__code-challenge'
+              path={CODE_CHALLENGE_PATH}
+            />
+            <MainButton
+              className='button__more-about-me'
+              text='More about me '
+              onClick={executeScroll}>
+              <FontAwesomeIcon icon={faArrowDown} />
+            </MainButton>
+          </div>
         </div>
 
         <section className='section__chart-role'>

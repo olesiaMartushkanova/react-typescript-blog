@@ -3,6 +3,7 @@
   .main__about-me {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     font-family: 'Rhodium Libre', serif;
     width: 100%;
   }
@@ -10,6 +11,7 @@
   .section__introduction {
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
     margin-left: 150px;
   }
 
@@ -26,14 +28,14 @@
   }
 
   .aside__about-me {
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 24px;
   }
 
   .section__portfolio-picture {
     display: flex;
     flex-direction: row;
-    width: 700px;
+    width: 1000px;
   }
 
   .img__portfolio-picture {
@@ -48,7 +50,7 @@
   }
 
   .text__main-about-me {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     text-align: justify;
     font-size: 20px;
   }
@@ -57,9 +59,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
   }
 
   .button__read-my-story {
+    font-size: 18px;
+    width: 250px;
+    margin-bottom: 25px;
+  }
+
+  .button__code-challenge {
     font-size: 18px;
     width: 250px;
     margin-bottom: 25px;
@@ -74,8 +83,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 200px;
   }
+
   .chart {
     display: flex;
     flex-direction: row;
@@ -134,6 +144,12 @@
     margin-bottom: 10px;
   }
 
+  .button__code-challenge {
+    font-size: 15px;
+    width: 200px;
+    margin-bottom: 10px;
+  }
+
   .button__more-about-me {
     font-size: 13px;
     width: 200px;
@@ -143,6 +159,5 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
   }
 }
