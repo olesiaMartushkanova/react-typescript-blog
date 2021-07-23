@@ -1,3 +1,5 @@
+import './RoleListItem.css';
+
 const RoleListItem = ({ props }: any) => {
   return props.map((listItem: any) => (
     <ul key={listItem}>
