@@ -1,8 +1,10 @@
 export const SOFT_SKILLS: Array<string> = [
   'Awesome teamplayer',
   'Every day learner',
-  'Positive attitude',
-  'Critical thinking',
+  'Opinionated person',
+  'Have critical thinking',
+  'Love challenges',
+  'Always look for solutions',
 ];
 
 export const TECH_SKILLS: Array<string> = [
@@ -10,6 +12,7 @@ export const TECH_SKILLS: Array<string> = [
   'React',
   'Automation Testing',
   'DevOps',
+  'Professional Google searching skills',
 ];
 
 export const ABOUT_ME_TITLE = `Hello! I'm Olesia!`;
@@ -17,9 +20,7 @@ export const ABOUT_ME_TITLE = `Hello! I'm Olesia!`;
 export const ABOUT_ME_ASIDE =
   'I am a Software Engineer based in a beautiful New Zealand';
 
-export const ABOUT_ME_TEXT = `I have 5+ years of experience working in Agile software
-development environment. I love programming and believe in clean
-code, teamwork and making users happy. I can create web
-applications using modern languages and frameworks. I always
-work to achieve the best results. My main life motto is 'grow
-and improve every day'.`;
+export const ABOUT_ME_TEXT = `I had to describe myself I would say: "I love programming. I care a lot about what I do (because I love it!). I aim to write clean code, not just working code. I am not perfect and I don't know everything. But I always
+work hard to achieve the best results and I am not scared of challenges. 
+My main life motto is to grow
+and improve every day."`;

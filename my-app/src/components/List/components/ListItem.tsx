@@ -1,4 +1,4 @@
-import './RoleListItem.css';
+import './ListItem.css';
 
 const RoleListItem = ({ props }: any) => {
   return props.map((listItem: any) => (

@@ -80,10 +80,6 @@
     display: flex;
     flex-direction: row;
   }
-
-  .chart-header {
-    font-size: 30px;
-  }
 }
 
 /* Mobile */
@@ -148,9 +144,5 @@
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
-  }
-
-  .chart-header {
-    font-size: 22px;
   }
 }

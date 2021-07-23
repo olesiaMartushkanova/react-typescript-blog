@@ -9,7 +9,7 @@ import DownloadCVButton from './components/DownloadCVButton/DowlonadCVButton';
 import ReadMyStoryButton from './components/ReadMyStoryButton/ReadMyStoryButton';
 import MainButton from '../../components/MainButton/MainButton';
 import RolePieChart from './components/RolePieChart/RolePieChart';
-import RoleList from './components/RoleText/RoleList';
+import List from '../../components/List/List';
 import {
   ABOUT_ME_ASIDE,
   ABOUT_ME_TEXT,
@@ -58,11 +58,10 @@ const AboutMe = () => {
         </div>
 
         <section className='section__chart-role'>
-          <h3 className='chart-header'>What I do</h3>
           <div className='chart'>
-            <RoleList list={SOFT_SKILLS} />
+            <List list={SOFT_SKILLS} />
             <RolePieChart ref={chartRef} />
-            <RoleList list={TECH_SKILLS} />
+            <List list={TECH_SKILLS} />
           </div>
         </section>
       </div>

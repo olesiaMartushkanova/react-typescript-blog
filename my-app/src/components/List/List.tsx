@@ -1,4 +1,4 @@
-import RoleListItem from './components/RoleListItem';
+import ListItem from './components/ListItem';
 
 interface IRoleList {
   list: Array<string>;
@@ -10,7 +10,7 @@ const RoleList = (props: IRoleList) => {
 
   return (
     <div className={className}>
-      <RoleListItem props={list} />
+      <ListItem props={list} />
     </div>
   );
 };
