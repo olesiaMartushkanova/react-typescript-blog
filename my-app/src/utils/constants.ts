@@ -5,7 +5,6 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { IPostItem } from '../pages/Home/components/LatestPosts/components/PostItem';
 import { ISocialFollow } from '../components/Page/components/Footer/components/SocialFollow/SocialFollow';
-import { IRoleListItem } from '../pages/AboutMe/components/RoleText/components/RoleListItem';
 
 export const ABOUT_ME_PATH = '/about-me';
 export const HOME_PATH = '/';
@@ -54,9 +53,9 @@ export const MEDIA_QUERY_SIZE = {
   mobile: '(max-width: 768px)',
 };
 
-export const TESTER_ROLE_DESCRIPTION: Array<IRoleListItem> = [
-  {
-    id: 'tester_role_description',
-    list: ['Advocate for quality', 'Automate testing process'],
-  },
+export const SOFT_SKILLS: Array<string> = [
+  'Being a teamplayer',
+  'Support positive culture',
 ];
+
+export const TECH_SKILLS: Array<string> = ['JavaScript/Typescript', 'React'];

@@ -2,7 +2,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { useRef } from 'react';
 import Page from '../../components/Page/Page';
-import { HOME_PATH, MY_STORY_PATH } from '../../utils/constants';
+import {
+  HOME_PATH,
+  MY_STORY_PATH,
+  SOFT_SKILLS,
+  TECH_SKILLS,
+} from '../../utils/constants';
 import './AboutMe.css';
 import Portrait from '../../images/Portrait.jpg';
 import DownloadCVButton from './components/DownloadCVButton/DowlonadCVButton';
@@ -60,11 +65,11 @@ const AboutMe = () => {
         </div>
 
         <section className='section__chart-role'>
-          <h3 className='chart-header'>What I do:</h3>
+          <h3 className='chart-header'>What I do</h3>
           <div className='chart'>
-            <RoleList title='Part Test Engineer' />
+            <RoleList list={SOFT_SKILLS} />
             <RolePieChart ref={chartRef} />
-            <RoleList title='Part Web-Developer' />
+            <RoleList list={TECH_SKILLS} />
           </div>
         </section>
       </div>

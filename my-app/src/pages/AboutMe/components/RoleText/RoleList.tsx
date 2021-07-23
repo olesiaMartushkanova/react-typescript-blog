@@ -1,19 +1,16 @@
-import { TESTER_ROLE_DESCRIPTION } from '../../../../utils/constants';
 import RoleListItem from './components/RoleListItem';
 
 interface IRoleList {
-  title: string;
-  classNameMain?: string;
-  classNameTitle?: string;
+  list: Array<string>;
+  className?: string;
 }
 
 const RoleList = (props: IRoleList) => {
-  const { title, classNameMain, classNameTitle } = props;
+  const { className, list } = props;
 
   return (
-    <div className={classNameMain}>
-      <h4 className={classNameTitle}>{title}</h4>
-      <RoleListItem props={TESTER_ROLE_DESCRIPTION} />
+    <div className={className}>
+      <RoleListItem props={list} />
     </div>
   );
 };

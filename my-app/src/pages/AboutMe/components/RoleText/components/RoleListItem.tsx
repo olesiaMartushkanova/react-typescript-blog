@@ -1,12 +1,7 @@
-export interface IRoleListItem {
-  id: string;
-  list: Array<string>;
-}
-
 const RoleListItem = ({ props }: any) => {
-  return props.map((listItem: IRoleListItem) => (
-    <ul key={listItem.id}>
-      <li>{listItem.list}</li>
+  return props.map((listItem: any) => (
+    <ul key={listItem}>
+      <li>{listItem}</li>
     </ul>
   ));
 };

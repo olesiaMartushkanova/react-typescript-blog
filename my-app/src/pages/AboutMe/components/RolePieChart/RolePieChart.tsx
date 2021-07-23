@@ -55,8 +55,8 @@ const RolePieChart = React.forwardRef<any, any>((props, ref) => {
         loader={<div>Loading Chart</div>}
         data={[
           ['Activity', 'Percentage'],
-          ['Dev', 40],
-          ['Testing', 60],
+          ['Tech', 50],
+          ['Soft', 50],
         ]}
         options={{
           ...setPieChartOptions(),
