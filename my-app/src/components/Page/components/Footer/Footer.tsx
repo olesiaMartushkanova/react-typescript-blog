@@ -1,6 +1,33 @@
-import { SOCIAL_BUTTONS } from '../../../../utils/constants';
 import './Footer.css';
-import SocialFollow from './components/SocialFollow/SocialFollow';
+import SocialFollow, {
+  ISocialFollow,
+} from './components/SocialFollow/SocialFollow';
+import {
+  faInstagram,
+  faLinkedin,
+  faGithub,
+} from '@fortawesome/free-brands-svg-icons';
+
+const SOCIAL_BUTTONS: Array<ISocialFollow> = [
+  {
+    id: 'instagram_icon',
+    icon: faInstagram,
+    className: 'instagram',
+    path: 'https://www.instagram.com/olesia_learns/',
+  },
+  {
+    id: 'linkedin_icon',
+    icon: faLinkedin,
+    className: 'linkedin',
+    path: 'https://www.linkedin.com/in/olesia-martushkanova/',
+  },
+  {
+    id: 'github_icon',
+    icon: faGithub,
+    className: 'github',
+    path: 'https://github.com/olesiaMartushkanova',
+  },
+];
 
 const Footer = () => {
   return (
