@@ -1,18 +1,15 @@
 export const SOFT_SKILLS: Array<string> = [
   'Awesome teamplayer',
-  'Every day learner',
-  'Opinionated person',
   'Have critical thinking',
-  'Love challenges',
+  'Solve challenges',
   'Always look for solutions',
 ];
 
 export const TECH_SKILLS: Array<string> = [
-  'JavaScript/Typescript',
-  'React',
   'Automation Testing',
-  'DevOps',
-  'Professional Google searching skills',
+  'JavaScript/ Typescript',
+  'Experienced in DevOps',
+  'Front-end development',
 ];
 
 export const ABOUT_ME_TITLE = `Hello! I'm Olesia!`;

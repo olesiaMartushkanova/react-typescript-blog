@@ -1,11 +1,11 @@
 import ListItem from './components/ListItem';
 
-interface IRoleList {
+interface IList {
   list: Array<string>;
   className?: string;
 }
 
-const RoleList = (props: IRoleList) => {
+const List = (props: IList) => {
   const { className, list } = props;
 
   return (
@@ -15,4 +15,4 @@ const RoleList = (props: IRoleList) => {
   );
 };
 
-export default RoleList;
+export default List;

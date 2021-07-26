@@ -66,12 +66,12 @@ const AboutMe = () => {
           </div>
         </div>
 
-        <section className='section__chart-role'>
-          <div className='chart'>
-            <List list={SOFT_SKILLS} />
-            <RolePieChart ref={chartRef} />
-            <List list={TECH_SKILLS} />
+        <section className='section__skills-chart'>
+          <div className='section__skills-description'>
+            <List className='list soft-skills' list={SOFT_SKILLS} />
+            <List className='list hard-skills' list={TECH_SKILLS} />
           </div>
+          <RolePieChart ref={chartRef} />
         </section>
       </div>
     </Page>

@@ -11,8 +11,8 @@ const desktopSizeChartOptions = {
       offset: 0.1,
     },
     1: {
-      color: 'F4F0FD',
-      textStyle: { color: 'black', fontSize: 20 },
+      color: '#5c5c5c',
+      textStyle: { color: 'white', fontSize: 20 },
     },
   },
 };
@@ -20,13 +20,13 @@ const desktopSizeChartOptions = {
 const mobileSizeChartOptions = {
   slices: {
     0: {
-      color: '5E3FBE',
+      color: '#5E3FBE',
       textStyle: { color: 'white', fontSize: 14 },
       offset: 0.1,
     },
     1: {
-      color: 'F4F0FD',
-      textStyle: { color: 'black', fontSize: 12 },
+      color: '5c5c5c',
+      textStyle: { color: 'white', fontSize: 12 },
     },
   },
 };

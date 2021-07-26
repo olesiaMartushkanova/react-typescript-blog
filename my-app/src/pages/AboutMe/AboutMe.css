@@ -79,16 +79,34 @@
     width: 250px;
   }
 
-  .section__chart-role {
+  .section__skills-chart {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 200px;
   }
 
-  .chart {
+  .section__skills-description {
     display: flex;
     flex-direction: row;
+  }
+
+  .list {
+    font-size: 20px;
+  }
+
+  .soft-skills {
+    margin-right: 45px;
+  }
+
+  .soft-skills li::marker {
+    content: '► ';
+    color: rgb(92, 92, 92);
+  }
+
+  .hard-skills li::marker {
+    content: '► ';
+    color: rgb(94, 63, 190);
   }
 }
 
@@ -155,9 +173,33 @@
     width: 200px;
   }
 
-  .section__chart-role {
+  .section__skills-chart {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 30px;
+  }
+
+  .section__skills-description {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .list {
+    font-size: 14px;
+  }
+
+  .soft-skills {
+    margin-right: 10px;
+  }
+
+  .soft-skills li::marker {
+    content: '►';
+    color: rgb(92, 92, 92);
+  }
+
+  .hard-skills li::marker {
+    content: '►';
+    color: rgb(94, 63, 190);
   }
 }

@@ -1,6 +1,4 @@
-import './ListItem.css';
-
-const RoleListItem = ({ props }: any) => {
+const ListItem = ({ props }: any) => {
   return props.map((listItem: any) => (
     <ul key={listItem}>
       <li>{listItem}</li>
@@ -8,4 +6,4 @@ const RoleListItem = ({ props }: any) => {
   ));
 };
 
-export default RoleListItem;
+export default ListItem;
