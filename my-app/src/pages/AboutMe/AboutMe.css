@@ -147,13 +147,14 @@
 
   .text__main-about-me {
     font-size: 12px;
-    text-align: justify;
+    text-align: start;
   }
 
   .buttons__more {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 5px;
   }
 
   .button__read-my-story {
