@@ -86,13 +86,22 @@
     margin-top: 200px;
   }
 
+  .space__before-skills-title {
+    margin-bottom: 50px;
+  }
+
   .section__skills-description {
     display: flex;
     flex-direction: row;
+    margin-top: 20px;
   }
 
   .list {
     font-size: 20px;
+  }
+
+  .list li::marker {
+    content: '► ';
   }
 
   .soft-skills {
@@ -100,13 +109,21 @@
   }
 
   .soft-skills li::marker {
-    content: '► ';
     color: rgb(92, 92, 92);
   }
 
   .hard-skills li::marker {
-    content: '► ';
     color: rgb(94, 63, 190);
+  }
+
+  .section__random-facts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .random-facts-description {
+    margin-top: 20px;
   }
 }
 

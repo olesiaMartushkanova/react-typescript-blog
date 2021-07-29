@@ -18,16 +18,17 @@ import {
   ABOUT_ME_ASIDE,
   ABOUT_ME_TEXT,
   ABOUT_ME_TITLE,
+  RANDOM_FACTS,
   SOFT_SKILLS,
   TECH_SKILLS,
 } from './constants';
 import CodeChallengeButton from './components/ReadMyStoryButton copy/ReadMyStoryButton';
 
 const AboutMe = () => {
-  const chartRef = useRef<HTMLDivElement>(null);
+  const skillsTitleRef = useRef<HTMLDivElement>(null);
 
-  const executeScroll = () =>
-    chartRef.current?.scrollIntoView({
+  const executeScrollsToSkillsSection = () =>
+    skillsTitleRef.current?.scrollIntoView({
       behavior: 'smooth',
       block: 'start',
     });
@@ -60,22 +61,35 @@ const AboutMe = () => {
             <MainButton
               className='button__more-about-me'
               text='More about me '
-              onClick={executeScroll}>
+              onClick={executeScrollsToSkillsSection}>
               <FontAwesomeIcon icon={faArrowDown} />
             </MainButton>
           </div>
         </div>
 
         <section className='section__skills-chart'>
+          <div
+            ref={skillsTitleRef}
+            className='space__before-skills-title'></div>
+          <h2>About my skills</h2>
           <div className='section__skills-description'>
             <List className='list soft-skills' list={SOFT_SKILLS} />
             <List className='list hard-skills' list={TECH_SKILLS} />
           </div>
-          <RolePieChart ref={chartRef} />
+          <RolePieChart />
+        </section>
+
+        <section className='section__random-facts'>
+          <h2>Random facts about me</h2>
+          <List
+            className='list random-facts-description'
+            list={RANDOM_FACTS}></List>
         </section>
       </div>
     </Page>
   );
 };
+
+// IDEA: split css files on mobile and desktop
 
 export default AboutMe;
