@@ -1,15 +1,26 @@
-export const SOFT_SKILLS: Array<string> = [
-  'Awesome team-player',
-  'Have critical thinking',
-  'Solve challenges',
-  'Always look for solutions',
+import {
+  faDog,
+  faFlag,
+  faHome,
+  faKiwiBird,
+  faLaptopCode,
+  faMugHot,
+  faRunning,
+} from '@fortawesome/free-solid-svg-icons';
+import { ListItemType } from '../../components/List/components/ListItem';
+
+export const SOFT_SKILLS: Array<ListItemType> = [
+  { itemText: 'Awesome team-player' },
+  { itemText: 'Have critical thinking' },
+  { itemText: 'Solve challenges' },
+  { itemText: 'Always look for solutions' },
 ];
 
-export const TECH_SKILLS: Array<string> = [
-  'Automation Testing',
-  'JavaScript/ Typescript',
-  'Experience in DevOps',
-  'Front-end development',
+export const TECH_SKILLS: Array<ListItemType> = [
+  { itemText: 'Automation Testing' },
+  { itemText: 'JavaScript/ Typescript' },
+  { itemText: 'Experience in DevOps' },
+  { itemText: 'Front-end development' },
 ];
 
 export const ABOUT_ME_TITLE = `Hello! I'm Olesia!`;
@@ -22,11 +33,14 @@ work hard to achieve the best results and I am not scared of challenges.
 My main life motto is to grow
 and improve every day."`;
 
-export const RANDOM_FACTS: Array<string> = [
-  'I enjoy coding and happy to work extra hours',
-  `I'm originally from Ukraine`,
-  'I consider New Zealand my home',
-  'I love sport',
-  'I need coffee, every day and a lot',
-  'My biggest dream is to have a dog',
+export const RANDOM_FACTS: Array<ListItemType> = [
+  {
+    itemText: 'I enjoy coding and happy to work extra hours',
+    icon: faLaptopCode,
+  },
+  { itemText: `I'm originally from Ukraine`, icon: faHome },
+  { itemText: 'I consider New Zealand my home', icon: faKiwiBird },
+  { itemText: 'I love sport', icon: faRunning },
+  { itemText: 'I need coffee, every day and a lot', icon: faMugHot },
+  { itemText: 'My biggest dream is to have a dog', icon: faDog },
 ];

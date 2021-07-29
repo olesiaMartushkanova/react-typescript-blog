@@ -100,19 +100,17 @@
     font-size: 20px;
   }
 
-  .list li::marker {
-    content: '► ';
-  }
-
   .soft-skills {
     margin-right: 45px;
   }
 
   .soft-skills li::marker {
+    content: '► ';
     color: rgb(92, 92, 92);
   }
 
   .hard-skills li::marker {
+    content: '► ';
     color: rgb(94, 63, 190);
   }
 

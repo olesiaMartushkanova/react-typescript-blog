@@ -1,7 +1,7 @@
-import ListItem from './components/ListItem';
+import ListItem, { ListItemType } from './components/ListItem';
 
 interface IList {
-  list: Array<string>;
+  list: Array<ListItemType>;
   className?: string;
 }
 
@@ -10,7 +10,7 @@ const List = (props: IList) => {
 
   return (
     <div className={className}>
-      <ListItem props={list} />
+      <ListItem props={list} displayIcon={true} />
     </div>
   );
 };
