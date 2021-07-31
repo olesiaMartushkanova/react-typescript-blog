@@ -1,0 +1,16 @@
+@media screen and (min-width: 769px) {
+  .main__read-my-story {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Rhodium Libre', serif;
+    width: 100%;
+    height: 100%;
+  }
+
+  .title__how-started {
+    margin-top: 45px;
+    font-size: 36px;
+    text-align: center;
+  }
+}

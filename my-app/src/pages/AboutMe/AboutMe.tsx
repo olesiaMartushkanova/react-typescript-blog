@@ -22,7 +22,8 @@ import {
   SOFT_SKILLS,
   TECH_SKILLS,
 } from './constants';
-import CodeChallengeButton from './components/ReadMyStoryButton copy/ReadMyStoryButton';
+import CodeChallengeButton from './components/CodeChallengeButton/CodeChallengeButton';
+import { ENV_KEY } from '../../utils/env';
 
 const AboutMe = () => {
   const skillsTitleRef = useRef<HTMLDivElement>(null);
@@ -49,15 +50,17 @@ const AboutMe = () => {
             </section>
           </section>
           <div className='buttons__more'>
-            <DownloadCVButton />
+            {ENV_KEY.downloadCvFeature && <DownloadCVButton />}
             <ReadMyStoryButton
               className='button__read-my-story'
               path={MY_STORY_PATH}
             />
-            <CodeChallengeButton
-              className='button__code-challenge'
-              path={CODE_CHALLENGE_PATH}
-            />
+            {ENV_KEY.hundredDaysButton && (
+              <CodeChallengeButton
+                className='button__code-challenge'
+                path={CODE_CHALLENGE_PATH}
+              />
+            )}
             <MainButton
               className='button__more-about-me'
               text='More about me '
