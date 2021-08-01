@@ -13,4 +13,20 @@
     font-size: 36px;
     text-align: center;
   }
+
+  .text__how-started {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-right: 65px;
+    text-align: justify;
+  }
+
+  .p__big-day {
+    font-weight: bold;
+  }
+
+  .p__end {
+    font-style: italic;
+  }
 }
