@@ -1,6 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Rhodium+Libre&display=swap');
+/* Desktop */
+@media screen and (min-width: 769px) {
+  .button__main {
+    font-family: 'Rhodium Libre', serif;
+    background-color: #585858;
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 6px 24px;
+  }
+  .button__main:hover {
+    background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+    background-color: #e9e9e9;
+    color: #080808;
+  }
+}
 
-.mainButton {
-  font-family: 'Rhodium Libre', serif;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .button__main {
+    font-family: 'Rhodium Libre', serif;
+    background-color: #585858;
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 6px 24px;
+  }
+  .button__main:hover {
+    background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+    background-color: #e9e9e9;
+    color: #080808;
+  }
 }

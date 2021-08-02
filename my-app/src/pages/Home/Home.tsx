@@ -1,27 +1,34 @@
 import './Home.css';
-import { ABOUT_ME_PATH, LATEST_POSTS, TITLE_TEXT } from '../../utils/constants';
-import LatestPosts from '../../components/LatestPosts/LatestPosts';
+import { ABOUT_ME_PATH, MEDIA_QUERY_SIZE } from '../../utils/constants';
+import LatestPosts from './components/LatestPosts/LatestPosts';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../../components/LatestPosts/LatestPosts.css';
-import ContactForm from '../../components/ContactForm/ContactForm';
+import ContactForm from './components/ContactForm/ContactForm';
 import Page from '../../components/Page/Page';
+import { useMediaQueryHook } from '../../utils/hooks/useMediaQuery';
+import { LATEST_POSTS, TITLE_TEXT } from './constants';
 
 const Home = () => {
+  const isPageWide = useMediaQueryHook(MEDIA_QUERY_SIZE.desktop);
+
   return (
-    <Page path={ABOUT_ME_PATH} text='Home'>
-      <div className='home'>
-        <div className='titleContainer'>
-          <h1>{TITLE_TEXT}</h1>
-        </div>
+    <Page homeButtonPath={ABOUT_ME_PATH} text='About me'>
+      <main className='main__home'>
+        {isPageWide && (
+          <section className='section__title'>
+            <h1>{TITLE_TEXT}</h1>
+          </section>
+        )}
+
         <div className='spacer' />
-        <div className='mainSection'>
-          <div className='latestPostsContainer'>
+
+        <section className='section__main--home-page'>
+          <nav className='nav__latest-posts'>
             My latest posts
             <LatestPosts props={LATEST_POSTS} />
-          </div>
-          <ContactForm className='contactFormContainer' />
-        </div>
-      </div>
+          </nav>
+          <ContactForm className='container__contact-me' />
+        </section>
+      </main>
     </Page>
   );
 };

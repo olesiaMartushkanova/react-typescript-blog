@@ -1,0 +1,31 @@
+/* Desktop */
+@media (min-width: 769px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+
+  .section__social-follow {
+    right: 0;
+    top: calc(45px - 1em);
+    margin-right: 70px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+
+  .section__social-follow {
+    right: 0;
+    top: calc(45px - 1em);
+    margin-right: 35px;
+  }
+}

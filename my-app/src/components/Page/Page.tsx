@@ -1,30 +1,30 @@
 import React from 'react';
 import './Page.css';
-import Footer from '../../pages/Footer/Footer';
-import AboutMeButton from '../AboutMeButton/AboutMeButton';
-import MediumButton from '../MediumButton/MediumButton';
+import Footer from './components/Footer/Footer';
+import AboutMeButton from './components/AboutMeButton/AboutMeButton';
+import MediumButton from './components/MediumButton/MediumButton';
 import { MEDIUM_PATH } from '../../utils/constants';
 
-interface IHeader {
-  path: string;
+interface IPage {
+  homeButtonPath: string;
   text: string;
 }
 
-const Header: React.FC<IHeader> = (props) => {
-  const { children, path, text } = props;
+const Page: React.FC<IPage> = (props) => {
+  const { children, homeButtonPath, text } = props;
 
   return (
-    <div className='page'>
-      <div className='header'>
-        <div className='buttonsContainer'>
-          <AboutMeButton path={path} text={text} />
+    <div className='app-blog-page'>
+      <header className='header'>
+        <nav className='nav__buttons'>
+          <AboutMeButton path={homeButtonPath} text={text} />
           <MediumButton path={MEDIUM_PATH} />
-        </div>
-      </div>
-      {children}
+        </nav>
+      </header>
+      <div> {children}</div>
       <Footer />
     </div>
   );
 };
 
-export default Header;
+export default Page;

@@ -1,0 +1,21 @@
+/* Desktop */
+@media (min-width: 769px) {
+  .instagram {
+    margin-right: 15px;
+  }
+
+  .linkedin {
+    margin-right: 15px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .instagram {
+    margin-right: 10px;
+  }
+
+  .linkedin {
+    margin-right: 10px;
+  }
+}
