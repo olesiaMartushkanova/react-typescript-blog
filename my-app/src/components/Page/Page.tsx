@@ -7,18 +7,32 @@ import { MEDIUM_PATH } from '../../utils/constants';
 
 interface IPage {
   homeButtonPath: string;
-  text: string;
+  homeButtonText: string;
+  mediumButtonPath?: string;
+  mediumButtonText?: string;
+  openMediumInNewTab?: boolean;
 }
 
 const Page: React.FC<IPage> = (props) => {
-  const { children, homeButtonPath, text } = props;
+  const {
+    children,
+    homeButtonPath,
+    homeButtonText,
+    mediumButtonPath,
+    mediumButtonText,
+    openMediumInNewTab,
+  } = props;
 
   return (
     <div className='app-blog-page'>
       <header className='header'>
         <nav className='nav__buttons'>
-          <AboutMeButton path={homeButtonPath} text={text} />
-          <MediumButton path={MEDIUM_PATH} />
+          <AboutMeButton path={homeButtonPath} text={homeButtonText} />
+          <MediumButton
+            path={mediumButtonPath ?? MEDIUM_PATH}
+            text={mediumButtonText ?? 'Medium'}
+            openInNewTab={openMediumInNewTab ?? true}
+          />
         </nav>
       </header>
       <div> {children}</div>

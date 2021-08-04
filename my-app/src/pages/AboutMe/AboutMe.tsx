@@ -34,7 +34,7 @@ const AboutMe = () => {
     });
 
   return (
-    <Page homeButtonPath={HOME_PATH} text='Home'>
+    <Page homeButtonPath={HOME_PATH} homeButtonText='Home'>
       <div className='main__about-me'>
         <div className='section__introduction'>
           <section className='section__title--about-me'>

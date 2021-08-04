@@ -1,6 +1,6 @@
 import './ReadMyStory.css';
 import Page from '../../components/Page/Page';
-import { HOME_PATH } from '../../utils/constants';
+import { ABOUT_ME_PATH, HOME_PATH } from '../../utils/constants';
 import SEO from '../../images/SEO.jpg';
 import Team from '../../images/Team.jpg';
 import GlobalLogic from '../../images/Global-Logic.jpg';
@@ -10,7 +10,12 @@ import Warehouse from '../../images/Warehouse.jpg';
 
 const ReadMyStory = () => {
   return (
-    <Page homeButtonPath={HOME_PATH} text='Home'>
+    <Page
+      homeButtonPath={HOME_PATH}
+      homeButtonText='Home'
+      mediumButtonPath={ABOUT_ME_PATH}
+      mediumButtonText='About me'
+      openMediumInNewTab={false}>
       <div className='main__read-my-story'>
         <h1 className='title__how-started'>
           How did I become a software engineer?
@@ -117,7 +122,7 @@ const ReadMyStory = () => {
           </p>
 
           <div className='img__container-warehouse'>
-            <img className='img__single' src={Warehouse}></img>
+            <img className='img__warehouse' src={Warehouse}></img>
             <div className='img__text'>In The Warehouse Group: Christmas</div>
           </div>
 

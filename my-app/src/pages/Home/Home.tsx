@@ -11,7 +11,7 @@ const Home = () => {
   const isPageWide = useMediaQueryHook(MEDIA_QUERY_SIZE.desktop);
 
   return (
-    <Page homeButtonPath={ABOUT_ME_PATH} text='About me'>
+    <Page homeButtonPath={ABOUT_ME_PATH} homeButtonText='About me'>
       <main className='main__home'>
         {isPageWide && (
           <section className='section__title'>
