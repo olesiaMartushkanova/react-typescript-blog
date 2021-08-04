@@ -16,7 +16,6 @@ import RolePieChart from './components/RolePieChart/RolePieChart';
 import List from '../../components/List/List';
 import {
   ABOUT_ME_ASIDE,
-  ABOUT_ME_TEXT,
   ABOUT_ME_TITLE,
   RANDOM_FACTS,
   SOFT_SKILLS,
@@ -46,15 +45,26 @@ const AboutMe = () => {
           <section className='section__portfolio-picture'>
             <img className='img__portfolio-picture' src={Portrait} />
             <section className='section__about-me__main'>
-              <text className='text__main-about-me'>{ABOUT_ME_TEXT}</text>
+              <text className='text__main-about-me'>
+                <p>
+                  I had to describe myself I would say: "I love programming. I
+                  care a lot about what I do (because I love it!). I aim to
+                  write clean code, not just working code. I am not perfect and
+                  I don't know everything. But I always work hard to achieve the
+                  best results and I am not scared of challenges.
+                </p>
+                <p>My main life motto is to grow and improve every day."</p>
+              </text>
             </section>
           </section>
+
           <div className='buttons__more'>
             {ENV_KEY.downloadCvFeature && <DownloadCVButton />}
             <ReadMyStoryButton
               className='button__read-my-story'
               path={MY_STORY_PATH}
             />
+
             {ENV_KEY.hundredDaysButton && (
               <CodeChallengeButton
                 className='button__code-challenge'
@@ -74,7 +84,7 @@ const AboutMe = () => {
           <div
             ref={skillsTitleRef}
             className='space__before-skills-title'></div>
-          <h2>About my skills</h2>
+          <div className='sub-title__about-me'>About my skills</div>
           <div className='section__skills-description'>
             <List className='list soft-skills' list={SOFT_SKILLS} />
             <List className='list hard-skills' list={TECH_SKILLS} />
@@ -83,7 +93,7 @@ const AboutMe = () => {
         </section>
 
         <section className='section__random-facts'>
-          <h2>Random facts about me</h2>
+          <div className='sub-title__about-me'>Random facts about me</div>
           <List
             className='list random-facts-description'
             list={RANDOM_FACTS}></List>
@@ -92,7 +102,5 @@ const AboutMe = () => {
     </Page>
   );
 };
-
-// IDEA: split css files on mobile and desktop
 
 export default AboutMe;

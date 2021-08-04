@@ -40,7 +40,7 @@
 
   .img__portfolio-picture {
     width: 180px;
-    height: 235px;
+    height: auto;
   }
 
   .section__about-me__main {
@@ -90,6 +90,12 @@
     margin-bottom: 50px;
   }
 
+  .sub-title__about-me {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
   .section__skills-description {
     display: flex;
     flex-direction: row;
@@ -118,6 +124,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 10px;
   }
 
   .random-facts-description {
@@ -130,15 +137,14 @@
   .main__about-me {
     display: flex;
     flex-direction: column;
-    align-items: center;
     font-family: 'Rhodium Libre', serif;
-    width: 100%;
-    text-align: center;
-    width: 95%;
+    margin-left: 10px;
+    margin-right: 17px;
   }
 
   .section__title--about-me {
     margin-bottom: 5px;
+    text-align: center;
   }
 
   .title__about-me {
@@ -156,13 +162,21 @@
 
   .img__portfolio-picture {
     width: 114px;
-    height: 164x;
+    height: auto;
     margin-bottom: 10px;
+    float: left;
+    margin-right: 10px;
+  }
+
+  .section__about-me__main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
 
   .text__main-about-me {
     font-size: 12px;
-    text-align: start;
+    text-align: justify;
   }
 
   .buttons__more {
@@ -192,13 +206,18 @@
   .section__skills-chart {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-top: 30px;
   }
 
   .section__skills-description {
     display: flex;
     flex-direction: row;
+  }
+
+  .sub-title__about-me {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
   }
 
   .list {
@@ -210,12 +229,21 @@
   }
 
   .soft-skills li::marker {
-    content: '►';
+    content: '► ';
     color: rgb(92, 92, 92);
   }
 
   .hard-skills li::marker {
-    content: '►';
+    content: '► ';
     color: rgb(94, 63, 190);
+  }
+
+  .section__random-facts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .random-facts-description {
+    margin-top: 10px;
   }
 }

@@ -61,6 +61,7 @@
   .img__container-row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
   }
@@ -76,6 +77,89 @@
     flex-direction: column;
     float: right;
     margin-left: 2rem;
+    align-items: center;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .main__read-my-story {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: 'Rhodium Libre', serif;
+    margin-left: 10px;
+    margin-right: 17px;
+  }
+
+  .title__how-started {
+    margin-top: 5px;
+    font-size: 20px;
+    text-align: justify;
+  }
+
+  .text__how-started {
+    font-size: 12px;
+    margin-top: 15px;
+    text-align: justify;
+  }
+
+  .p__big-day {
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .p__end {
+    font-style: italic;
+    margin-top: 10px;
+  }
+
+  .img__container {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-right: 1rem;
+    align-items: center;
+  }
+
+  .img__single {
+    width: 114px;
+    height: auto;
+  }
+
+  .img__text {
+    color: rgb(66, 66, 66, 0.7);
+    font-weight: bold;
+    font-size: 8px;
+    margin-top: 5px;
+  }
+
+  .img__team {
+    width: 140px;
+    height: auto;
+  }
+
+  .img__container-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .img__container-row__with-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img__container-warehouse {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-left: 1rem;
     align-items: center;
   }
 }
