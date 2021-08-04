@@ -4,7 +4,6 @@ import { ABOUT_ME_PATH, HOME_PATH } from '../../utils/constants';
 import SEO from '../../images/SEO.jpg';
 import Team from '../../images/Team.jpg';
 import GlobalLogic from '../../images/Global-Logic.jpg';
-import Facebook from '../../images/Facebook.jpg';
 import Regent from '../../images/Regent.jpg';
 import Warehouse from '../../images/Warehouse.jpg';
 
@@ -77,13 +76,6 @@ const ReadMyStory = () => {
             <div className='img__container-row__with-text'>
               <img className='img__team' src={Team}></img>
               <div className='img__text'>My team in GlobalLogic</div>
-            </div>
-
-            <div className='img__container-row__with-text'>
-              <img className='img__team' src={Facebook}></img>
-              <div className='img__text'>
-                Official first day as Software Tester
-              </div>
             </div>
 
             <div className='img__container-row__with-text'>

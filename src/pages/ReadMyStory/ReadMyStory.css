@@ -4,8 +4,9 @@
     flex-direction: column;
     justify-content: space-between;
     font-family: 'Rhodium Libre', serif;
-    width: 100%;
     height: 100%;
+    max-width: 960px;
+    margin-left: 150px;
   }
 
   .title__how-started {
@@ -17,8 +18,6 @@
   .text__how-started {
     font-size: 18px;
     margin-top: 15px;
-    margin-left: 30px;
-    margin-right: 65px;
     text-align: justify;
   }
 
