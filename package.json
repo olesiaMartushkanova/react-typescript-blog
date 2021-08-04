@@ -1,5 +1,6 @@
 {
   "name": "my-app",
+  "homepage": "http://olesiaMartushkanova.github.io/olesia-learns-blog",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,7 +24,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test:circular": "yarn madge --circular --ts-config=tsconfig.json --extensions tsx,ts ./"
+    "test:circular": "yarn madge --circular --ts-config=tsconfig.json --extensions tsx,ts ./",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
