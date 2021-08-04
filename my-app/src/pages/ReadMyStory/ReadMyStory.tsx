@@ -1,10 +1,21 @@
 import './ReadMyStory.css';
 import Page from '../../components/Page/Page';
-import { HOME_PATH } from '../../utils/constants';
+import { ABOUT_ME_PATH, HOME_PATH } from '../../utils/constants';
+import SEO from '../../images/SEO.jpg';
+import Team from '../../images/Team.jpg';
+import GlobalLogic from '../../images/Global-Logic.jpg';
+import Facebook from '../../images/Facebook.jpg';
+import Regent from '../../images/Regent.jpg';
+import Warehouse from '../../images/Warehouse.jpg';
 
 const ReadMyStory = () => {
   return (
-    <Page homeButtonPath={HOME_PATH} text='Home'>
+    <Page
+      homeButtonPath={HOME_PATH}
+      homeButtonText='Home'
+      mediumButtonPath={ABOUT_ME_PATH}
+      mediumButtonText='About me'
+      openMediumInNewTab={false}>
       <div className='main__read-my-story'>
         <h1 className='title__how-started'>
           How did I become a software engineer?
@@ -20,6 +31,12 @@ const ReadMyStory = () => {
             graduated from university, went on 3 months trip to Asia and decided
             that teaching wasn’t something I wanted to do all my life.
           </p>
+
+          <div className='img__container'>
+            <img className='img__single' src={SEO}></img>
+            <div className='img__text'>My first $10 for SEO work</div>
+          </div>
+
           <p>
             It was a hard time for me, I felt really down: 5 years of my life
             were wasted on getting the education that I didn’t want to use.
@@ -40,6 +57,7 @@ const ReadMyStory = () => {
             step in my life: sign up in ‘Go IT’ for the ‘Quality Assurance’
             3-months course. I told myself: why not try?
           </p>
+
           <p>
             It’s probably easy to guess that I really loved to study there! It
             was a whole new world for me and I was going to be the best student.
@@ -54,6 +72,26 @@ const ReadMyStory = () => {
             1st of August, 2016: I have started to work as a Software Test
             Engineer. (Big day!)
           </p>
+
+          <div className='img__container-row'>
+            <div className='img__container-row__with-text'>
+              <img className='img__team' src={Team}></img>
+              <div className='img__text'>My team in GlobalLogic</div>
+            </div>
+
+            <div className='img__container-row__with-text'>
+              <img className='img__team' src={Facebook}></img>
+              <div className='img__text'>
+                Official first day as Software Tester
+              </div>
+            </div>
+
+            <div className='img__container-row__with-text'>
+              <img className='img__team' src={GlobalLogic}></img>
+              <div className='img__text'>Our office in GlobalLogic</div>
+            </div>
+          </div>
+
           <p>
             I still remember my first day, I don’t think I have ever been so
             scared! Nevertheless, I was so lucky with my first team and my first
@@ -63,6 +101,12 @@ const ReadMyStory = () => {
             IT! I was very happy that I found something that I was enjoying
             doing (and I still enjoy it!).
           </p>
+
+          <div className='img__container'>
+            <img className='img__single' src={Regent}></img>
+            <div className='img__text'>My first day of studying in NZ</div>
+          </div>
+
           <p>
             In 2017 I have moved to beautiful New Zealand. I came here to study
             Computer science post-graduation diploma. After one month in New
@@ -76,6 +120,12 @@ const ReadMyStory = () => {
             automation with C#, with Java and then with JavaScript. I loved
             coding, the more I was learning, the more I wanted to learn.
           </p>
+
+          <div className='img__container-warehouse'>
+            <img className='img__warehouse' src={Warehouse}></img>
+            <div className='img__text'>In The Warehouse Group: Christmas</div>
+          </div>
+
           <p>
             Today I keep focusing on test automation. I love it, I love solving
             challenges, I love how creative I can be at this job. But I also
