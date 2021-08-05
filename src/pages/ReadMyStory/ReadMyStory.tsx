@@ -32,7 +32,7 @@ const ReadMyStory = () => {
           </p>
 
           <div className='img__container'>
-            <img className='img__single' src={SEO}></img>
+            <img className='img__vertical' src={SEO}></img>
             <div className='img__text'>My first $10 for SEO work</div>
           </div>
 
@@ -74,12 +74,12 @@ const ReadMyStory = () => {
 
           <div className='img__container-row'>
             <div className='img__container-row__with-text'>
-              <img className='img__team' src={Team}></img>
+              <img className='img__horizontal' src={Team}></img>
               <div className='img__text'>My team in GlobalLogic</div>
             </div>
 
             <div className='img__container-row__with-text'>
-              <img className='img__team' src={GlobalLogic}></img>
+              <img className='img__horizontal' src={GlobalLogic}></img>
               <div className='img__text'>Our office in GlobalLogic</div>
             </div>
           </div>
@@ -95,7 +95,7 @@ const ReadMyStory = () => {
           </p>
 
           <div className='img__container'>
-            <img className='img__single' src={Regent}></img>
+            <img className='img__regent' src={Regent}></img>
             <div className='img__text'>My first day of studying in NZ</div>
           </div>
 
@@ -114,7 +114,7 @@ const ReadMyStory = () => {
           </p>
 
           <div className='img__container-warehouse'>
-            <img className='img__warehouse' src={Warehouse}></img>
+            <img className='img__horizontal' src={Warehouse}></img>
             <div className='img__text'>In The Warehouse Group: Christmas</div>
           </div>
 

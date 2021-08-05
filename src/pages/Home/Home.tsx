@@ -23,7 +23,8 @@ const Home = () => {
 
         <section className='section__main--home-page'>
           <nav className='nav__latest-posts'>
-            My latest posts
+            <div className='nav__latest-posts-title'> My latest posts</div>
+
             <LatestPosts props={LATEST_POSTS} />
           </nav>
           <ContactForm className='container__contact-me' />

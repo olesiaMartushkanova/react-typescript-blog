@@ -28,6 +28,9 @@
     font-family: 'Rhodium Libre', serif;
     font-size: 18px;
     text-align: center;
+  }
+
+  .nav__latest-posts-title {
     font-weight: bold;
   }
 
@@ -53,19 +56,15 @@
 @media screen and (max-width: 768px) {
   .main__home {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
-  }
-
-  .spacer {
-    flex-grow: 1;
   }
 
   .section__main--home-page {
     display: flex;
     flex-direction: column;
-    margin-right: 40px;
+    /* margin-right: 40px; */
     width: 300px;
   }
 
@@ -84,6 +83,5 @@
     font-family: 'Rhodium Libre', serif;
     font-size: 18px;
     text-align: center;
-    font-weight: bold;
   }
 }

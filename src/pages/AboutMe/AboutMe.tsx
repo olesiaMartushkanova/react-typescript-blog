@@ -5,6 +5,7 @@ import Page from '../../components/Page/Page';
 import {
   CODE_CHALLENGE_PATH,
   HOME_PATH,
+  MEDIA_QUERY_SIZE,
   MY_STORY_PATH,
 } from '../../utils/constants';
 import './AboutMe.css';
@@ -23,6 +24,7 @@ import {
 } from './constants';
 import CodeChallengeButton from './components/CodeChallengeButton/CodeChallengeButton';
 import { ENV_KEY } from '../../utils/env';
+import { useMediaQueryHook } from '../../utils/hooks/useMediaQuery';
 
 const AboutMe = () => {
   const skillsTitleRef = useRef<HTMLDivElement>(null);
@@ -32,6 +34,8 @@ const AboutMe = () => {
       behavior: 'smooth',
       block: 'start',
     });
+
+  const isPageWide = useMediaQueryHook(MEDIA_QUERY_SIZE.desktop);
 
   return (
     <Page homeButtonPath={HOME_PATH} homeButtonText='Home'>
@@ -71,12 +75,15 @@ const AboutMe = () => {
                 path={CODE_CHALLENGE_PATH}
               />
             )}
-            <MainButton
-              className='button__more-about-me'
-              text='More about me '
-              onClick={executeScrollsToSkillsSection}>
-              <FontAwesomeIcon icon={faArrowDown} />
-            </MainButton>
+
+            {isPageWide && (
+              <MainButton
+                className='button__more-about-me'
+                text='More about me '
+                onClick={executeScrollsToSkillsSection}>
+                <FontAwesomeIcon icon={faArrowDown} />
+              </MainButton>
+            )}
           </div>
         </div>
 

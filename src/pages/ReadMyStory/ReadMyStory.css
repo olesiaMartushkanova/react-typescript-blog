@@ -11,12 +11,12 @@
 
   .title__how-started {
     margin-top: 45px;
-    font-size: 36px;
+    font-size: 38px;
     text-align: center;
   }
 
   .text__how-started {
-    font-size: 18px;
+    font-size: 22px;
     margin-top: 15px;
     text-align: justify;
   }
@@ -24,12 +24,13 @@
   .p__big-day {
     font-weight: bold;
     text-align: center;
-    font-size: 20px;
+    font-size: 26px;
   }
 
   .p__end {
     font-style: italic;
     margin-top: 10px;
+    font-size: 24px;
   }
 
   .img__container {
@@ -40,8 +41,8 @@
     align-items: center;
   }
 
-  .img__single {
-    width: 280px;
+  .img__vertical {
+    width: 320px;
     height: auto;
   }
 
@@ -52,8 +53,8 @@
     margin-top: 5px;
   }
 
-  .img__team {
-    width: 400px;
+  .img__horizontal {
+    width: 480px;
     height: auto;
   }
 
@@ -63,6 +64,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 20px;
   }
 
   .img__container-row__with-text {
@@ -79,7 +81,7 @@
     align-items: center;
   }
 
-  .img__warehouse {
+  .img__regent {
     width: 380px;
     height: auto;
   }
@@ -128,7 +130,7 @@
     align-items: center;
   }
 
-  .img__single {
+  .img__vertical {
     width: 130px;
     height: auto;
   }
@@ -140,7 +142,7 @@
     margin-top: 5px;
   }
 
-  .img__team {
+  .img__horizontal {
     width: 180px;
     height: auto;
   }
@@ -167,8 +169,8 @@
     align-items: center;
   }
 
-  .img__warehouse {
-    width: 200px;
+  .img__regent {
+    width: 130px;
     height: auto;
   }
 }
