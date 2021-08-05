@@ -148,12 +148,12 @@
   }
 
   .title__about-me {
-    font-size: 22px;
+    font-size: 27px;
   }
 
   .aside__about-me {
-    font-size: 14px;
-    margin-bottom: 5px;
+    font-size: 20px;
+    margin-bottom: 15px;
   }
 
   .section__portfolio-picture {
@@ -161,11 +161,11 @@
   }
 
   .img__portfolio-picture {
-    width: 114px;
-    height: auto;
+    width: 180px;
+    height: 240px;
     margin-bottom: 10px;
-    float: left;
     margin-right: 10px;
+    float: inherit;
   }
 
   .section__about-me__main {
@@ -175,7 +175,7 @@
   }
 
   .text__main-about-me {
-    font-size: 12px;
+    font-size: 20px;
     text-align: justify;
   }
 
@@ -187,7 +187,7 @@
   }
 
   .button__read-my-story {
-    font-size: 15px;
+    font-size: 20px;
     width: 200px;
     margin-bottom: 10px;
   }
@@ -196,11 +196,6 @@
     font-size: 15px;
     width: 200px;
     margin-bottom: 10px;
-  }
-
-  .button__more-about-me {
-    font-size: 13px;
-    width: 200px;
   }
 
   .section__skills-chart {
@@ -221,7 +216,7 @@
   }
 
   .list {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .soft-skills {

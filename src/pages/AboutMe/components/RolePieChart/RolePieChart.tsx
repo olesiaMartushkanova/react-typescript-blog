@@ -21,12 +21,12 @@ const mobileSizeChartOptions = {
   slices: {
     0: {
       color: '#5E3FBE',
-      textStyle: { color: 'white', fontSize: 14 },
+      textStyle: { color: 'white', fontSize: 20 },
       offset: 0.1,
     },
     1: {
       color: '5c5c5c',
-      textStyle: { color: 'white', fontSize: 12 },
+      textStyle: { color: 'white', fontSize: 20 },
     },
   },
 };
@@ -43,8 +43,8 @@ const RolePieChart = React.forwardRef<any, any>((props, ref) => {
       : { ...mobileSizeChartOptions };
   };
 
-  const setWidth = isPageWide ? 400 : 300;
-  const setHeight = isPageWide ? 400 : 200;
+  const setWidth = isPageWide ? 400 : 400;
+  const setHeight = isPageWide ? 400 : 300;
 
   return (
     <div ref={ref}>
