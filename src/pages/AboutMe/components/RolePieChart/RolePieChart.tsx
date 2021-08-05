@@ -7,12 +7,12 @@ const desktopSizeChartOptions = {
   slices: {
     0: {
       color: '5E3FBE',
-      textStyle: { color: 'white', fontSize: 24 },
+      textStyle: { color: 'white', fontSize: 26 },
       offset: 0.1,
     },
     1: {
       color: '#5c5c5c',
-      textStyle: { color: 'white', fontSize: 20 },
+      textStyle: { color: 'white', fontSize: 26 },
     },
   },
 };
