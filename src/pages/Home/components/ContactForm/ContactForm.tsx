@@ -96,7 +96,7 @@ const ContactForm = (props: IContactForm) => {
 
   return (
     <section className={`form-container__contact ${props.className}`}>
-      <label className='formLabel'>Contact Me</label>
+      <label className='form-contact-me__title'>Contact Me</label>
       <>
         <form noValidate onSubmit={onSubmit}>
           <input

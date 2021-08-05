@@ -1,13 +1,20 @@
 import './ReadMyStory.css';
 import Page from '../../components/Page/Page';
-import { ABOUT_ME_PATH, HOME_PATH } from '../../utils/constants';
+import {
+  ABOUT_ME_PATH,
+  HOME_PATH,
+  MEDIA_QUERY_SIZE,
+} from '../../utils/constants';
 import SEO from '../../images/SEO.jpg';
 import Team from '../../images/Team.jpg';
 import GlobalLogic from '../../images/Global-Logic.jpg';
 import Regent from '../../images/Regent.jpg';
 import Warehouse from '../../images/Warehouse.jpg';
+import { useMediaQueryHook } from '../../utils/hooks/useMediaQuery';
 
 const ReadMyStory = () => {
+  const isPageWide = useMediaQueryHook(MEDIA_QUERY_SIZE.desktop);
+
   return (
     <Page
       homeButtonPath={HOME_PATH}
@@ -78,10 +85,12 @@ const ReadMyStory = () => {
               <div className='img__text'>My team in GlobalLogic</div>
             </div>
 
-            <div className='img__container-row__with-text'>
-              <img className='img__horizontal' src={GlobalLogic}></img>
-              <div className='img__text'>Our office in GlobalLogic</div>
-            </div>
+            {isPageWide && (
+              <div className='img__container-row__with-text'>
+                <img className='img__horizontal' src={GlobalLogic}></img>
+                <div className='img__text'>Our office in GlobalLogic</div>
+              </div>
+            )}
           </div>
 
           <p>

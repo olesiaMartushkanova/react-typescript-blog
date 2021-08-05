@@ -43,7 +43,7 @@ const RolePieChart = React.forwardRef<any, any>((props, ref) => {
       : { ...mobileSizeChartOptions };
   };
 
-  const setWidth = isPageWide ? 400 : 400;
+  const setWidth = isPageWide ? 400 : 300;
   const setHeight = isPageWide ? 400 : 300;
 
   return (

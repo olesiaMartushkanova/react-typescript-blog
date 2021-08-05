@@ -154,4 +154,8 @@
   .valid {
     border-width: 0px;
   }
+
+  .form-contact-me__title {
+    font-size: 22px;
+  }
 }

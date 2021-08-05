@@ -58,13 +58,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
   }
 
   .section__main--home-page {
     display: flex;
     flex-direction: column;
-    /* margin-right: 40px; */
     width: 300px;
   }
 
@@ -83,5 +81,10 @@
     font-family: 'Rhodium Libre', serif;
     font-size: 18px;
     text-align: center;
+  }
+
+  .nav__latest-posts-title {
+    font-weight: bold;
+    font-size: 22px;
   }
 }

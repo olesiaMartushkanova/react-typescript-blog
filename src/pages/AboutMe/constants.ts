@@ -10,10 +10,10 @@ import {
 import { ListItemType } from '../../components/List/components/ListItem';
 
 export const SOFT_SKILLS: Array<ListItemType> = [
-  { itemText: 'Awesome team-player' },
-  { itemText: 'Have critical thinking' },
+  { itemText: 'Team-player' },
+  { itemText: 'Critical thinking' },
   { itemText: 'Solve challenges' },
-  { itemText: 'Always look for solutions' },
+  { itemText: 'Find solutions' },
 ];
 
 export const TECH_SKILLS: Array<ListItemType> = [
