@@ -12,7 +12,7 @@ import CodeChallenge from './pages/CodeChallenge/CodeChallenge';
 
 export const App = () => {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path={HOME_PATH} component={Home}>
           <Home />
