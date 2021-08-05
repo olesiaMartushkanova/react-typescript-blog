@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import {
   ABOUT_ME_PATH,
   CODE_CHALLENGE_PATH,
