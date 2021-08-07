@@ -47,7 +47,6 @@
   }
 
   .nav__buttons {
-    position: absolute;
     display: flex;
     margin-top: 25px;
   }
