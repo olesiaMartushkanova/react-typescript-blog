@@ -10,9 +10,4 @@ export const LATEST_POSTS: Array<IPostItem> = [
     title: 'How did I become a software engineer?',
     path: MY_STORY_PATH,
   },
-  {
-    id: 'learning_argo_article',
-    title: 'Diving into DevOps: learning Argo Workflows',
-    path: MEDIUM_PATH,
-  },
 ];
