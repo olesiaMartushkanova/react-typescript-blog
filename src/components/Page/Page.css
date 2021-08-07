@@ -31,6 +31,7 @@
   .app-blog-page {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     background-image: none;
     overflow: auto;
     background-color: #1f2833;
@@ -39,7 +40,8 @@
   }
 
   .header {
-    align-items: center;
+    display: flex;
+    justify-content: center;
     width: 100vw;
     height: 80px;
     margin-bottom: 10px;
@@ -47,7 +49,7 @@
   }
 
   .nav__buttons {
-    display: flex;
+    align-items: center;
     margin-top: 25px;
   }
 }
