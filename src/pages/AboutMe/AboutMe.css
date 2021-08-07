@@ -140,7 +140,8 @@
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     margin-left: 10px;
-    margin-right: 17px;
+    margin-right: 20px;
+    width: 87%;
     color: white;
   }
 
