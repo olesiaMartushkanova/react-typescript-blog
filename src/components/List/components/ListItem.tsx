@@ -13,7 +13,7 @@ const ListItem = ({ props }: any) => {
       <FontAwesomeIcon
         style={{ marginRight: '7px' }}
         icon={listItem.icon}
-        color='black'
+        color='white'
       />
       <li>{listItem.itemText}</li>
     </ul>

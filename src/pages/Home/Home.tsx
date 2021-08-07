@@ -15,7 +15,8 @@ const Home = () => {
       <main className='main__home'>
         {isPageWide && (
           <section className='section__title'>
-            <h1>{TITLE_TEXT}</h1>
+            <h1>Hi, there!</h1>
+            <h2>{TITLE_TEXT}</h2>
           </section>
         )}
 

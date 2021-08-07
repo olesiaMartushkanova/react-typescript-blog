@@ -4,8 +4,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-family: 'Rhodium Libre', serif;
+    font-family: 'Roboto', sans-serif;
     width: 100%;
+    color: white;
   }
 
   .section__introduction {
@@ -112,12 +113,12 @@
 
   .soft-skills li::marker {
     content: '► ';
-    color: rgb(92, 92, 92);
+    color: #66fcf1;
   }
 
   .hard-skills li::marker {
     content: '► ';
-    color: rgb(94, 63, 190);
+    color: white;
   }
 
   .section__random-facts {
@@ -137,7 +138,7 @@
   .main__about-me {
     display: flex;
     flex-direction: column;
-    font-family: 'Rhodium Libre', serif;
+    font-family: 'Roboto', sans-serif;
     margin-left: 10px;
     margin-right: 17px;
   }

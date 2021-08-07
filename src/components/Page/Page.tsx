@@ -35,7 +35,7 @@ const Page: React.FC<IPage> = (props) => {
           />
         </nav>
       </header>
-      <div> {children}</div>
+      <div className='page__body'> {children}</div>
       <Footer />
     </div>
   );

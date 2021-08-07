@@ -139,7 +139,7 @@ const ContactForm = (props: IContactForm) => {
                 ? 'text-field textarea__message invalid'
                 : 'text-field textarea__message'
             }
-            placeholder='Do you want to contact me?'
+            placeholder='Please, leave your friendly message here'
             value={message}
             onChange={messageChangeHandler}
             onFocus={messageFocusHandler}></textarea>

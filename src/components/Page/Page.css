@@ -5,16 +5,20 @@
     flex-direction: column;
     overflow: auto;
     background-image: none;
-    background-color: #f5f5f5;
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100vw;
     height: 100%;
+    background-color: #1f2833;
   }
 
   .header {
     width: 100vw;
-    height: 80px;
+    height: 95px;
+  }
+
+  .page__body {
+    background-color: #1f2833;
   }
 
   .nav__buttons {

@@ -19,19 +19,20 @@
 
   .nav__latest-posts {
     padding: 1rem;
-    background-color: rgb(202, 202, 202);
+    background-color: #1f2833;
     margin: 2rem auto;
     width: 50rem;
     max-width: 95%;
-    border-radius: 12px;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
-    font-family: 'Rhodium Libre', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     text-align: center;
+    border: 1px solid #66fcf1;
   }
 
   .nav__latest-posts-title {
     font-weight: bold;
+    color: white;
   }
 
   .section__title {
@@ -39,11 +40,11 @@
     height: 405px;
     margin-top: 100px;
     margin-left: 105px;
-    font-family: 'Rhodium Libre', serif;
+    font-family: 'Bebas Neue', cursive;
     font-style: normal;
     letter-spacing: 0.1em;
     line-height: 61px;
-    color: #000000;
+    color: #66fcf1;
     font-size: 36px;
   }
 
@@ -76,9 +77,8 @@
     margin: 1rem auto;
     width: 50rem;
     max-width: 95%;
-    border-radius: 12px;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
-    font-family: 'Rhodium Libre', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     text-align: center;
   }
