@@ -53,8 +53,7 @@ const AboutMe = () => {
                 <p>
                   {`I had to describe myself I would say: "I love programming. I
                   care a lot about what I do (because I love it!).\nI aim to
-                  write clean code, not just working code. I am not perfect and
-                  I don't know everything. But I always work hard to achieve the
+                  write clean code, not just working code. I focus on Automation Testing but I also enjoy doing development and DevOps. I always work hard to achieve the
                   best results and I am not scared of challenges.`}
                 </p>
                 <p>My main life motto is to grow and improve every day."</p>

@@ -15,7 +15,7 @@
   .button__main:hover {
     background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
     background-color: #e9e9e9;
-    color: #080808;
+    color: #1f2833;
   }
 }
 
@@ -23,8 +23,8 @@
 @media screen and (max-width: 768px) {
   .button__main {
     font-family: 'Roboto', sans-serif;
-    background-color: #585858;
-    border: 1px solid #dcdcdc;
+    background-color: #1f2833;
+    border: 1px solid #66fcf1;
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
@@ -35,6 +35,6 @@
   .button__main:hover {
     background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
     background-color: #e9e9e9;
-    color: #080808;
+    color: #1f2833;
   }
 }

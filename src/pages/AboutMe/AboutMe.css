@@ -141,6 +141,7 @@
     font-family: 'Roboto', sans-serif;
     margin-left: 10px;
     margin-right: 17px;
+    color: white;
   }
 
   .section__title--about-me {
@@ -226,12 +227,12 @@
 
   .soft-skills li::marker {
     content: '► ';
-    color: rgb(92, 92, 92);
+    color: #66fcf1;
   }
 
   .hard-skills li::marker {
     content: '► ';
-    color: rgb(94, 63, 190);
+    color: white;
   }
 
   .section__random-facts {
