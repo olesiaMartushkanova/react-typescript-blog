@@ -91,7 +91,7 @@ const AboutMe = () => {
           <div
             ref={skillsTitleRef}
             className='space__before-skills-title'></div>
-          <div className='sub-title__about-me'>About my skills</div>
+          <div className='sub-title__about-me'>Some of my skills</div>
           <div className='section__skills-description'>
             <List className='list soft-skills' list={SOFT_SKILLS} />
             <List className='list hard-skills' list={TECH_SKILLS} />
