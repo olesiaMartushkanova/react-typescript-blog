@@ -1,3 +1,4 @@
+import { useHistory } from 'react-router-dom';
 import './PostItem.css';
 
 export interface IPostItem {
@@ -9,8 +10,9 @@ export interface IPostItem {
 const PostItem = (props: IPostItem) => {
   const { title, path, id } = props;
 
+  const history = useHistory();
   const postItemHandler = () => {
-    window.open(path, '_blank');
+    history.push(path || '/');
   };
 
   return (
