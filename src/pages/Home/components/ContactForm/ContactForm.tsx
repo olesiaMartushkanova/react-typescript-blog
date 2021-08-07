@@ -96,7 +96,7 @@ const ContactForm = (props: IContactForm) => {
 
   return (
     <section className={`form-container__contact ${props.className}`}>
-      <label className='formLabel'>Contact Me</label>
+      <label className='form-contact-me__title'>Contact Me</label>
       <>
         <form noValidate onSubmit={onSubmit}>
           <input
@@ -139,7 +139,7 @@ const ContactForm = (props: IContactForm) => {
                 ? 'text-field textarea__message invalid'
                 : 'text-field textarea__message'
             }
-            placeholder='Do you want to contact me?'
+            placeholder='Please, leave your friendly message here'
             value={message}
             onChange={messageChangeHandler}
             onFocus={messageFocusHandler}></textarea>

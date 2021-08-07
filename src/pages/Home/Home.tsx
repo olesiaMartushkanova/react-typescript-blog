@@ -15,7 +15,8 @@ const Home = () => {
       <main className='main__home'>
         {isPageWide && (
           <section className='section__title'>
-            <h1>{TITLE_TEXT}</h1>
+            <h1>Hi, there!</h1>
+            <h2>{TITLE_TEXT}</h2>
           </section>
         )}
 
@@ -23,7 +24,8 @@ const Home = () => {
 
         <section className='section__main--home-page'>
           <nav className='nav__latest-posts'>
-            My latest posts
+            <div className='nav__latest-posts-title'> My latest posts</div>
+
             <LatestPosts props={LATEST_POSTS} />
           </nav>
           <ContactForm className='container__contact-me' />

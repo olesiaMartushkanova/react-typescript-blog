@@ -2,11 +2,8 @@
   .post-item {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     padding: 0.5rem;
     margin: 1rem 0;
-    border-radius: 12px;
     background-color: whitesmoke;
     font-size: 14px;
     cursor: pointer;
@@ -17,13 +14,10 @@
   .post-item {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     padding: 0.3rem;
     margin: 1rem 0;
-    border-radius: 12px;
     background-color: whitesmoke;
-    font-size: 12px;
+    font-size: 16px;
     cursor: pointer;
   }
 }

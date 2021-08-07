@@ -2,22 +2,21 @@
 @media screen and (min-width: 769px) {
   .form-container__contact {
     padding: 1rem;
-    background-color: rgb(202, 202, 202);
+    background-color: #1f2833;
     margin: 2rem auto;
     width: 412px;
     width: 50rem;
     max-width: 95%;
-    border-radius: 12px;
-    font-family: 'Rhodium Libre', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 22px;
     text-align: center;
     font-weight: bold;
+    border: 1px solid #66fcf1;
   }
 
   .text-field {
     padding: 10px;
     font-size: 14px;
-    border-radius: 12px;
     background-color: whitesmoke;
     resize: none;
     border-width: 0px;
@@ -28,7 +27,6 @@
     outline: none;
     border: 1px solid;
     border-color: grey;
-    border-radius: 12px;
   }
 
   .textarea__message {
@@ -49,7 +47,7 @@
   }
 
   ::placeholder {
-    font-family: 'Rhodium Libre', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 23px;
     padding-top: 5px;
@@ -63,7 +61,7 @@
 
   .text__success {
     font-size: 14px;
-    color: green;
+    color: rgb(24, 248, 24);
     border-width: 0;
   }
 
@@ -74,6 +72,10 @@
 
   .valid {
     border-width: 0px;
+  }
+
+  .form-contact-me__title {
+    color: white;
   }
 }
 
@@ -81,22 +83,21 @@
 @media screen and (max-width: 768px) {
   .form-container__contact {
     padding: 1rem;
-    background-color: rgb(202, 202, 202);
+    background-color: #1f2833;
     margin: 2rem auto;
     width: 412px;
     width: 50rem;
     max-width: 95%;
-    border-radius: 12px;
-    font-family: 'Rhodium Libre', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     text-align: center;
     font-weight: bold;
+    border: 1px solid #66fcf1;
   }
 
   .text-field {
     padding: 10px;
     font-size: 12px;
-    border-radius: 12px;
     background-color: whitesmoke;
     resize: none;
     border-width: 0px;
@@ -107,7 +108,6 @@
     outline: none;
     border: 1px solid;
     border-color: grey;
-    border-radius: 12px;
   }
 
   .textarea__message {
@@ -128,7 +128,7 @@
   }
 
   ::placeholder {
-    font-family: 'Rhodium Libre', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 23px;
     padding-top: 5px;
@@ -142,7 +142,7 @@
 
   .text__success {
     font-size: 12px;
-    color: green;
+    color: rgb(24, 248, 24);
     border-width: 0;
   }
 
@@ -153,5 +153,10 @@
 
   .valid {
     border-width: 0px;
+  }
+
+  .form-contact-me__title {
+    font-size: 22px;
+    color: white;
   }
 }

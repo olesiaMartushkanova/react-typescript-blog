@@ -16,7 +16,7 @@
   .label__download-cv {
     margin-top: 5px;
     font-size: 16px;
-    font-family: 'Rhodium Libre', serif;
+    font-family: 'Roboto', sans-serif;
     color: black;
     cursor: pointer;
   }
@@ -44,7 +44,7 @@
   .label__download-cv {
     margin-top: 5px;
     font-size: 14px;
-    font-family: 'Rhodium Libre', serif;
+    font-family: 'Roboto', sans-serif;
     color: black;
     cursor: pointer;
   }

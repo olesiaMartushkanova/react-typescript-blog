@@ -4,8 +4,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-family: 'Rhodium Libre', serif;
+    font-family: 'Roboto', sans-serif;
     width: 100%;
+    color: white;
   }
 
   .section__introduction {
@@ -19,16 +20,16 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 5px;
-    width: 300px;
+    width: 340px;
   }
 
   .title__about-me {
-    font-size: 36px;
+    font-size: 40px;
     text-align: right;
   }
 
   .aside__about-me {
-    font-size: 22px;
+    font-size: 24px;
     margin-bottom: 24px;
   }
 
@@ -39,8 +40,8 @@
   }
 
   .img__portfolio-picture {
-    width: 180px;
-    height: auto;
+    width: 240px;
+    height: 300px;
   }
 
   .section__about-me__main {
@@ -52,14 +53,14 @@
   .text__main-about-me {
     margin-bottom: 24px;
     text-align: justify;
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .buttons__more {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 10px;
   }
 
   .button__read-my-story {
@@ -91,7 +92,7 @@
   }
 
   .sub-title__about-me {
-    font-size: 30px;
+    font-size: 36px;
     margin-bottom: 10px;
     text-align: center;
   }
@@ -103,7 +104,7 @@
   }
 
   .list {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .soft-skills {
@@ -112,12 +113,12 @@
 
   .soft-skills li::marker {
     content: '► ';
-    color: rgb(92, 92, 92);
+    color: #66fcf1;
   }
 
   .hard-skills li::marker {
     content: '► ';
-    color: rgb(94, 63, 190);
+    color: white;
   }
 
   .section__random-facts {
@@ -137,9 +138,10 @@
   .main__about-me {
     display: flex;
     flex-direction: column;
-    font-family: 'Rhodium Libre', serif;
+    font-family: 'Roboto', sans-serif;
     margin-left: 10px;
     margin-right: 17px;
+    color: white;
   }
 
   .section__title--about-me {
@@ -148,24 +150,24 @@
   }
 
   .title__about-me {
-    font-size: 22px;
+    font-size: 27px;
   }
 
   .aside__about-me {
-    font-size: 14px;
-    margin-bottom: 5px;
+    font-size: 20px;
+    margin-bottom: 15px;
   }
 
   .section__portfolio-picture {
-    margin-left: 10px;
+    align-items: center;
   }
 
   .img__portfolio-picture {
-    width: 114px;
-    height: auto;
+    width: 200px;
+    height: 260px;
     margin-bottom: 10px;
-    float: left;
-    margin-right: 10px;
+    align-self: center;
+    float: none;
   }
 
   .section__about-me__main {
@@ -175,7 +177,7 @@
   }
 
   .text__main-about-me {
-    font-size: 12px;
+    font-size: 20px;
     text-align: justify;
   }
 
@@ -187,7 +189,7 @@
   }
 
   .button__read-my-story {
-    font-size: 15px;
+    font-size: 20px;
     width: 200px;
     margin-bottom: 10px;
   }
@@ -196,11 +198,6 @@
     font-size: 15px;
     width: 200px;
     margin-bottom: 10px;
-  }
-
-  .button__more-about-me {
-    font-size: 13px;
-    width: 200px;
   }
 
   .section__skills-chart {
@@ -215,13 +212,13 @@
   }
 
   .sub-title__about-me {
-    font-size: 20px;
+    font-size: 28px;
     margin-bottom: 10px;
     text-align: center;
   }
 
   .list {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .soft-skills {
@@ -230,12 +227,12 @@
 
   .soft-skills li::marker {
     content: '► ';
-    color: rgb(92, 92, 92);
+    color: #66fcf1;
   }
 
   .hard-skills li::marker {
     content: '► ';
-    color: rgb(94, 63, 190);
+    color: white;
   }
 
   .section__random-facts {

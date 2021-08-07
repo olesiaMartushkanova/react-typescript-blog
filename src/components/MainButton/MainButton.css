@@ -1,10 +1,9 @@
 /* Desktop */
 @media screen and (min-width: 769px) {
   .button__main {
-    font-family: 'Rhodium Libre', serif;
-    background-color: #585858;
-    border-radius: 6px;
-    border: 1px solid #dcdcdc;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1f2833;
+    border: 1px solid #66fcf1;
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
@@ -12,30 +11,30 @@
     font-weight: bold;
     padding: 6px 24px;
   }
+
   .button__main:hover {
     background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
     background-color: #e9e9e9;
-    color: #080808;
+    color: #1f2833;
   }
 }
 
 /* Mobile */
 @media screen and (max-width: 768px) {
   .button__main {
-    font-family: 'Rhodium Libre', serif;
-    background-color: #585858;
-    border-radius: 6px;
-    border: 1px solid #dcdcdc;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1f2833;
+    border: 1px solid #66fcf1;
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     padding: 6px 24px;
   }
   .button__main:hover {
     background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
     background-color: #e9e9e9;
-    color: #080808;
+    color: #1f2833;
   }
 }

@@ -1,13 +1,20 @@
 import './ReadMyStory.css';
 import Page from '../../components/Page/Page';
-import { ABOUT_ME_PATH, HOME_PATH } from '../../utils/constants';
+import {
+  ABOUT_ME_PATH,
+  HOME_PATH,
+  MEDIA_QUERY_SIZE,
+} from '../../utils/constants';
 import SEO from '../../images/SEO.jpg';
 import Team from '../../images/Team.jpg';
 import GlobalLogic from '../../images/Global-Logic.jpg';
 import Regent from '../../images/Regent.jpg';
 import Warehouse from '../../images/Warehouse.jpg';
+import { useMediaQueryHook } from '../../utils/hooks/useMediaQuery';
 
 const ReadMyStory = () => {
+  const isPageWide = useMediaQueryHook(MEDIA_QUERY_SIZE.desktop);
+
   return (
     <Page
       homeButtonPath={HOME_PATH}
@@ -32,7 +39,7 @@ const ReadMyStory = () => {
           </p>
 
           <div className='img__container'>
-            <img className='img__single' src={SEO}></img>
+            <img className='img__vertical' src={SEO}></img>
             <div className='img__text'>My first $10 for SEO work</div>
           </div>
 
@@ -74,14 +81,16 @@ const ReadMyStory = () => {
 
           <div className='img__container-row'>
             <div className='img__container-row__with-text'>
-              <img className='img__team' src={Team}></img>
+              <img className='img__horizontal' src={Team}></img>
               <div className='img__text'>My team in GlobalLogic</div>
             </div>
 
-            <div className='img__container-row__with-text'>
-              <img className='img__team' src={GlobalLogic}></img>
-              <div className='img__text'>Our office in GlobalLogic</div>
-            </div>
+            {isPageWide && (
+              <div className='img__container-row__with-text'>
+                <img className='img__horizontal' src={GlobalLogic}></img>
+                <div className='img__text'>Our office in GlobalLogic</div>
+              </div>
+            )}
           </div>
 
           <p>
@@ -95,7 +104,7 @@ const ReadMyStory = () => {
           </p>
 
           <div className='img__container'>
-            <img className='img__single' src={Regent}></img>
+            <img className='img__regent' src={Regent}></img>
             <div className='img__text'>My first day of studying in NZ</div>
           </div>
 
@@ -114,7 +123,7 @@ const ReadMyStory = () => {
           </p>
 
           <div className='img__container-warehouse'>
-            <img className='img__warehouse' src={Warehouse}></img>
+            <img className='img__horizontal' src={Warehouse}></img>
             <div className='img__text'>In The Warehouse Group: Christmas</div>
           </div>
 

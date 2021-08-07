@@ -6,13 +6,13 @@ import { useMediaQueryHook } from '../../../../utils/hooks/useMediaQuery';
 const desktopSizeChartOptions = {
   slices: {
     0: {
-      color: '5E3FBE',
-      textStyle: { color: 'white', fontSize: 24 },
+      color: 'c5c6c7',
+      textStyle: { color: 'black', fontSize: 26 },
       offset: 0.1,
     },
     1: {
-      color: '#5c5c5c',
-      textStyle: { color: 'white', fontSize: 20 },
+      color: '45a29e',
+      textStyle: { color: 'white', fontSize: 26 },
     },
   },
 };
@@ -20,13 +20,13 @@ const desktopSizeChartOptions = {
 const mobileSizeChartOptions = {
   slices: {
     0: {
-      color: '#5E3FBE',
-      textStyle: { color: 'white', fontSize: 14 },
+      color: 'c5c6c7',
+      textStyle: { color: 'black', fontSize: 20 },
       offset: 0.1,
     },
     1: {
-      color: '5c5c5c',
-      textStyle: { color: 'white', fontSize: 12 },
+      color: '45a29e',
+      textStyle: { color: 'white', fontSize: 20 },
     },
   },
 };
@@ -44,7 +44,7 @@ const RolePieChart = React.forwardRef<any, any>((props, ref) => {
   };
 
   const setWidth = isPageWide ? 400 : 300;
-  const setHeight = isPageWide ? 400 : 200;
+  const setHeight = isPageWide ? 400 : 300;
 
   return (
     <div ref={ref}>
@@ -62,7 +62,7 @@ const RolePieChart = React.forwardRef<any, any>((props, ref) => {
           ...setPieChartOptions(),
           fontName: 'Rhodium Libre',
           is3D: true,
-          backgroundColor: '#f5f5f5',
+          backgroundColor: '#1f2833',
           pieSliceText: 'label',
           legend: 'none',
         }}

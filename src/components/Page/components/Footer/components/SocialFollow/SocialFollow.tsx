@@ -19,7 +19,7 @@ const SocialFollow = ({ props }: any) => {
       <FontAwesomeIcon
         icon={socialButton.icon}
         className={socialButton.className}
-        color='black'
+        color='white'
         size='2x'></FontAwesomeIcon>
     </a>
   ));
