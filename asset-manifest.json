@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-typescript-blog/static/css/main.fa37e35a.chunk.css",
-    "main.js": "/react-typescript-blog/static/js/main.59c7446b.chunk.js",
-    "main.js.map": "/react-typescript-blog/static/js/main.59c7446b.chunk.js.map",
+    "main.css": "/react-typescript-blog/static/css/main.df733c48.chunk.css",
+    "main.js": "/react-typescript-blog/static/js/main.af65d5d1.chunk.js",
+    "main.js.map": "/react-typescript-blog/static/js/main.af65d5d1.chunk.js.map",
     "runtime-main.js": "/react-typescript-blog/static/js/runtime-main.39114838.js",
     "runtime-main.js.map": "/react-typescript-blog/static/js/runtime-main.39114838.js.map",
     "static/css/2.150d169a.chunk.css": "/react-typescript-blog/static/css/2.150d169a.chunk.css",
-    "static/js/2.c26327dd.chunk.js": "/react-typescript-blog/static/js/2.c26327dd.chunk.js",
-    "static/js/2.c26327dd.chunk.js.map": "/react-typescript-blog/static/js/2.c26327dd.chunk.js.map",
+    "static/js/2.6878dd16.chunk.js": "/react-typescript-blog/static/js/2.6878dd16.chunk.js",
+    "static/js/2.6878dd16.chunk.js.map": "/react-typescript-blog/static/js/2.6878dd16.chunk.js.map",
     "index.html": "/react-typescript-blog/index.html",
     "static/css/2.150d169a.chunk.css.map": "/react-typescript-blog/static/css/2.150d169a.chunk.css.map",
-    "static/css/main.fa37e35a.chunk.css.map": "/react-typescript-blog/static/css/main.fa37e35a.chunk.css.map",
-    "static/js/2.c26327dd.chunk.js.LICENSE.txt": "/react-typescript-blog/static/js/2.c26327dd.chunk.js.LICENSE.txt",
+    "static/css/main.df733c48.chunk.css.map": "/react-typescript-blog/static/css/main.df733c48.chunk.css.map",
+    "static/js/2.6878dd16.chunk.js.LICENSE.txt": "/react-typescript-blog/static/js/2.6878dd16.chunk.js.LICENSE.txt",
     "static/media/Global-Logic.9bfca5fe.jpg": "/react-typescript-blog/static/media/Global-Logic.9bfca5fe.jpg",
     "static/media/Portrait.22b1e233.jpg": "/react-typescript-blog/static/media/Portrait.22b1e233.jpg",
     "static/media/Regent.8790acc1.jpg": "/react-typescript-blog/static/media/Regent.8790acc1.jpg",
@@ -22,8 +22,8 @@
   "entrypoints": [
     "static/js/runtime-main.39114838.js",
     "static/css/2.150d169a.chunk.css",
-    "static/js/2.c26327dd.chunk.js",
-    "static/css/main.fa37e35a.chunk.css",
-    "static/js/main.59c7446b.chunk.js"
+    "static/js/2.6878dd16.chunk.js",
+    "static/css/main.df733c48.chunk.css",
+    "static/js/main.af65d5d1.chunk.js"
   ]
 }
