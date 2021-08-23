@@ -11,9 +11,11 @@ const AboutMeButton = (props: IMainButton) => {
   };
 
   return (
-    <MainButton className='button__about-me' onClick={buttonHandler}>
-      {text}
-    </MainButton>
+    <MainButton
+      text={text}
+      className='button__about-me'
+      onClick={buttonHandler}
+    />
   );
 };
 
