@@ -33,9 +33,12 @@ export const RANDOM_FACTS: Array<TextListItemType> = [
     itemText: 'Programming is my passion',
     icon: faLaptopCode,
   },
-  { itemText: `I'm originally from Ukraine`, icon: faHome },
-  { itemText: 'I consider New Zealand my home', icon: faKiwiBird },
-  { itemText: 'I love sport', icon: faRunning },
-  { itemText: 'I am a coffee drinker', icon: faMugHot },
+  { itemText: 'I grew up in Ukraine', icon: faHome },
+  {
+    itemText: 'New Zealand is my home now',
+    icon: faKiwiBird,
+  },
+  { itemText: 'My mornings start with coffee', icon: faMugHot },
+  { itemText: 'I love sport (especially running)', icon: faRunning },
   { itemText: 'My biggest dream is to have a dog', icon: faDog },
 ];
