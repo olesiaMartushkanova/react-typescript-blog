@@ -28,7 +28,7 @@ const Page: React.FC<IPage> = (props) => {
   return (
     <div className='app-blog-page'>
       <header className='header'>
-        <nav className='nav__buttons'>
+        <div className='nav__buttons'>
           <AboutMeButton
             className='button__about-me'
             path={homeButtonPath}
@@ -44,7 +44,7 @@ const Page: React.FC<IPage> = (props) => {
           )}
 
           <Dropdown className='header__dropdown' />
-        </nav>
+        </div>
       </header>
       <div className='page__body'> {children}</div>
       <Footer />
