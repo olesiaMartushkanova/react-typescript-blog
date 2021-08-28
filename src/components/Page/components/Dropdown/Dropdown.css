@@ -5,4 +5,5 @@
 .dropdown__menu {
   position: absolute;
   display: 'block';
+  width: 200px;
 }

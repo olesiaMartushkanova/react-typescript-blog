@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { LATEST_POSTS } from '../../../../pages/Home/constants';
 import { MY_STORY_PATH } from '../../../../utils/constants';
 import { ILinkListItem } from '../../../LinkList/components/LinkListItem';
@@ -10,24 +10,41 @@ interface IDropdown {
   className?: string;
 }
 
+const postsList: Array<ILinkListItem> = [
+  {
+    id: 'learning_react_article',
+    title: 'How did I become a software engineer?',
+    path: MY_STORY_PATH,
+    style: { fontSize: '26px' },
+  },
+];
+
 const Dropdown = (props: IDropdown) => {
   const { className } = props;
 
   const [showMenu, setShowMenu] = useState(false);
+  const dropdown = useRef<HTMLHeadingElement>(null);
 
-  const handleClick = () => {
+  const handleClick = (event: any) => {
+    event.preventDefault();
+    console.log('HERE');
     setShowMenu(true);
-    console.log('Clicking: ', showMenu);
   };
 
-  const postsList: Array<ILinkListItem> = [
-    {
-      id: 'learning_react_article',
-      title: 'How did I become a software engineer?',
-      path: MY_STORY_PATH,
-      style: { fontSize: '26px' },
-    },
-  ];
+  const closeMenu = (event: any) => {
+    if (!dropdown.current?.contains(event.target)) {
+      setShowMenu(false);
+    }
+  };
+
+  useEffect(() => {
+    if (showMenu) {
+      document.addEventListener('click', closeMenu);
+    } else {
+      document.removeEventListener('click', closeMenu);
+    }
+    return () => document.removeEventListener('click', closeMenu);
+  }, [showMenu]);
 
   return (
     <div className={`${className} dropdown__container`}>
@@ -36,7 +53,7 @@ const Dropdown = (props: IDropdown) => {
       </MainButton>
 
       {showMenu && (
-        <div className='dropdown__menu'>
+        <div className='dropdown__menu' ref={dropdown}>
           <LinkList props={postsList} />
         </div>
       )}
