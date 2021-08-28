@@ -1,4 +1,8 @@
 import { useState } from 'react';
+import { LATEST_POSTS } from '../../../../pages/Home/constants';
+import { MY_STORY_PATH } from '../../../../utils/constants';
+import { ILinkListItem } from '../../../LinkList/components/LinkListItem';
+import LinkList from '../../../LinkList/LinkList';
 import MainButton from '../../../MainButton/MainButton';
 import './Dropdown.css';
 
@@ -16,6 +20,15 @@ const Dropdown = (props: IDropdown) => {
     console.log('Clicking: ', showMenu);
   };
 
+  const postsList: Array<ILinkListItem> = [
+    {
+      id: 'learning_react_article',
+      title: 'How did I become a software engineer?',
+      path: MY_STORY_PATH,
+      style: { fontSize: '26px' },
+    },
+  ];
+
   return (
     <div className={`${className} dropdown__container`}>
       <MainButton className='dropdown__button' onClick={handleClick}>
@@ -23,9 +36,8 @@ const Dropdown = (props: IDropdown) => {
       </MainButton>
 
       {showMenu && (
-        <div className='dropdown__menu' style={{ backgroundColor: 'red' }}>
-          <option>First option</option>
-          <option>Second option</option>
+        <div className='dropdown__menu'>
+          <LinkList props={postsList} />
         </div>
       )}
     </div>
