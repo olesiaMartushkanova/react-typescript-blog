@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import MainButton from '../MainButton/MainButton';
+import MainButton from '../../../MainButton/MainButton';
 import './Dropdown.css';
 
 interface IDropdown {

@@ -4,7 +4,7 @@ import Footer from './components/Footer/Footer';
 import AboutMeButton from './components/AboutMeButton/AboutMeButton';
 import MediumButton from './components/MediumButton/MediumButton';
 import { MEDIUM_PATH } from '../../utils/constants';
-import Dropdown from '../Dropdown/Dropdown';
+import Dropdown from './components/Dropdown/Dropdown';
 import { ENV_KEY } from '../../utils/env';
 
 interface IPage {

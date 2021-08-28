@@ -1,7 +1,6 @@
 import './Home.css';
 import { ABOUT_ME_PATH, MEDIA_QUERY_SIZE } from '../../utils/constants';
-import LatestPosts from './components/LatestPosts/LatestPosts';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import LinkList from '../../components/LinkList/LinkList';
 import ContactForm from './components/ContactForm/ContactForm';
 import Page from '../../components/Page/Page';
 import { useMediaQueryHook } from '../../utils/hooks/useMediaQuery';
@@ -34,7 +33,7 @@ const Home = () => {
           <nav className='nav__latest-posts'>
             <div className='nav__latest-posts-title'> My latest posts</div>
 
-            <LatestPosts props={LATEST_POSTS} />
+            <LinkList props={LATEST_POSTS} />
           </nav>
 
           {isMobile && !openContactForm && (

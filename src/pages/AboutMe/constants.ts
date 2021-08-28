@@ -7,16 +7,16 @@ import {
   faMugHot,
   faRunning,
 } from '@fortawesome/free-solid-svg-icons';
-import { ListItemType } from '../../components/List/components/ListItem';
+import { TextListItemType } from './components/TextList/components/TextListItem';
 
-export const SOFT_SKILLS: Array<ListItemType> = [
+export const SOFT_SKILLS: Array<TextListItemType> = [
   { itemText: 'Team-player' },
   { itemText: 'Critical thinking' },
   { itemText: 'Solve challenges' },
   { itemText: 'Find solutions' },
 ];
 
-export const TECH_SKILLS: Array<ListItemType> = [
+export const TECH_SKILLS: Array<TextListItemType> = [
   { itemText: 'Automation Testing' },
   { itemText: 'JavaScript/ Typescript' },
   { itemText: 'Experience in DevOps' },
@@ -28,7 +28,7 @@ export const ABOUT_ME_TITLE = `Hello! I'm Olesia!`;
 export const ABOUT_ME_ASIDE =
   'I am a Software Engineer based in a beautiful New Zealand';
 
-export const RANDOM_FACTS: Array<ListItemType> = [
+export const RANDOM_FACTS: Array<TextListItemType> = [
   {
     itemText: 'I enjoy coding and happy to work extra hours',
     icon: faLaptopCode,
