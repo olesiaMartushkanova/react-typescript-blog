@@ -51,10 +51,10 @@ const AboutMe = () => {
             <section className='section__about-me__main'>
               <text className='text__main-about-me'>
                 <p>
-                  {`I had to describe myself I would say: "I focus on Automation Testing but I also enjoy doing development and DevOps. I love programming a lot! That's why I
-                  care about what I do and always work hard to achieve the best results. Also, I love challenges! `}
+                  {`If I had to describe myself I would say: "I focus on Automation Testing but I also enjoy doing development and DevOps. I love programming a lot! That's why I
+                  care about what I do and I always work hard to achieve the best results. `}
                 </p>
-                <p>My main life motto is to grow and improve every day."</p>
+                <p>My life motto is 'Learn every day'."</p>
               </text>
             </section>
           </section>

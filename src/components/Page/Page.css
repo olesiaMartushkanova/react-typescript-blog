@@ -28,11 +28,11 @@
   }
 
   .button__about-me {
-    margin-right: 11px;
+    margin-left: 11px;
   }
 
   .header__dropdown {
-    margin-left: 11px;
+    margin-right: 11px;
   }
 }
 
@@ -65,10 +65,10 @@
   }
 
   .button__about-me {
-    margin-right: 11px;
+    margin-left: 11px;
   }
 
   .header__dropdown {
-    margin-left: 11px;
+    margin-right: 11px;
   }
 }

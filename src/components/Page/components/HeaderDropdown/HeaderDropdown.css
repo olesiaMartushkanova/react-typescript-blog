@@ -1,0 +1,27 @@
+/* Desktop  */
+@media screen and (min-width: 769px) {
+  .header-dropdown__container {
+    position: relative;
+  }
+
+  .header-dropdown__menu {
+    position: absolute;
+    display: 'block';
+    width: 300px;
+    background-color: #1f2833;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .header-dropdown__container {
+    position: relative;
+  }
+
+  .header-dropdown__menu {
+    position: absolute;
+    display: 'block';
+    width: 220px;
+    font-size: 22px;
+  }
+}

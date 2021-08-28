@@ -6,11 +6,10 @@ export interface ILinkListItem {
   id: string;
   title: string;
   path: string;
-  style?: CSSProperties;
 }
 
 const LinkListItem = (props: ILinkListItem) => {
-  const { title, path, style } = props;
+  const { title, path } = props;
 
   const history = useHistory();
   const linkItemClickHandler = () => {
@@ -18,7 +17,7 @@ const LinkListItem = (props: ILinkListItem) => {
   };
 
   return (
-    <div className='link-tem' onClick={linkItemClickHandler} style={style}>
+    <div className='link-item' onClick={linkItemClickHandler}>
       {title}
       <a href={path}></a>
     </div>

@@ -1,9 +1,0 @@
-.dropdown__container {
-  position: relative;
-}
-
-.dropdown__menu {
-  position: absolute;
-  display: 'block';
-  width: 200px;
-}

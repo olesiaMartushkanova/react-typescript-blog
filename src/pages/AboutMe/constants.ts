@@ -30,12 +30,12 @@ export const ABOUT_ME_ASIDE =
 
 export const RANDOM_FACTS: Array<TextListItemType> = [
   {
-    itemText: 'I enjoy coding and happy to work extra hours',
+    itemText: 'Programming is my passion',
     icon: faLaptopCode,
   },
   { itemText: `I'm originally from Ukraine`, icon: faHome },
   { itemText: 'I consider New Zealand my home', icon: faKiwiBird },
   { itemText: 'I love sport', icon: faRunning },
-  { itemText: 'I need coffee, every day and a lot', icon: faMugHot },
+  { itemText: 'I am a coffee drinker', icon: faMugHot },
   { itemText: 'My biggest dream is to have a dog', icon: faDog },
 ];

@@ -1,12 +1,12 @@
 import './Home.css';
 import { ABOUT_ME_PATH, MEDIA_QUERY_SIZE } from '../../utils/constants';
-import LinkList from '../../components/LinkList/LinkList';
 import ContactForm from './components/ContactForm/ContactForm';
 import Page from '../../components/Page/Page';
 import { useMediaQueryHook } from '../../utils/hooks/useMediaQuery';
-import { LATEST_POSTS, TITLE_TEXT } from './constants';
+import { TITLE_TEXT } from './constants';
 import MainButton from '../../components/MainButton/MainButton';
 import { useState } from 'react';
+import LatestPostsLink from './components/LatestPostsList/LatestPostsList';
 
 const Home = () => {
   const isPageWide = useMediaQueryHook(MEDIA_QUERY_SIZE.desktop);
@@ -30,11 +30,11 @@ const Home = () => {
         {isPageWide && <div className='spacer' />}
 
         <section className='section__main--home-page'>
-          <nav className='nav__latest-posts'>
+          <div className='nav__latest-posts'>
             <div className='nav__latest-posts-title'> My latest posts</div>
 
-            <LinkList props={LATEST_POSTS} />
-          </nav>
+            <LatestPostsLink />
+          </div>
 
           {isMobile && !openContactForm && (
             <MainButton

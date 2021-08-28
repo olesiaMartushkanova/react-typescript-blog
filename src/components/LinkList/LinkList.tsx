@@ -7,7 +7,6 @@ const LinkList = ({ props }: any) => {
         id={linkListItem.id}
         title={linkListItem.title}
         path={linkListItem.path}
-        style={linkListItem.style}
       />
     </div>
   ));

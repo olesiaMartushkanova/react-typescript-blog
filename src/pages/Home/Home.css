@@ -19,7 +19,6 @@
 
   .nav__latest-posts {
     padding: 1rem;
-    background-color: #1f2833;
     margin: 2rem auto;
     width: 50rem;
     max-width: 95%;
@@ -33,6 +32,7 @@
     font-weight: bold;
     color: white;
     font-size: 26px;
+    margin-bottom: 10px;
   }
 
   .section__title {
@@ -94,6 +94,7 @@
     font-weight: bold;
     font-size: 22px;
     color: white;
+    margin-bottom: 10px;
   }
 
   .button__contact-me {
