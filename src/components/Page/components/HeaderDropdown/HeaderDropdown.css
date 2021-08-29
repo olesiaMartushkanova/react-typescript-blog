@@ -16,8 +16,15 @@
   }
 
   .header-dropdown__menu:hover {
+    text-decoration: underline;
     text-decoration-color: rgb(1, 1, 138);
     color: rgb(1, 1, 138);
+  }
+
+  .button-dropdown__open {
+    background-color: #e9e9e9;
+    color: #1f2833;
+    border-bottom: 'none';
   }
 }
 
@@ -40,7 +47,14 @@
   }
 
   .header-dropdown__menu:hover {
-    text-decoration-color: rgb(1, 1, 138);
+    text-decoration: underline;
+    text-decoration-color: rgb(36, 36, 202);
     color: rgb(1, 1, 138);
+  }
+
+  .button-dropdown__open {
+    background-color: #e9e9e9;
+    color: #1f2833;
+    border-bottom: 'none';
   }
 }

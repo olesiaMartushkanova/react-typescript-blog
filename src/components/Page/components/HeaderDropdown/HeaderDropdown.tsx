@@ -19,38 +19,21 @@ const postsList: Array<ILinkListItem> = [
   },
 ];
 
-const dropdownIsOpenedButtonColors = {
-  backgroundColor: '#e9e9e9',
-  color: '#1f2833',
-  borderBottom: 'none',
-};
-
-const dropdownIsClosedButtonColors = {
-  backgroundColor: '#1f2833',
-  color: '#e9e9e9',
-  borderBottom: '1px solid #66fcf1',
-};
-
 const HeaderDropdown = (props: IDropdown) => {
   const { className } = props;
 
   const [showMenu, setShowMenu] = useState(false);
-  const [buttonColors, setButtonColors] = useState(
-    dropdownIsClosedButtonColors
-  );
 
   const dropdown = useRef<HTMLHeadingElement>(null);
 
   const openMenu = (event: any) => {
     event.preventDefault();
     setShowMenu(true);
-    setButtonColors(dropdownIsOpenedButtonColors);
   };
 
   const closeMenu = (event: any) => {
     if (!dropdown.current?.contains(event.target)) {
       setShowMenu(false);
-      setButtonColors(dropdownIsClosedButtonColors);
     }
   };
 
@@ -65,7 +48,10 @@ const HeaderDropdown = (props: IDropdown) => {
 
   return (
     <div className={`header-dropdown__container ${className}`}>
-      <MainButton onClick={openMenu} style={buttonColors} text='My Posts'>
+      <MainButton
+        onClick={openMenu}
+        className={showMenu ? 'button-dropdown__open' : ''}
+        text='My Posts'>
         <FontAwesomeIcon icon={faCaretDown} style={{ marginLeft: '15px' }} />
       </MainButton>
 
