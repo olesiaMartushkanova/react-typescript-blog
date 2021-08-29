@@ -8,7 +8,6 @@
     width: 50rem;
     max-width: 95%;
     font-family: 'Roboto', sans-serif;
-    font-size: 22px;
     text-align: center;
     font-weight: bold;
     border: 1px solid #66fcf1;
@@ -76,6 +75,7 @@
 
   .form-contact-me__title {
     color: white;
+    font-size: 26px;
   }
 }
 
@@ -89,7 +89,6 @@
     width: 50rem;
     max-width: 95%;
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
     text-align: center;
     font-weight: bold;
     border: 1px solid #66fcf1;
@@ -158,5 +157,6 @@
   .form-contact-me__title {
     font-size: 22px;
     color: white;
+    font-size: 18px;
   }
 }

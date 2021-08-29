@@ -14,7 +14,7 @@ import DownloadCVButton from './components/DownloadCVButton/DowlonadCVButton';
 import ReadMyStoryButton from './components/ReadMyStoryButton/ReadMyStoryButton';
 import MainButton from '../../components/MainButton/MainButton';
 import RolePieChart from './components/RolePieChart/RolePieChart';
-import List from '../../components/List/List';
+import TextList from './components/TextList/TextList';
 import {
   ABOUT_ME_ASIDE,
   ABOUT_ME_TITLE,
@@ -22,7 +22,6 @@ import {
   SOFT_SKILLS,
   TECH_SKILLS,
 } from './constants';
-import CodeChallengeButton from './components/CodeChallengeButton/CodeChallengeButton';
 import { ENV_KEY } from '../../utils/env';
 import { useMediaQueryHook } from '../../utils/hooks/useMediaQuery';
 
@@ -51,10 +50,10 @@ const AboutMe = () => {
             <section className='section__about-me__main'>
               <text className='text__main-about-me'>
                 <p>
-                  {`I had to describe myself I would say: "I focus on Automation Testing but I also enjoy doing development and DevOps. I love programming a lot! That's why
-                  care about what I do and always work hard to achieve the best results. Also, I love challenges! `}
+                  {`If I had to describe myself I would say: "I focus on Automation Testing but I also enjoy doing development and DevOps. I love programming a lot! That's why I
+                  care about what I do and I always work hard to achieve the best results. `}
                 </p>
-                <p>My main life motto is to grow and improve every day."</p>
+                <p>My life motto is 'Learn every day'."</p>
               </text>
             </section>
           </section>
@@ -65,13 +64,6 @@ const AboutMe = () => {
               className='button__read-my-story'
               path={MY_STORY_PATH}
             />
-
-            {ENV_KEY.hundredDaysButton && (
-              <CodeChallengeButton
-                className='button__code-challenge'
-                path={CODE_CHALLENGE_PATH}
-              />
-            )}
 
             {isPageWide && (
               <MainButton
@@ -90,17 +82,18 @@ const AboutMe = () => {
             className='space__before-skills-title'></div>
           <div className='sub-title__about-me'>Some of my skills</div>
           <div className='section__skills-description'>
-            <List className='list soft-skills' list={SOFT_SKILLS} />
-            <List className='list hard-skills' list={TECH_SKILLS} />
+            <TextList className='list soft-skills' list={SOFT_SKILLS} />
+            <TextList className='list hard-skills' list={TECH_SKILLS} />
           </div>
           <RolePieChart />
         </section>
 
         <section className='section__random-facts'>
           <div className='sub-title__about-me'>Random facts about me</div>
-          <List
+          <TextList
             className='list random-facts-description'
-            list={RANDOM_FACTS}></List>
+            list={RANDOM_FACTS}
+          />
         </section>
       </div>
     </Page>

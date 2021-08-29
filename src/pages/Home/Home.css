@@ -19,7 +19,6 @@
 
   .nav__latest-posts {
     padding: 1rem;
-    background-color: #1f2833;
     margin: 2rem auto;
     width: 50rem;
     max-width: 95%;
@@ -32,6 +31,8 @@
   .nav__latest-posts-title {
     font-weight: bold;
     color: white;
+    font-size: 26px;
+    margin-bottom: 10px;
   }
 
   .section__title {
@@ -41,10 +42,9 @@
     margin-left: 105px;
     font-family: 'Bebas Neue', cursive;
     font-style: normal;
-    letter-spacing: 0.1em;
     line-height: 61px;
     color: #66fcf1;
-    font-size: 36px;
+    font-size: 48px;
   }
 
   .container__contact-me {
@@ -58,12 +58,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1rem auto;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
   }
 
   .section__main--home-page {
     display: flex;
     flex-direction: column;
+    width: 80vw;
+  }
+
+  .section__title {
     width: 300px;
+    font-family: 'Bebas Neue', cursive;
+    font-style: normal;
+    color: #66fcf1;
+    font-size: 36px;
+    margin-bottom: 10px;
   }
 
   .container__contact-me {
@@ -72,12 +84,8 @@
 
   .nav__latest-posts {
     padding: 1rem;
-    background-color: #1f2833;
+    background-color: hsl(213, 24%, 16%);
     border: 1px solid #66fcf1;
-    margin: 1rem auto;
-    width: 50rem;
-    max-width: 95%;
-    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     text-align: center;
   }
@@ -86,5 +94,11 @@
     font-weight: bold;
     font-size: 22px;
     color: white;
+    margin-bottom: 10px;
+  }
+
+  .button__contact-me {
+    background-color: #45a29e;
+    margin-top: 50px;
   }
 }

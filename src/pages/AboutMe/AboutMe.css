@@ -25,7 +25,6 @@
 
   .title__about-me {
     font-size: 40px;
-    text-align: right;
   }
 
   .aside__about-me {
@@ -141,7 +140,7 @@
     font-family: 'Roboto', sans-serif;
     margin-left: 10px;
     margin-right: 20px;
-    width: 87%;
+    width: 95%;
     color: white;
   }
 
@@ -160,6 +159,8 @@
   }
 
   .section__portfolio-picture {
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
 
@@ -167,7 +168,6 @@
     width: 200px;
     height: 260px;
     margin-bottom: 10px;
-    align-self: center;
     float: none;
   }
 

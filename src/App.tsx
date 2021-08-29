@@ -8,7 +8,6 @@ import {
 import AboutMe from './pages/AboutMe/AboutMe';
 import Home from './pages/Home/Home';
 import ReadMyStory from './pages/ReadMyStory/ReadMyStory';
-import CodeChallenge from './pages/CodeChallenge/CodeChallenge';
 
 export const App = () => {
   return (
@@ -21,9 +20,6 @@ export const App = () => {
           <AboutMe />
         </Route>
         <Route path={MY_STORY_PATH} component={ReadMyStory}>
-          <ReadMyStory />
-        </Route>
-        <Route path={CODE_CHALLENGE_PATH} component={CodeChallenge}>
           <ReadMyStory />
         </Route>
       </Switch>

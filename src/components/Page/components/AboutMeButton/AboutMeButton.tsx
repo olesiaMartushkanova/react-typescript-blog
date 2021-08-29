@@ -1,9 +1,8 @@
 import { useHistory } from 'react-router-dom';
 import MainButton, { IMainButton } from '../../../MainButton/MainButton';
-import './AboutMeButton.css';
 
 const AboutMeButton = (props: IMainButton) => {
-  const { text, path } = props;
+  const { text, path, className } = props;
 
   const history = useHistory();
   const buttonHandler = () => {
@@ -11,9 +10,7 @@ const AboutMeButton = (props: IMainButton) => {
   };
 
   return (
-    <MainButton className='button__about-me' onClick={buttonHandler}>
-      {text}
-    </MainButton>
+    <MainButton text={text} className={className} onClick={buttonHandler} />
   );
 };
 

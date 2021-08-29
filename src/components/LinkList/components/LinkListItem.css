@@ -1,0 +1,17 @@
+@media screen and (min-width: 769px) {
+  .link-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .link-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem;
+    cursor: pointer;
+  }
+}

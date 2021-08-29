@@ -1,12 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export type ListItemType = {
+export type TextListItemType = {
   itemText: string;
   icon?: any;
 };
 
-const ListItem = ({ props }: any) => {
-  return props.map((listItem: ListItemType) => (
+const TextListItem = ({ props }: any) => {
+  return props.map((listItem: TextListItemType) => (
     <ul
       key={listItem.itemText}
       style={{ display: 'flex', flexDirection: 'row', listStyle: 'none' }}>
@@ -20,4 +20,4 @@ const ListItem = ({ props }: any) => {
   ));
 };
 
-export default ListItem;
+export default TextListItem;

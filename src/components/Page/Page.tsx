@@ -4,6 +4,8 @@ import Footer from './components/Footer/Footer';
 import AboutMeButton from './components/AboutMeButton/AboutMeButton';
 import MediumButton from './components/MediumButton/MediumButton';
 import { MEDIUM_PATH } from '../../utils/constants';
+import HeaderDropdown from './components/HeaderDropdown/HeaderDropdown';
+import { ENV_KEY } from '../../utils/env';
 
 interface IPage {
   homeButtonPath: string;
@@ -26,14 +28,23 @@ const Page: React.FC<IPage> = (props) => {
   return (
     <div className='app-blog-page'>
       <header className='header'>
-        <nav className='nav__buttons'>
-          <AboutMeButton path={homeButtonPath} text={homeButtonText} />
-          <MediumButton
-            path={mediumButtonPath ?? MEDIUM_PATH}
-            text={mediumButtonText ?? 'Medium'}
-            openInNewTab={openMediumInNewTab ?? true}
+        <div className='nav__buttons'>
+          <HeaderDropdown className='posts__dropdown' />
+
+          <AboutMeButton
+            className='button__about-me'
+            path={homeButtonPath}
+            text={homeButtonText}
           />
-        </nav>
+
+          {ENV_KEY.mediumButton && (
+            <MediumButton
+              path={mediumButtonPath ?? MEDIUM_PATH}
+              text={mediumButtonText ?? 'Medium'}
+              openInNewTab={openMediumInNewTab ?? true}
+            />
+          )}
+        </div>
       </header>
       <div className='page__body'> {children}</div>
       <Footer />
