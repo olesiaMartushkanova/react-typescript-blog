@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { MY_STORY_PATH } from '../../../../utils/constants';
 import { ILinkListItem } from '../../../LinkList/components/LinkListItem';
 import LinkList from '../../../LinkList/LinkList';
-import MainButton from '../../../MainButton/MainButton';
+import PostsButton from './components/PostsButton/PostsButton';
 import './HeaderDropdown.css';
 
 interface IDropdown {
@@ -60,10 +60,8 @@ const HeaderDropdown = (props: IDropdown) => {
   }, [showMenu]);
 
   return (
-    <div className='header-dropdown__container'>
-      <MainButton onClick={handleClick} style={buttonColors}>
-        My Posts
-      </MainButton>
+    <div className={`${className} header-dropdown__container`}>
+      <PostsButton onClick={handleClick} />
 
       {showMenu && (
         <div className='header-dropdown__menu' ref={dropdown}>

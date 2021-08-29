@@ -22,7 +22,6 @@ import {
   SOFT_SKILLS,
   TECH_SKILLS,
 } from './constants';
-import CodeChallengeButton from './components/CodeChallengeButton/CodeChallengeButton';
 import { ENV_KEY } from '../../utils/env';
 import { useMediaQueryHook } from '../../utils/hooks/useMediaQuery';
 
@@ -65,13 +64,6 @@ const AboutMe = () => {
               className='button__read-my-story'
               path={MY_STORY_PATH}
             />
-
-            {ENV_KEY.hundredDaysButton && (
-              <CodeChallengeButton
-                className='button__code-challenge'
-                path={CODE_CHALLENGE_PATH}
-              />
-            )}
 
             {isPageWide && (
               <MainButton
