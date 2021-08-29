@@ -1,13 +1,20 @@
 # Blog: TypeScript + React
+This blog is my first React project.
+It allowed me to make first steps in web-development with React.
+
+## View Blog
+This blog has been deployed to Github Pages:
+[Read about me](https://olesiamartushkanova.github.io/react-typescript-blog/#/about-me)
+
+## Story
+I wanted to reproduce the full development process at home so I started with creating a proper design of this blog in Figma.
+My end goal was to have my own functional application to work on my programming skills, experiment with automation testing and deployment.
+
+I still keep working and improving this application.
+If my commits for this blog are 2 weeks old and older then I am working on other home projects meanwhile.
 
 ## Run app locally
-
 ```
 yarn && yarn start
 ```
-
-Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
