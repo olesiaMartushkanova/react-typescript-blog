@@ -61,7 +61,7 @@ const HeaderDropdown = (props: IDropdown) => {
 
   return (
     <div className={`${className} header-dropdown__container`}>
-      <PostsButton onClick={handleClick} />
+      <PostsButton onClick={handleClick} style={buttonColors} />
 
       {showMenu && (
         <div className='header-dropdown__menu' ref={dropdown}>

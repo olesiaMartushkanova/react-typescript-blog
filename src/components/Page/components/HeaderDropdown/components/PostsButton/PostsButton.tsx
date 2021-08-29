@@ -1,7 +1,7 @@
 import { CSSProperties } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import MainButton from '../../../../../MainButton/MainButton';
-import { faEllipsisV } from '@fortawesome/free-solid-svg-icons';
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 
 interface IPostsButton {
   style?: CSSProperties;
@@ -13,8 +13,8 @@ const PostsButton = (props: IPostsButton) => {
 
   return (
     <div>
-      <MainButton onClick={onClick} style={style}>
-        My Posts
+      <MainButton onClick={onClick} style={style} text='My Posts'>
+        <FontAwesomeIcon icon={faCaretDown} style={{ marginLeft: '15px' }} />
       </MainButton>
     </div>
   );
