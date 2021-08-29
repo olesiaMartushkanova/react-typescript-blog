@@ -6,7 +6,6 @@
 
   .header-dropdown__menu {
     position: absolute;
-    display: 'block';
     width: 300px;
     background-color: #1f2833;
     color: #ffffff;
@@ -29,7 +28,6 @@
 
   .header-dropdown__menu {
     position: absolute;
-    display: 'block';
     width: 220px;
     font-size: 20px;
     background-color: #1f2833;

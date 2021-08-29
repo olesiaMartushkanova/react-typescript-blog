@@ -21,16 +21,29 @@ const HeaderDropdown = (props: IDropdown) => {
   const { className } = props;
 
   const [showMenu, setShowMenu] = useState(false);
+  const [buttonColors, setButtonColors] = useState({
+    backgroundColor: '#1f2833',
+    color: '#ffffff',
+  });
+
   const dropdown = useRef<HTMLHeadingElement>(null);
 
   const handleClick = (event: any) => {
     event.preventDefault();
     setShowMenu(true);
+    setButtonColors({
+      backgroundColor: '#e9e9e9',
+      color: '#1f2833',
+    });
   };
 
   const closeMenu = (event: any) => {
     if (!dropdown.current?.contains(event.target)) {
       setShowMenu(false);
+      setButtonColors({
+        backgroundColor: '#1f2833',
+        color: '#ffffff',
+      });
     }
   };
 
@@ -45,7 +58,7 @@ const HeaderDropdown = (props: IDropdown) => {
 
   return (
     <div className={`${className} header-dropdown__container`}>
-      <MainButton className='dropdown__button' onClick={handleClick}>
+      <MainButton onClick={handleClick} style={buttonColors}>
         My Posts
       </MainButton>
 
