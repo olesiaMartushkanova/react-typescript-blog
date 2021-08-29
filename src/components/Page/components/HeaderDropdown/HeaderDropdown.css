@@ -16,7 +16,8 @@
   }
 
   .header-dropdown__menu:hover {
-    text-decoration: underline;
+    text-decoration-color: rgb(1, 1, 138);
+    color: rgb(1, 1, 138);
   }
 }
 
@@ -39,6 +40,7 @@
   }
 
   .header-dropdown__menu:hover {
-    text-decoration: underline;
+    text-decoration-color: rgb(1, 1, 138);
+    color: rgb(1, 1, 138);
   }
 }

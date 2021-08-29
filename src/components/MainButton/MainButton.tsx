@@ -7,14 +7,19 @@ export interface IMainButton {
   path?: string;
   onClick?: any;
   style?: CSSProperties;
+  onMouseEnter?: any;
 }
 
 const MainButton: React.FC<IMainButton> = (props) => {
-  const { className, text, children, onClick, style } = props;
+  const { className, text, children, onClick, style, onMouseEnter } = props;
   const classes = 'button__main ' + className;
 
   return (
-    <button className={classes} onClick={onClick} style={style}>
+    <button
+      className={classes}
+      onClick={onClick}
+      style={style}
+      onMouseEnter={onMouseEnter}>
       {text}
       {children}
     </button>

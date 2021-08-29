@@ -1,8 +1,7 @@
 import { MY_STORY_PATH } from '../../utils/constants';
 import { ILinkListItem } from '../../components/LinkList/components/LinkListItem';
 
-export const TITLE_TEXT =
-  'It’s all about my passion to life, learning and personal growth';
+export const TITLE_TEXT = 'It’s all about my passion for learning';
 
 export const LATEST_POSTS: Array<ILinkListItem> = [
   {
