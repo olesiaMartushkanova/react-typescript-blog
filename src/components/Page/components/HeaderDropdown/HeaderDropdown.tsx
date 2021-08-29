@@ -24,6 +24,7 @@ const HeaderDropdown = (props: IDropdown) => {
   const [buttonColors, setButtonColors] = useState({
     backgroundColor: '#1f2833',
     color: '#ffffff',
+    borderBottom: '1px solid #66fcf1',
   });
 
   const dropdown = useRef<HTMLHeadingElement>(null);
@@ -34,6 +35,7 @@ const HeaderDropdown = (props: IDropdown) => {
     setButtonColors({
       backgroundColor: '#e9e9e9',
       color: '#1f2833',
+      borderBottom: 'none',
     });
   };
 
@@ -43,6 +45,7 @@ const HeaderDropdown = (props: IDropdown) => {
       setButtonColors({
         backgroundColor: '#1f2833',
         color: '#ffffff',
+        borderBottom: '1px solid #66fcf1',
       });
     }
   };
@@ -57,7 +60,7 @@ const HeaderDropdown = (props: IDropdown) => {
   }, [showMenu]);
 
   return (
-    <div className={`${className} header-dropdown__container`}>
+    <div className='header-dropdown__container'>
       <MainButton onClick={handleClick} style={buttonColors}>
         My Posts
       </MainButton>
