@@ -24,7 +24,7 @@
   .button-dropdown__open {
     background-color: #e9e9e9;
     color: #1f2833;
-    border-bottom: 'none';
+    border-bottom: 0px;
   }
 }
 
@@ -55,6 +55,6 @@
   .button-dropdown__open {
     background-color: #e9e9e9;
     color: #1f2833;
-    border-bottom: 'none';
+    border-bottom: 0px;
   }
 }
