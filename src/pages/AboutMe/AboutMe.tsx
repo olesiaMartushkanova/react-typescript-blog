@@ -3,14 +3,12 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { useRef } from 'react';
 import Page from '../../components/Page/Page';
 import {
-  CODE_CHALLENGE_PATH,
   HOME_PATH,
   MEDIA_QUERY_SIZE,
   MY_STORY_PATH,
 } from '../../utils/constants';
 import './AboutMe.css';
 import Portrait from '../../images/Portrait.jpg';
-import DownloadCVButton from './components/DownloadCVButton/DowlonadCVButton';
 import ReadMyStoryButton from './components/ReadMyStoryButton/ReadMyStoryButton';
 import MainButton from '../../components/MainButton/MainButton';
 import RolePieChart from './components/RolePieChart/RolePieChart';
@@ -22,7 +20,6 @@ import {
   SOFT_SKILLS,
   TECH_SKILLS,
 } from './constants';
-import { ENV_KEY } from '../../utils/env';
 import { useMediaQueryHook } from '../../utils/hooks/useMediaQuery';
 
 const AboutMe = () => {
@@ -50,7 +47,7 @@ const AboutMe = () => {
             <section className='section__about-me__main'>
               <text className='text__main-about-me'>
                 <p>
-                  {`If I had to describe myself I would say: "I focus on Automation Testing but I also enjoy doing development and DevOps. I love programming a lot! That's why I
+                  {`If I had to describe myself I would say: "I am a self-taught Software Developer with a background in automation testings, dedicated to learning and improving every day. I enjoy building web-applications and work in DevOps environment. I love programming a lot! That's why I
                   care about what I do and I always work hard to achieve the best results. `}
                 </p>
                 <p>My life motto is 'Learn every day'."</p>
@@ -59,7 +56,6 @@ const AboutMe = () => {
           </section>
 
           <div className='buttons__more'>
-            {ENV_KEY.downloadCvFeature && <DownloadCVButton />}
             <ReadMyStoryButton
               className='button__read-my-story'
               path={MY_STORY_PATH}
