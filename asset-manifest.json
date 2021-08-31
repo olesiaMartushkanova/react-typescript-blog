@@ -1,26 +1,25 @@
 {
   "files": {
-    "main.css": "/react-typescript-blog/static/css/main.16d6e4ac.chunk.css",
-    "main.js": "/react-typescript-blog/static/js/main.123b01fb.chunk.js",
-    "main.js.map": "/react-typescript-blog/static/js/main.123b01fb.chunk.js.map",
+    "main.css": "/react-typescript-blog/static/css/main.82bc810e.chunk.css",
+    "main.js": "/react-typescript-blog/static/js/main.255a0311.chunk.js",
+    "main.js.map": "/react-typescript-blog/static/js/main.255a0311.chunk.js.map",
     "runtime-main.js": "/react-typescript-blog/static/js/runtime-main.39114838.js",
     "runtime-main.js.map": "/react-typescript-blog/static/js/runtime-main.39114838.js.map",
-    "static/js/2.23c32168.chunk.js": "/react-typescript-blog/static/js/2.23c32168.chunk.js",
-    "static/js/2.23c32168.chunk.js.map": "/react-typescript-blog/static/js/2.23c32168.chunk.js.map",
+    "static/js/2.323e8bb0.chunk.js": "/react-typescript-blog/static/js/2.323e8bb0.chunk.js",
+    "static/js/2.323e8bb0.chunk.js.map": "/react-typescript-blog/static/js/2.323e8bb0.chunk.js.map",
     "index.html": "/react-typescript-blog/index.html",
-    "static/css/main.16d6e4ac.chunk.css.map": "/react-typescript-blog/static/css/main.16d6e4ac.chunk.css.map",
-    "static/js/2.23c32168.chunk.js.LICENSE.txt": "/react-typescript-blog/static/js/2.23c32168.chunk.js.LICENSE.txt",
+    "static/css/main.82bc810e.chunk.css.map": "/react-typescript-blog/static/css/main.82bc810e.chunk.css.map",
+    "static/js/2.323e8bb0.chunk.js.LICENSE.txt": "/react-typescript-blog/static/js/2.323e8bb0.chunk.js.LICENSE.txt",
     "static/media/Global-Logic.9bfca5fe.jpg": "/react-typescript-blog/static/media/Global-Logic.9bfca5fe.jpg",
     "static/media/Portrait.22b1e233.jpg": "/react-typescript-blog/static/media/Portrait.22b1e233.jpg",
     "static/media/Regent.8790acc1.jpg": "/react-typescript-blog/static/media/Regent.8790acc1.jpg",
-    "static/media/SEO.893febde.jpg": "/react-typescript-blog/static/media/SEO.893febde.jpg",
     "static/media/Team.f5281eb0.jpg": "/react-typescript-blog/static/media/Team.f5281eb0.jpg",
     "static/media/Warehouse.4c1770cc.jpg": "/react-typescript-blog/static/media/Warehouse.4c1770cc.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.39114838.js",
-    "static/js/2.23c32168.chunk.js",
-    "static/css/main.16d6e4ac.chunk.css",
-    "static/js/main.123b01fb.chunk.js"
+    "static/js/2.323e8bb0.chunk.js",
+    "static/css/main.82bc810e.chunk.css",
+    "static/js/main.255a0311.chunk.js"
   ]
 }
