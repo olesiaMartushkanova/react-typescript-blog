@@ -10,12 +10,6 @@ import {
 
 const SOCIAL_BUTTONS: Array<ISocialFollow> = [
   {
-    id: 'instagram_icon',
-    icon: faInstagram,
-    className: 'instagram',
-    path: 'https://www.instagram.com/olesia_learns/',
-  },
-  {
     id: 'linkedin_icon',
     icon: faLinkedin,
     className: 'linkedin',
