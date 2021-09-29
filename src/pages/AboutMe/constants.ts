@@ -1,6 +1,5 @@
 import {
   faDog,
-  faFlag,
   faHome,
   faKiwiBird,
   faLaptopCode,

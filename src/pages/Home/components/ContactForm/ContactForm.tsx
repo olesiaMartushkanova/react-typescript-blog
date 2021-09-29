@@ -77,7 +77,7 @@ const ContactForm = (props: IContactForm) => {
     }
 
     if (name === '' && email === '' && message === '') {
-      setMessageError(`Please, feel the form if you want to send me a message`);
+      setMessageError(`Please, fill the form if you want to send me a message`);
       isValid = false;
     }
 

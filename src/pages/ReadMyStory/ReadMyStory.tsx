@@ -1,11 +1,6 @@
 import './ReadMyStory.css';
 import Page from '../../components/Page/Page';
-import {
-  ABOUT_ME_PATH,
-  HOME_PATH,
-  MEDIA_QUERY_SIZE,
-} from '../../utils/constants';
-import SEO from '../../images/SEO.jpg';
+import { ABOUT_ME_PATH, MEDIA_QUERY_SIZE } from '../../utils/constants';
 import Team from '../../images/Team.jpg';
 import GlobalLogic from '../../images/Global-Logic.jpg';
 import Regent from '../../images/Regent.jpg';
@@ -16,12 +11,7 @@ const ReadMyStory = () => {
   const isPageWide = useMediaQueryHook(MEDIA_QUERY_SIZE.desktop);
 
   return (
-    <Page
-      homeButtonPath={HOME_PATH}
-      homeButtonText='Home'
-      mediumButtonPath={ABOUT_ME_PATH}
-      mediumButtonText='About me'
-      openMediumInNewTab={false}>
+    <Page homeButtonPath={ABOUT_ME_PATH} homeButtonText='About me'>
       <div className='main__read-my-story'>
         <h1 className='title__how-started'>
           How did I become a software engineer?

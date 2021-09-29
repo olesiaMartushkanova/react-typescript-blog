@@ -2,11 +2,7 @@ import './Footer.css';
 import SocialFollow, {
   ISocialFollow,
 } from './components/SocialFollow/SocialFollow';
-import {
-  faInstagram,
-  faLinkedin,
-  faGithub,
-} from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const SOCIAL_BUTTONS: Array<ISocialFollow> = [
   {

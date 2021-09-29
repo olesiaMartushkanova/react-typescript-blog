@@ -1,4 +1,3 @@
-import { CSSProperties } from 'react';
 import { useHistory } from 'react-router-dom';
 import './LinkListItem.css';
 
