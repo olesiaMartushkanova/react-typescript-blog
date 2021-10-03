@@ -23,7 +23,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test:circular": "yarn madge --circular --ts-config=tsconfig.json --extensions tsx,ts ./",
-    "predeploy": "yarn run build",
+    "predeploy": "export CI=false && yarn run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
