@@ -40,3 +40,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 - Install Eslint to keep my code consistent
 - Make my code cleaner
 - Avoid using `any` type
+- Add Component tests with React testing library and Jest
