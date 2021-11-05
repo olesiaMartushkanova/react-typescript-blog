@@ -10,8 +10,14 @@ export interface IMainButton {
   onMouseEnter?: any;
 }
 
-const MainButton: React.FC<IMainButton> = (props) => {
-  const { className, text, children, onClick, style, onMouseEnter } = props;
+const MainButton: React.FC<IMainButton> = ({
+  className,
+  text,
+  children,
+  onClick,
+  style,
+  onMouseEnter,
+}) => {
   const classes = 'button__main ' + className;
 
   return (

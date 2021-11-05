@@ -16,7 +16,6 @@ const Home = () => {
 
   const contactMeButtonHandler = () => {
     setOpenContactForm(true);
-    // TODO: add setting to false after form is submit
   };
 
   return (

@@ -19,9 +19,7 @@ const postsList: Array<ILinkListItem> = [
   },
 ];
 
-const HeaderDropdown = (props: IDropdown) => {
-  const { className } = props;
-
+const HeaderDropdown = ({ className }: IDropdown) => {
   const [showMenu, setShowMenu] = useState(false);
 
   const dropdown = useRef<HTMLHeadingElement>(null);

@@ -9,9 +9,11 @@ interface IPage {
   homeButtonText: string;
 }
 
-const Page: React.FC<IPage> = (props) => {
-  const { children, homeButtonPath, homeButtonText } = props;
-
+const Page: React.FC<IPage> = ({
+  children,
+  homeButtonPath,
+  homeButtonText,
+}) => {
   return (
     <div className='app-blog-page'>
       <header className='header'>

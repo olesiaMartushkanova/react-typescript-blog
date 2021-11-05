@@ -1,9 +1,7 @@
 import { useHistory } from 'react-router-dom';
 import MainButton, { IMainButton } from '../../../MainButton/MainButton';
 
-const AboutMeButton = (props: IMainButton) => {
-  const { text, path, className } = props;
-
+const AboutMeButton = ({ text, path, className }: IMainButton) => {
   const history = useHistory();
   const buttonHandler = () => {
     history.push(path || '/');

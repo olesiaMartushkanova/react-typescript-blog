@@ -3,9 +3,7 @@ import MainButton, {
   IMainButton,
 } from '../../../../components/MainButton/MainButton';
 
-const ReadMyStoryButton = (props: IMainButton) => {
-  const { path, className } = props;
-
+const ReadMyStoryButton = ({ path, className }: IMainButton) => {
   const history = useHistory();
   const buttonHandler = () => {
     history.push(path || '/');

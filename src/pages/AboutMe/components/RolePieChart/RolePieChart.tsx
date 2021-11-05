@@ -31,8 +31,7 @@ const mobileSizeChartOptions = {
   },
 };
 
-const RolePieChart = React.forwardRef<any, any>((props, ref) => {
-  const { children } = props;
+const RolePieChart = React.forwardRef<any, any>(({ children }, ref) => {
   const isPageWide = useMediaQueryHook(MEDIA_QUERY_SIZE.desktop);
 
   const setPieChartOptions = () => {

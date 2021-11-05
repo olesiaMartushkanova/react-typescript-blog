@@ -7,9 +7,7 @@ export interface ILinkListItem {
   path: string;
 }
 
-const LinkListItem = (props: ILinkListItem) => {
-  const { title, path } = props;
-
+const LinkListItem = ({ title, path }: ILinkListItem) => {
   const history = useHistory();
   const linkItemClickHandler = () => {
     history.push(path || '/');
