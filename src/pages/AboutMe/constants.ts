@@ -16,7 +16,7 @@ export const SOFT_SKILLS: Array<TextListItemType> = [
 ];
 
 export const TECH_SKILLS: Array<TextListItemType> = [
-  { itemText: 'JavaScript / HTM, CSS/ React' },
+  { itemText: 'JavaScript / HTML, CSS/ React' },
   { itemText: 'Automation Testing' },
   { itemText: 'Experience in DevOps' },
   { itemText: 'Professional in googling' },
