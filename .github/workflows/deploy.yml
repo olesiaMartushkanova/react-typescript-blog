@@ -3,6 +3,10 @@ on:
   push:
     branches:
       - master
+on:
+    branches:
+      - master
+  workflow_dispatch:
 
 jobs:
   build:
