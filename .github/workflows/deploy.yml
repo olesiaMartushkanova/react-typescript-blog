@@ -1,9 +1,7 @@
 name: Deploy to Github Pages
+
 on:
   push:
-    branches:
-      - master
-on:
     branches:
       - master
   workflow_dispatch:
@@ -14,10 +12,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+
       - name: Install modules
         run: yarn
+
       - name: Build
         run: yarn predeploy
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
